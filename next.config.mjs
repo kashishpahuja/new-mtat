@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  experimental: {
-    agentFeedback: true,
+   output: "export",
+   images: {
+    unoptimized: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+  // experimental: {
+  //   agentFeedback: true,
+  // },
+  // cacheComponents: true,
+  // partialPrefetching: true,
   reactCompiler: true,
   turbopack: {
     rules: {
