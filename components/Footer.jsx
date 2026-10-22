@@ -35,16 +35,16 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2.5 text-sm text-gray-800">
             <li>
-              <Link href="/about" className="hover:text-white transition">About</Link>
+              <Link href="/about" className="hover:underline transition">About</Link>
             </li>
             <li>
-              <Link href="/strength" className="hover:text-white transition">Strength</Link>
+              <Link href="/strength" className="hover:underline transition">Strength</Link>
             </li>
             <li>
-              <Link href="/our-presence" className="hover:text-white transition">Our Presence</Link>
+              <Link href="/our-presence" className="hover:underline transition">Our Presence</Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-white transition">Contact</Link>
+              <Link href="/contact" className="hover:underline transition">Contact</Link>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[#004DA3] shrink-0 text-xs" />
-              <a href="mailto:info@mtaindia.in" className="hover:text-white transition">
+              <a href="mailto:info@mtaindia.in" className="hover:underline transition">
                 info@mtaindia.in
               </a>
             </li>
@@ -82,7 +82,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#004DA3] hover:text-white transition duration-300"
+              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#004DA3] hover:underline transition duration-300"
             >
               <FaFacebookF className="text-sm" />
             </a>
@@ -91,7 +91,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#467B23] hover:text-white transition duration-300"
+              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#467B23] hover:underline transition duration-300"
             >
               <FaInstagram className="text-sm" />
             </a>
@@ -100,7 +100,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#004DA3] hover:text-white transition duration-300"
+              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#004DA3] hover:underline transition duration-300"
             >
               <FaLinkedinIn className="text-sm" />
             </a>
@@ -109,7 +109,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#467B23] hover:text-white transition duration-300"
+              className="w-9 h-9 rounded bg-black/40 border border-white/15 flex items-center justify-center text-gray-800 hover:bg-[#467B23] hover:underline transition duration-300"
             >
               <FaYoutube className="text-sm" />
             </a>

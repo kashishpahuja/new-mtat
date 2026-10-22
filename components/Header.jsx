@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaTimesSolid } from "react-icons/lia";
 import Link from "next/link";
 import gsap from "gsap";
-import { FaChevronDown, FaDownload } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

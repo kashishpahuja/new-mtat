@@ -118,7 +118,7 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="grid gap-8 md:grid-cols-2 md:items-end md:gap-16">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-orange-600">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
               Our Services
             </p>
 
@@ -129,7 +129,7 @@ export default function ServicesSection() {
 
             <a
               href="#all-services"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-orange-600 underline underline-offset-4 transition hover:text-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange-600"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-[#004DA3] underline underline-offset-4 transition hover:text-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
             >
               Explore our capabilities
               <ArrowUpRight />
@@ -194,7 +194,7 @@ export default function ServicesSection() {
                   />
 
                   {/* Image Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950/90" />
+                  <div className="absolute inset-0 bg-linear-to-b from-slate-950/40 via-transparent to-slate-950/90" />
 
                   <div />
 
@@ -218,7 +218,7 @@ export default function ServicesSection() {
             type="button"
             onClick={() => scrollByCard(-1)}
             aria-label="Previous services"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-orange-600 hover:bg-orange-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange-600"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
           >
             <svg
               viewBox="0 0 24 24"
@@ -244,7 +244,7 @@ export default function ServicesSection() {
             type="button"
             onClick={() => scrollByCard(1)}
             aria-label="Next services"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-orange-600 hover:bg-orange-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange-600"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
           >
             <svg
               viewBox="0 0 24 24"
