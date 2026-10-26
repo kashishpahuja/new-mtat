@@ -4,44 +4,46 @@ import { useRef, useState } from "react";
 
 const services = [
   {
-    title: "CNC Milling",
-    image:
-      "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+    title: "1. Metal Cutting Solutions",
+    description: "Explore advanced CNC turning centres, machining centres, multi-axis machines and gear-hobbing solutions for precision machining applications.",
+    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+    href: "/products/metal-cutting",
+    buttonText: "Explore Metal Cutting",
   },
   {
-    title: "CNC Turning",
-    image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+    title: "02. Metal Forming Solutions",
+    description: "Discover press brakes, power presses, hydraulic presses and sheet metal processing technologies for industrial forming applications.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+    href: "/products/metal-forming",
+    buttonText: "Explore Metal Forming",
   },
   {
-    title: "Aerospace Components",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
+    title: "03. Precision Metrology",
+    description: "Explore dimensional measurement and inspection solutions, including coordinate measuring machines, optical measuring systems and portable measuring arms.",
+    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+    href: "/products/metrology",
+    buttonText: "Explore Metrology",
   },
   {
-    title: "Precision Metal Parts",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+    title: "04. Tool Room Solutions",
+    description: "Discover specialised machinery for precision tooling and finishing, including EDM, wire EDM, surface grinding and cylindrical grinding solutions.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+    href: "/products/tool-room-accessories",
+    buttonText: "Explore Tool Room Solutions",
   },
   {
-    title: "Custom Component Manufacturing",
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80",
+    title: "05. Machine Selection & Supply",
+    description: "Explore machine options from our product portfolio with assistance in identifying equipment suited to your production requirements and applications.",
+    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+    href: "/contact",
+    buttonText: "Enquire About Machinery",
   },
   {
-    title: "Aerospace Components",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "Precision Metal Parts",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "Custom Component Manufacturing",
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80",
+    title: "06. Service & Spares Support",
+    description: "Connect with our team for service assistance and spare-parts enquiries for supported machines and brands.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+    href: "/contact",
+    buttonText: "Get Support",
   },
 ];
 
@@ -64,16 +66,8 @@ const ArrowUpRight = () => (
 
 export default function ServicesSection() {
   const trackRef = useRef(null);
-  const [hasInteracted, setHasInteracted] = useState(false);
-
-  const handleInteraction = () => {
-    if (!hasInteracted) {
-      setHasInteracted(true);
-    }
-  };
 
   const scrollByCard = (dir) => {
-    handleInteraction();
     const el = trackRef.current;
     if (!el) return;
 
@@ -86,8 +80,8 @@ export default function ServicesSection() {
     });
   };
 
-  // Duplicate list once when animating to create a seamless loop
-  const displayedServices = !hasInteracted ? [...services, ...services] : services;
+  // Duplicate list continuously for smooth endless sliding effect
+  const displayedServices = [...services, ...services, ...services];
 
   return (
     <section
@@ -100,13 +94,13 @@ export default function ServicesSection() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-33.333%);
           }
         }
         .animate-slow-marquee {
           display: flex;
           width: max-content;
-          animation: slowMarquee 45s linear infinite;
+          animation: slowMarquee 40s linear infinite;
           will-change: transform;
         }
         .animate-slow-marquee:hover {
@@ -119,19 +113,19 @@ export default function ServicesSection() {
         <div className="grid gap-8 md:grid-cols-2 md:items-end md:gap-16">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
-              Our Services
+              OUR EXPERTISE
             </p>
 
             <h2 className="mt-4 max-w-md text-3xl font-medium leading-tight tracking-tight text-slate-900 md:text-5xl">
-              Precision Engineering.
-              <span className="block text-slate-500">Built to Perform.</span>
+              Complete Manufacturing Solutions.
+              <span className="block text-slate-500">Precision at Every Step.</span>
             </h2>
 
             <a
               href="#all-services"
               className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-[#004DA3] underline underline-offset-4 transition hover:text-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
             >
-              Explore our capabilities
+              Explore Our Solutions
               <ArrowUpRight />
             </a>
           </div>
@@ -139,18 +133,11 @@ export default function ServicesSection() {
           {/* Description */}
           <div className="space-y-4 text-sm leading-7 md:text-base">
             <p className="font-medium text-slate-800">
-              We deliver precision CNC machining and custom component
-              manufacturing, transforming engineering designs into accurate,
-              production-ready parts. Every component is manufactured with a
-              focus on dimensional accuracy, consistency, and quality.
+              MTAT Technologies brings together advanced machine tools and industrial technologies to support the evolving needs of modern manufacturing. From metal cutting and metal forming to precision metrology and specialised tool-room equipment, we connect industries with solutions designed for accuracy, productivity and performance.
             </p>
 
             <p className="text-slate-500">
-              From CNC milling and turning to complex metal components, we
-              support aerospace, automotive, industrial machinery, and
-              construction applications. Our manufacturing process follows your
-              drawings and specifications to deliver components designed for
-              reliable performance.
+              With a portfolio of established machine-tool brands and a focus on sales, service and spares, we help businesses explore the right technologies for their manufacturing requirements.
             </p>
           </div>
         </div>
@@ -158,31 +145,18 @@ export default function ServicesSection() {
         {/* Service Cards Container */}
         <div
           ref={trackRef}
-          onMouseEnter={handleInteraction}
-          onTouchStart={handleInteraction}
-          onScroll={handleInteraction}
-          className={`-mx-6 mt-16 overflow-x-auto px-6 pb-3 pt-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${
-            !hasInteracted
-              ? "animate-slow-marquee cursor-grab"
-              : "flex snap-x snap-mandatory gap-6"
-          }`}
+          className="-mx-6 mt-16 overflow-x-auto px-6 pb-3 pt-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          <div className={`flex gap-6 ${!hasInteracted ? "flex-row" : ""}`}>
+          <div className="animate-slow-marquee gap-6">
             {displayedServices.map((service, index) => (
               <div
                 key={`${service.title}-${index}`}
                 data-card
                 className="group relative flex h-96 w-[260px] shrink-0 snap-start flex-col justify-end overflow-visible bg-slate-900 md:h-80 md:w-72"
               >
-                {/* Number - Positioned absolute with top half outside the card */}
-                {/* <span className="absolute -top-10 left-4 text-7xl font-semibold tracking-tight text-white z-20 pointer-events-none drop-shadow-md">
-                  {String((index % services.length) + 1).padStart(2, "0")}
-                </span> */}
-
                 {/* Card Link Container */}
                 <a
-                  href="#contact"
-                  onClick={handleInteraction}
+                  href={service.href}
                   className="relative flex h-full w-full flex-col justify-between overflow-hidden"
                 >
                   {/* Image */}
