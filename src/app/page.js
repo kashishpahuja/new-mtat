@@ -15,7 +15,7 @@ export default function Home() {
       <ServicesSection />
       <CompanyStorySection />
       <WhyUsSection />
-      <VideoFrame />
+      {/* <VideoFrame /> */}
       <TestimonialSection />
       <EnquirySection />
    </div>

@@ -1,6 +1,55 @@
 @import "tailwindcss";
 
 
+/* ===== Append to app/globals.css ===== */
+
+/* Lenis (recommended base rules) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Stop horizontal overflow WITHOUT breaking position: sticky (ScrollExpand).
+   Never use overflow-x: hidden on html/body here. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* ScrollExpand hint line */
+@keyframes about-scroll-hint {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+.about-scroll-hint-line {
+  animation: about-scroll-hint 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-scroll-hint-line {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+
 /* From Uiverse.io by alexmaracinaru */ 
 .cta {
   position: relative;

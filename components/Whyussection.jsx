@@ -8,36 +8,38 @@ import {
   FaHeadset,
 } from "react-icons/fa";
 
+
 const strengths = [
   {
     icon: FaIndustry,
     number: "01",
-    title: "Deep Industry Understanding",
+    title: "Precision",
     description:
-      "Decades of exposure to manufacturing environments help us understand real production challenges and industrial requirements.",
+      "Advanced machine-tool technologies for accuracy and reliable manufacturing performance.",
   },
   {
     icon: FaHandshake,
     number: "02",
-    title: "Trusted Technology Partnerships",
+    title: "Partnership",
     description:
-      "Our partnerships connect businesses with established machine-tool technologies for a wide range of manufacturing applications.",
+      "Strong technology partnerships built on trust, expertise, and shared growth.",
   },
   {
     icon: FaCogs,
     number: "03",
-    title: "Application-Focused Guidance",
+    title: "Expertise",
     description:
-      "We help customers explore suitable machinery and technologies based on their production processes and operational needs.",
+      "The right machinery and technology for diverse industrial applications.",
   },
   {
     icon: FaHeadset,
     number: "04",
-    title: "Support Beyond Supply",
+    title: "Progress",
     description:
-      "With on-ground support across North India, we focus on responsive assistance and lasting relationships with our customers.",
+      "Responsive on-ground support to keep businesses moving forward.",
   },
 ];
+
 
 const column1Images = [
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80",
@@ -73,23 +75,22 @@ export default function WhyUsSection() {
           {/* Left Content */}
           <div className="space-y-10 lg:col-span-8">
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
-                The MTAT Difference
-              </p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
+              Why MTAT
+            </p>
 
-              <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                More Than Machines.
-                <br />
-                A Partner in Progress.
-              </h2>
+            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Precision.
+              <br />
+              Partnership. Progress.
+            </h2>
+
 
               <div className="mt-4 h-px w-14 bg-white/30" />
 
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base">
-                Manufacturing needs more than equipment. It needs the right
-                technology, informed guidance, and dependable support.
-                MTAT brings these elements together to help businesses move
-                forward with confidence.
+              The right technology. Expert guidance. Reliable support. MTAT helps
+  businesses make informed manufacturing decisions with confidence.
               </p>
             </div>
 
