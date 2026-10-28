@@ -24,12 +24,12 @@ export default function TechnologyExpertise() {
     <section
       id="our-expertise"
       aria-labelledby="expertise-heading"
-      className="relative bg-[#05070A] py-28 sm:py-36"
+      className="relative bg-[#05070A] px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 2xl:px-60 py-24"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="mx-auto">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <SectionLabel>{EXPERTISE_SECTION.label}</SectionLabel>
+            <SectionLabel className='text-[#dbe2e7]'>{EXPERTISE_SECTION.label}</SectionLabel>
             <h2 id="expertise-heading" className="mt-8">
               <ScrollFloat
                 effect="float"

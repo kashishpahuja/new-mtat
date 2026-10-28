@@ -230,7 +230,7 @@ export default function ScrollExpand({
       </noscript>
       <div
         ref={stickyRef}
-        className="sticky top-0 h-[100svh] w-full overflow-hidden bg-[#05070A]"
+        className="sticky top-0 h-svh w-full overflow-hidden bg-[#05070A]"
       >
         <div
           ref={frameRef}

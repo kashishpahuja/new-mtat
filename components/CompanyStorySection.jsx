@@ -5,9 +5,9 @@ import React from "react";
 export default function CompanyStorySection() {
   // Replace repeated company logos with actual, approved partner logos.
   const logos = [
-    { src: "/Images/brands/jyoti-cnc.webp", alt: "Jyoti CNC" },
+    { src: "/Images/brands/jyoti.webp", alt: "Jyoti CNC" },
     { src: "/Images/brands/eifco.webp", alt: "EIFCO" },
-    { src: "/Images/brands/energy-mission.webp", alt: "Energy Mission" },
+    { src: "/Images/brands/energymission.webp", alt: "Energy Mission" },
     { src: "/Images/brands/hexagon.webp", alt: "Hexagon" },
     { src: "/Images/brands/sodick.webp", alt: "Sodick" },
     { src: "/Images/brands/pinnacle.webp", alt: "Pinnacle" },

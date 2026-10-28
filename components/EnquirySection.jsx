@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function EnquirySection() {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-20 sm:px-6 md:px-12 lg:px-24 xl:px-40">
+    <section className="relative w-full overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 2xl:px-60 py-24">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-40 mix-blend-overlay"
@@ -18,7 +18,7 @@ export default function EnquirySection() {
       <div className="relative z-10 flex flex-col items-center justify-between gap-8 rounded-lg border border-white/15 p-8 shadow-2xl backdrop-blur-md sm:p-12 md:flex-row">
         <div className="space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
-            Let's Talk Manufacturing
+            Let&apos;s Talk Manufacturing
           </p>
 
           <h2 className="text-3xl font-light tracking-tight text-white sm:text-4xl">
@@ -34,7 +34,7 @@ export default function EnquirySection() {
 
         <Link
           href="/contact"
-          className="group inline-flex shrink-0 items-center justify-between rounded-[4px] border border-white/20 bg-[#004DA3] px-8 py-4 text-xs font-semibold uppercase tracking-[1.2px] text-white shadow-lg transition-all duration-300 hover:bg-blue-700"
+          className="group inline-flex shrink-0 items-center justify-between rounded-sm border border-white/20 bg-[#004DA3] px-8 py-4 text-xs font-semibold uppercase tracking-[1.2px] text-white shadow-lg transition-all duration-300 hover:bg-blue-700"
         >
           <span className="flex items-center gap-3">
             Enquire Now

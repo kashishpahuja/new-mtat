@@ -38,9 +38,6 @@ export default function Footer() {
               <Link href="/about" className="hover:underline transition">About</Link>
             </li>
             <li>
-              <Link href="/strength" className="hover:underline transition">Strength</Link>
-            </li>
-            <li>
               <Link href="/our-presence" className="hover:underline transition">Our Presence</Link>
             </li>
             <li>

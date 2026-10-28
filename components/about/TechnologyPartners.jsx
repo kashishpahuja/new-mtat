@@ -19,7 +19,7 @@ export default function CompanyStorySection() {
     <section className="overflow-hidden border-t border-slate-200 bg-slate-50 py-20 text-slate-900">
 
       {/* Brand Partners Marquee */}
-      <div className="mb-20">
+      <div className="">
         <div className="mb-8 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
             Our Technology Partners

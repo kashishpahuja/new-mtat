@@ -108,7 +108,7 @@ export default function CompanyTimeline() {
       id="our-journey"
       ref={rootRef}
       aria-labelledby="journey-heading"
-      className="relative overflow-hidden bg-white py-20 sm:py-28 lg:py-36"
+      className="relative overflow-hidden bg-white px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 2xl:px-60 py-24"
     >
       {/* Subtle background decoration */}
       <div
@@ -116,7 +116,7 @@ export default function CompanyTimeline() {
         className="pointer-events-none absolute -right-32 top-32 h-96 w-96 rounded-full bg-lime-100/60 blur-3xl"
       />
 
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+      <div className="relative mx-auto">
         {/* Header */}
         <div className="grid gap-6 md:grid-cols-2 md:items-end md:gap-12">
           <div>

@@ -239,7 +239,7 @@ export default function OurPresencePage() {
           HERO
       ====================================================== */}
         <section className="relative">
-          <div className="relative flex min-h-[440px] items-center justify-center overflow-hidden bg-slate-800 sm:min-h-[540px] lg:min-h-[650px]">
+          <div className="relative flex  items-center justify-center overflow-hidden bg-slate-800 sm:min-h-[540px] lg:min-h-[650px]">
             <img
               src={images.hero}
               alt="Industrial machinery and manufacturing environment"

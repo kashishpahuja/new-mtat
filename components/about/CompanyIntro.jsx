@@ -10,9 +10,9 @@ export default function CompanyIntro() {
     <section
       id="our-story"
       aria-labelledby="story-heading"
-      className="relative py-28 sm:py-36"
+      className="relative px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 2xl:px-60 py-24"
     >
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-12 lg:gap-12 lg:px-10">
+      <div className="mx-auto grid gap-16 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7 lg:pr-12">
           <Reveal>
             <SectionLabel>{INTRO.label}</SectionLabel>
@@ -55,7 +55,7 @@ export default function CompanyIntro() {
           <RevealImage
             src={ABOUT_IMAGES.intro.src}
             alt={ABOUT_IMAGES.intro.alt}
-            className="relative aspect-[4/5]"
+            className="relative aspect-4/5"
           />
           <figcaption className="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.25em]">
             <span aria-hidden="true" className="h-px w-8 bg-[#2563EB]" />

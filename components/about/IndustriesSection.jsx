@@ -17,9 +17,9 @@ export default function IndustriesSection() {
     <section
       id="industries"
       aria-labelledby="industries-heading"
-      className="relative  py-28 sm:py-36"
+      className="relative"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 2xl:px-60 py-24">
         <SectionLabel>{INDUSTRIES_SECTION.label}</SectionLabel>
         <h2 id="industries-heading" className="mt-8 max-w-4xl">
           <ScrollFloat
