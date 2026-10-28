@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
-import "swiper/css";
+
 
 const testimonials = [
   {
