@@ -18,35 +18,7 @@ export default function CompanyStorySection() {
   return (
     <section className="overflow-hidden border-t border-slate-200 bg-slate-50 py-20 text-slate-900">
 
-      {/* Brand Partners Marquee */}
-      <div className="mb-20">
-        <div className="mb-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
-            Our Technology Partners
-          </p>
-          <p className="mt-2 text-sm text-slate-500">
-            Exploring manufacturing excellence through specialised machine-tool solutions.
-          </p>
-        </div>
-
-        <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-          <div className="animate-infinite-scroll flex w-max items-center gap-16 py-4">
-            {[...logos, ...logos].map((logo, idx) => (
-              <div
-                key={`${logo.alt}-${idx}`}
-                className="flex items-center justify-center opacity-70 transition duration-300 hover:opacity-100"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  loading="lazy"
-                  className="h-10 w-auto object-contain grayscale transition duration-300 hover:grayscale-0 sm:h-12"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+  
 
       {/* Company Story Heading */}
       <div className="mx-auto mb-12 max-w-7xl space-y-5 px-4 text-center sm:px-6 md:px-12 lg:px-24 xl:px-40">
@@ -111,6 +83,37 @@ export default function CompanyStorySection() {
           Discover MTAT Technologies, our journey in industrial machinery,
           and our commitment to supporting the evolving needs of manufacturing.
         </p>
+      </div>
+
+
+          {/* Brand Partners Marquee */}
+      <div className="mt-20">
+        <div className="mb-8 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
+            Our Technology Partners
+          </p>
+          <p className="mt-2 text-sm text-slate-500">
+            Exploring manufacturing excellence through specialised machine-tool solutions.
+          </p>
+        </div>
+
+        <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+          <div className="animate-infinite-scroll flex w-max items-center gap-16 py-4">
+            {[...logos, ...logos].map((logo, idx) => (
+              <div
+                key={`${logo.alt}-${idx}`}
+                className="flex items-center justify-center transition duration-300 hover:opacity-100"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="h-10 w-auto object-contain  transition duration-300 sm:h-12"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Infinite Logo Scroll */}

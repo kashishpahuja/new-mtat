@@ -1,8 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-   output: "export",
-   images: {
-    unoptimized: true,
+  //  output: "export",
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "mtaindia.in",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
   },
   // experimental: {
   //   agentFeedback: true,

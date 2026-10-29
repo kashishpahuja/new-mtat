@@ -141,129 +141,129 @@ function Navbar() {
     };
   }, [menuOpen]);
 
-  const productCategories = [
-    {
-      title: "Metal Cutting",
-      slug: "metal-cutting",
-      desc: "Jyoti CNC & Eifco machining and gear hobbing solutions.",
-      brands: [
-        {
-          title: "Jyoti CNC",
-          slug: "jyoti",
-          subcategories: [
-            { title: "Turning Centres", slug: "turning-centres" },
-            { title: "Vertical Turning Lathes (VTL)", slug: "vertical-turning-lathes-vtl" },
-            { title: "Vertical Machining Centres (VMC)", slug: "vertical-machining-centres-vmc" },
-            { title: "Turn-Mill Centres (TMC)", slug: "turn-mill-centres-tmc" },
-            { title: "Horizontal Machining Centres", slug: "horizontal-machining-centres" },
-            { title: "5-Axis Machines", slug: "5-axis-machines" },
-            { title: "Double Column Machines", slug: "double-column-machines" },
-          ],
-        },
-        {
-          title: "EIFCO",
-          slug: "eifco",
-          subcategories: [
-            { title: "Vertical Gear Hobber", slug: "vertical-gear-hobber" },
-            { title: "Horizontal Gear Hobber", slug: "horizontal-gear-hobber" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Metal Forming",
-      slug: "metal-forming",
-      desc: "Energy Mission, Singhal Press & Sukrit sheet metal systems.",
-      brands: [
-        {
-          title: "Energy Mission",
-          slug: "energy-mission",
-          subcategories: [
-            { title: "CNC Press Brakes", slug: "cnc-press-brakes" },
-            { title: "Shearing Machines", slug: "shearing-machines" },
-            { title: "Hydraulic Presses", slug: "hydraulic-presses" },
-            { title: "Iron Worker", slug: "iron-worker" },
-            { title: "BusBar Machine", slug: "busbar-machine" },
-            { title: "V-Grooving Machine", slug: "v-grooving-machine" },
-          ],
-        },
-        {
-          title: "Singhal Press (SEW)",
-          slug: "singhal-press",
-          subcategories: [
-            { title: "Cross Shaft Press", slug: "cross-shaft-press" },
-            { title: "Two Point Press", slug: "two-point-press" },
-            { title: "Eccentric Driven Press", slug: "eccentric-driven-press" },
-            { title: "Link Motion Power Press", slug: "link-motion-power-press" },
-            { title: "Knuckle Joint Press", slug: "knuckle-joint-press" },
-            { title: "2 in 1 and 3 in 1 Automation System", slug: "2-in-1-and-3-in-1-automation-system" },
-          ],
-        },
-        {
-          title: "SUKRIT",
-          slug: "sukrit",
-          subcategories: [
-            { title: "Ball Screw Driven", slug: "ball-screw-driven" },
-            { title: "Belt Driven", slug: "belt-driven" },
-            { title: "Servo Electric Press", slug: "servo-electric-press" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Metrology",
-      slug: "metrology",
-      desc: "Hexagon precision measurement, CMM & optical inspection.",
-      brands: [
-        {
-          title: "Hexagon",
-          slug: "hexagon",
-          subcategories: [
-            { title: "Optical Light Measuring Machines (OLM)", slug: "optical-light-measuring-machines-olm" },
-            { title: "Coordinate Measuring Machine (CMM)", slug: "coordinate-measuring-machine-cmm" },
-            { title: "Romer Arm (Portable Arm)", slug: "romer-arm-portable-arm" },
-            { title: "Tool and Job Probes", slug: "tool-and-job-probes" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Tool Room & Software",
-      slug: "tool-room-software",
-      desc: "Sodick EDM, Pinnacle & Kiya grinders and workshop solutions.",
-      brands: [
-        {
-          title: "Sodick",
-          slug: "sodick",
-          subcategories: [
-            { title: "EDM Machines", slug: "edm-machines" },
-            { title: "Wire EDM Machines", slug: "wire-edm-machines" },
-          ],
-        },
-        {
-          title: "Pinnacle",
-          slug: "pinnacle",
-          subcategories: [
-            { title: "Surface Grinders (Semi Automatic)", slug: "surface-grinders-semi-automatic" },
-            { title: "CNC Surface Grinders", slug: "cnc-surface-grinders" },
-            { title: "Rotary Surface Grinders", slug: "rotary-surface-grinders" },
-          ],
-        },
-        {
-          title: "Kiya",
-          slug: "kiya",
-          subcategories: [
-            { title: "CNC Hybrid Grinder (ID/OD)", slug: "cnc-hybrid-grinder-id-od" },
-            { title: "CNC External Cylindrical Grinder", slug: "cnc-external-cylindrical-grinder" },
-            { title: "CNC Internal Cylindrical Grinder", slug: "cnc-internal-cylindrical-grinder" },
-            { title: "CNC External Bush/Track Grinder", slug: "cnc-external-bush-track-grinder" },
-            { title: "Hydraulic Cylindrical Grinder", slug: "hydraulic-cylindrical-grinder" },
-            { title: "CNC LIP Grinder", slug: "cnc-lip-grinder" },
-          ],
-        },
-      ],
-    },
-  ];
+const productCategories = [
+  {
+    title: "Metal Cutting",
+    slug: "metal-cutting",
+    desc: "Jyoti CNC & Eifco machining and gear hobbing solutions.",
+    brands: [
+      {
+        title: "Jyoti CNC",
+        slug: "jyoti",
+        subcategories: [
+          { title: "Turning Centres", slug: "turning-centres" },
+          { title: "Vertical Turning Lathes (VTL)", slug: "vertical-turning-lathes-vtl" },
+          { title: "Vertical Machining Centres (VMC)", slug: "vertical-machining-centres-vmc" },
+          { title: "Turn-Mill Centres (TMC)", slug: "turn-mill-centres-tmc" },
+          { title: "Horizontal Machining Centres", slug: "horizontal-machining-centres" },
+          { title: "5-Axis Machines", slug: "5-axis-machines" },
+          { title: "Double Column Machines", slug: "double-column-machines" },
+        ],
+      },
+      {
+        title: "EIFCO",
+        slug: "eifco",
+        subcategories: [
+          { title: "Vertical Gear Hobber", slug: "vertical-gear-hobber" },
+          { title: "Horizontal Gear Hobber", slug: "horizontal-gear-hobber" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Metal Forming",
+    slug: "metal-forming",
+    desc: "Energy Mission, Singhal Press & Sukrit sheet metal systems.",
+    brands: [
+      {
+        title: "Energy Mission",
+        slug: "energy-mission",
+        subcategories: [
+          { title: "CNC Press Brakes", slug: "cnc-press-brakes" },
+          { title: "Shearing Machines", slug: "shearing-machines" },
+          { title: "Hydraulic Presses", slug: "hydraulic-presses" },
+          { title: "Iron Worker", slug: "iron-worker" },
+          { title: "BusBar Machine", slug: "busbar-machine" },
+          { title: "V-Grooving Machine", slug: "v-grooving-machine" },
+        ],
+      },
+      {
+        title: "Singhal Press (SEW)",
+        slug: "singhal-press",
+        subcategories: [
+          { title: "Cross Shaft Press", slug: "cross-shaft-press" },
+          { title: "Two Point Press", slug: "two-point-press" },
+          { title: "Eccentric Driven Press", slug: "eccentric-driven-press" },
+          { title: "Link Motion Power Press", slug: "link-motion-power-press" },
+          { title: "Knuckle Joint Press", slug: "knuckle-joint-press" },
+          { title: "2 in 1 and 3 in 1 Automation System", slug: "2-in-1-and-3-in-1-automation-system" },
+        ],
+      },
+      {
+        title: "SUKRIT",
+        slug: "sukrit",
+        subcategories: [
+          { title: "Ball Screw Driven", slug: "ball-screw-driven" },
+          { title: "Belt Driven", slug: "belt-driven" },
+          { title: "Servo Electric Press", slug: "servo-electric-press" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Metrology",
+    slug: "metrology",
+    desc: "Hexagon precision measurement, CMM & optical inspection.",
+    brands: [
+      {
+        title: "Hexagon",
+        slug: "hexagon",
+        subcategories: [
+          { title: "Optical Light Measuring Machines (OLM)", slug: "optical-light-measuring-machines-olm" },
+          { title: "Coordinate Measuring Machine (CMM)", slug: "coordinate-measuring-machine-cmm" },
+          { title: "Romer Arm (Portable Arm)", slug: "romer-arm-portable-arm" },
+          { title: "Tool and Job Probes", slug: "tool-and-job-probes" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Tool Room & Software",
+    slug: "tool-room-software",
+    desc: "Sodick EDM, Pinnacle & Kiya grinders and workshop solutions.",
+    brands: [
+      {
+        title: "Sodick",
+        slug: "sodick",
+        subcategories: [
+          { title: "EDM Machines", slug: "edm-machines" },
+          { title: "Wire EDM Machines", slug: "wire-edm-machines" },
+        ],
+      },
+      {
+        title: "Pinnacle",
+        slug: "pinnacle",
+        subcategories: [
+          { title: "Surface Grinders (Semi Automatic)", slug: "surface-grinders-semi-automatic" },
+          { title: "CNC Surface Grinders", slug: "cnc-surface-grinders" },
+          { title: "Rotary Surface Grinders", slug: "rotary-surface-grinders" },
+        ],
+      },
+      {
+        title: "Kiya",
+        slug: "kiya",
+        subcategories: [
+          { title: "CNC Hybrid Grinder (ID/OD)", slug: "cnc-hybrid-grinder-id-od" },
+          { title: "CNC External Cylindrical Grinder", slug: "cnc-external-cylindrical-grinder" },
+          { title: "CNC Internal Cylindrical Grinder", slug: "cnc-internal-cylindrical-grinder" },
+          { title: "CNC External Bush/Track Grinder", slug: "cnc-external-bush-track-grinder" },
+          { title: "Hydraulic Cylindrical Grinder", slug: "hydraulic-cylindrical-grinder" },
+          { title: "CNC LIP Grinder", slug: "cnc-lip-grinder" },
+        ],
+      },
+    ],
+  },
+];
 
   const brandPartners = [
     {

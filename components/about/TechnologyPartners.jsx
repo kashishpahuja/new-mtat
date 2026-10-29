@@ -5,9 +5,9 @@ import React from "react";
 export default function CompanyStorySection() {
   // Replace repeated company logos with actual, approved partner logos.
   const logos = [
-    { src: "/Images/brands/jyoti-cnc.webp", alt: "Jyoti CNC" },
+    { src: "/Images/brands/jyoti.webp", alt: "Jyoti CNC" },
     { src: "/Images/brands/eifco.webp", alt: "EIFCO" },
-    { src: "/Images/brands/energy-mission.webp", alt: "Energy Mission" },
+    { src: "/Images/brands/energymission.webp", alt: "Energy Mission" },
     { src: "/Images/brands/hexagon.webp", alt: "Hexagon" },
     { src: "/Images/brands/sodick.webp", alt: "Sodick" },
     { src: "/Images/brands/pinnacle.webp", alt: "Pinnacle" },
@@ -34,13 +34,13 @@ export default function CompanyStorySection() {
             {[...logos, ...logos].map((logo, idx) => (
               <div
                 key={`${logo.alt}-${idx}`}
-                className="flex items-center justify-center opacity-70 transition duration-300 hover:opacity-100"
+                className="flex items-center justify-center transition duration-300 hover:opacity-100"
               >
                 <img
                   src={logo.src}
                   alt={logo.alt}
                   loading="lazy"
-                  className="h-10 w-auto object-contain grayscale transition duration-300 hover:grayscale-0 sm:h-12"
+                  className="h-10 w-auto object-contain transition duration-300 hover:grayscale-0 sm:h-12"
                 />
               </div>
             ))}
