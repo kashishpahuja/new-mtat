@@ -1,0 +1,2692 @@
+{
+  "brands": {
+    "jyoti": {
+      "name": "Jyoti CNC",
+      "slug": "jyoti",
+      "description": "Explore Jyoti CNC industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://jyoti.co.in",
+      "categories": {
+        "turning-centres": {
+          "title": "Turning Centres",
+          "hero": {
+            "title": "Turning Centres",
+            "description": "Explore Jyoti CNC turning centres for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/turning-centres.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Turning Centres",
+            "description": "Explore the Jyoti CNC turning centres range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Turning Centres"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "DX 60",
+              "category": "Turning Centres",
+              "desc": "DX 60 for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-60",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "DX 100",
+              "category": "Turning Centres",
+              "desc": "DX 100 for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-100",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "DX 135",
+              "category": "Turning Centres",
+              "desc": "DX 135 for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-135",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "DX 200 Series",
+              "category": "Turning Centres",
+              "desc": "DX 200 Series for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-200-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "DX 250/350",
+              "category": "Turning Centres",
+              "desc": "DX 250/350 for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-250-350",
+              "sourceVerified": true
+            },
+            {
+              "id": 6,
+              "title": "DX Large Series",
+              "category": "Turning Centres",
+              "desc": "DX Large Series for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/dx-large-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 7,
+              "title": "AX Series",
+              "category": "Turning Centres",
+              "desc": "AX Series for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/ax-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 8,
+              "title": "TS Series",
+              "category": "Turning Centres",
+              "desc": "TS Series for turning centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turning-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turning-centres/ts-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "vertical-turning-lathes-vtl": {
+          "title": "Vertical Turning Lathes (VTL)",
+          "hero": {
+            "title": "Vertical Turning Lathes (VTL)",
+            "description": "Explore Jyoti CNC vertical turning lathes (vtl) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Vertical Turning Lathes (VTL)",
+            "description": "Explore the Jyoti CNC vertical turning lathes (vtl) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Vertical Turning Lathes (VTL)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "VTL 400",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 400 for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-400",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "VTL 500",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 500 for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-500",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "VTL 750",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 750 for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-750",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "VTL 900R",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 900R for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-900r",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "VTL 1200R",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 1200R for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-1200r",
+              "sourceVerified": true
+            },
+            {
+              "id": 6,
+              "title": "VTL 1600R",
+              "category": "Vertical Turning Lathes (VTL)",
+              "desc": "VTL 1600R for vertical turning lathes (vtl) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-turning-lathes-vtl.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-turning-lathes-vtl/vtl-1600r",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "vertical-machining-centres-vmc": {
+          "title": "Vertical Machining Centres (VMC)",
+          "hero": {
+            "title": "Vertical Machining Centres (VMC)",
+            "description": "Explore Jyoti CNC vertical machining centres (vmc) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/vertical-machining-centres-vmc.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Vertical Machining Centres (VMC)",
+            "description": "Explore the Jyoti CNC vertical machining centres (vmc) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Vertical Machining Centres (VMC)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "VMC 430 Series",
+              "category": "Vertical Machining Centres (VMC)",
+              "desc": "VMC 430 Series for vertical machining centres (vmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-machining-centres-vmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-machining-centres-vmc/vmc-430-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "PX Series",
+              "category": "Vertical Machining Centres (VMC)",
+              "desc": "PX Series for vertical machining centres (vmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-machining-centres-vmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-machining-centres-vmc/px-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "RX/RAX Series",
+              "category": "Vertical Machining Centres (VMC)",
+              "desc": "RX/RAX Series for vertical machining centres (vmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-machining-centres-vmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-machining-centres-vmc/rx-rax-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "Tachyon Series",
+              "category": "Vertical Machining Centres (VMC)",
+              "desc": "Tachyon Series for vertical machining centres (vmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/vertical-machining-centres-vmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/vertical-machining-centres-vmc/tachyon-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "turn-mill-centres-tmc": {
+          "title": "Turn-Mill Centres (TMC)",
+          "hero": {
+            "title": "Turn-Mill Centres (TMC)",
+            "description": "Explore Jyoti CNC turn-mill centres (tmc) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/turn-mill-centres-tmc.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Turn-Mill Centres (TMC)",
+            "description": "Explore the Jyoti CNC turn-mill centres (tmc) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Turn-Mill Centres (TMC)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "DX Series",
+              "category": "Turn-Mill Centres (TMC)",
+              "desc": "DX Series for turn-mill centres (tmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turn-mill-centres-tmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turn-mill-centres-tmc/dx-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "AX Series",
+              "category": "Turn-Mill Centres (TMC)",
+              "desc": "AX Series for turn-mill centres (tmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turn-mill-centres-tmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turn-mill-centres-tmc/ax-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "DX nvu Series",
+              "category": "Turn-Mill Centres (TMC)",
+              "desc": "DX nvu Series for turn-mill centres (tmc) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/turn-mill-centres-tmc.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/turn-mill-centres-tmc/dx-nvu-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "horizontal-machining-centres": {
+          "title": "Horizontal Machining Centres",
+          "hero": {
+            "title": "Horizontal Machining Centres",
+            "description": "Explore Jyoti CNC horizontal machining centres for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/horizontal-machining-centres.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Horizontal Machining Centres",
+            "description": "Explore the Jyoti CNC horizontal machining centres range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Horizontal Machining Centres"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "HX Series",
+              "category": "Horizontal Machining Centres",
+              "desc": "HX Series for horizontal machining centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/horizontal-machining-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/horizontal-machining-centres/hx-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "HP Series",
+              "category": "Horizontal Machining Centres",
+              "desc": "HP Series for horizontal machining centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/horizontal-machining-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/horizontal-machining-centres/hp-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "AWT 22",
+              "category": "Horizontal Machining Centres",
+              "desc": "AWT 22 for horizontal machining centres applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/horizontal-machining-centres.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/horizontal-machining-centres/awt-22",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "5-axis-machines": {
+          "title": "5-Axis Machines",
+          "hero": {
+            "title": "5-Axis Machines",
+            "description": "Explore Jyoti CNC 5-axis machines for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/5-axis-machines.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC 5-Axis Machines",
+            "description": "Explore the Jyoti CNC 5-axis machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "5-Axis Machines"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "U-Mill Series",
+              "category": "5-Axis Machines",
+              "desc": "U-Mill Series for 5-axis machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/5-axis-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/5-axis-machines/u-mill-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "MU Tech Series",
+              "category": "5-Axis Machines",
+              "desc": "MU Tech Series for 5-axis machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/5-axis-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/5-axis-machines/mu-tech-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "KX Five Series",
+              "category": "5-Axis Machines",
+              "desc": "KX Five Series for 5-axis machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/5-axis-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/5-axis-machines/kx-five-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "GU Five Series",
+              "category": "5-Axis Machines",
+              "desc": "GU Five Series for 5-axis machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/5-axis-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/5-axis-machines/gu-five-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "XKG Series",
+              "category": "5-Axis Machines",
+              "desc": "XKG Series for 5-axis machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/5-axis-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/5-axis-machines/xkg-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        },
+        "double-column-machines": {
+          "title": "Double Column Machines",
+          "hero": {
+            "title": "Double Column Machines",
+            "description": "Explore Jyoti CNC double column machines for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/jyoti/double-column-machines.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "Jyoti CNC Double Column Machines",
+            "description": "Explore the Jyoti CNC double column machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Double Column Machines"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "KX Large Series",
+              "category": "Double Column Machines",
+              "desc": "KX Large Series for double column machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/double-column-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/double-column-machines/kx-large-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "XKG Series",
+              "category": "Double Column Machines",
+              "desc": "XKG Series for double column machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/jyoti/double-column-machines.webp",
+              "manufacturerUrl": "https://jyoti.co.in",
+              "href": "/products/metal-cutting/jyoti/double-column-machines/xkg-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://jyoti.co.in"
+        }
+      }
+    },
+    "eifco": {
+      "name": "EIFCO",
+      "slug": "eifco",
+      "description": "Explore EIFCO industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://gearhobbingsolutions.com",
+      "categories": {
+        "vertical-gear-hobber": {
+          "title": "Vertical Gear Hobber",
+          "hero": {
+            "title": "Vertical Gear Hobber",
+            "description": "Explore EIFCO vertical gear hobber for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/eifco/vertical-gear-hobber.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "EIFCO Vertical Gear Hobber",
+            "description": "Explore the EIFCO vertical gear hobber range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Vertical Gear Hobber"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "CNC Vertical Gear Hobbing Machine",
+              "category": "Vertical Gear Hobber",
+              "desc": "CNC Vertical Gear Hobbing Machine for vertical gear hobber applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/eifco/vertical-gear-hobber.webp",
+              "manufacturerUrl": "https://gearhobbingsolutions.com",
+              "href": "/products/metal-cutting/eifco/vertical-gear-hobber/cnc-vertical-gear-hobbing-machine",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://gearhobbingsolutions.com"
+        },
+        "horizontal-gear-hobber": {
+          "title": "Horizontal Gear Hobber",
+          "hero": {
+            "title": "Horizontal Gear Hobber",
+            "description": "Explore EIFCO horizontal gear hobber for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/eifco/horizontal-gear-hobber.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Cutting",
+            "heading": "EIFCO Horizontal Gear Hobber",
+            "description": "Explore the EIFCO horizontal gear hobber range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Horizontal Gear Hobber"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "CNC Horizontal Gear Hobbing Machine",
+              "category": "Horizontal Gear Hobber",
+              "desc": "CNC Horizontal Gear Hobbing Machine for horizontal gear hobber applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/eifco/horizontal-gear-hobber.webp",
+              "manufacturerUrl": "https://gearhobbingsolutions.com",
+              "href": "/products/metal-cutting/eifco/horizontal-gear-hobber/cnc-horizontal-gear-hobbing-machine",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://gearhobbingsolutions.com"
+        }
+      }
+    },
+    "energy-mission": {
+      "name": "Energy Mission",
+      "slug": "energy-mission",
+      "description": "Explore Energy Mission industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://www.energymission.com",
+      "categories": {
+  
+        
+        "cnc-press-brakes": {
+            "title": "CNC Press Brakes",
+            "hero": {
+              "title": "Energy Mission CNC Press Brakes",
+              "description": "Discover precision metal bending solutions from Energy Mission, designed to support accurate sheet metal forming, consistent production quality and efficient industrial manufacturing.",
+              "primaryBtn": "Explore Machines",
+              "secondaryBtn": "Enquire Now",
+              "bgImage": "/Images/products/energy-mission/cnc-press-brakes.webp"
+            },
+            "intro": {
+              "subtitle": "Metal Forming Solutions",
+              "heading": "Energy Mission CNC Press Brake Machines",
+              "description": "Energy Mission offers a comprehensive range of press brake machines for sheet metal bending and industrial fabrication. From high-speed CNC bending to heavy-duty applications and conventional hydraulic solutions, explore the Optima, Splendid, Efficient, Tandem / Tridem, Magnum, Prudent, NC Press Brake and Hydraulic Press Brake ranges. Contact MTAT Technologies for product availability, machine configurations and technical specifications."
+            },
+            "categories": [
+              "All",
+              "CNC Press Brakes"
+            ],
+            "products": [
+              {
+                "id": 1,
+                "title": "Optima",
+                "category": "CNC Press Brakes",
+                "desc": "The Optima Series is designed for precision and productivity in CNC metal bending. Its servo-motor-controlled hydraulic pump system supports accurate Y1 and Y2 axis positioning, while high beam speeds and advanced CNC controls help improve production efficiency. Suitable for manufacturers seeking precise, repeatable bending performance with reduced energy consumption.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/optima/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/optima",
+                "sourceVerified": true
+              },
+              {
+                "id": 2,
+                "title": "Splendid",
+                "category": "CNC Press Brakes",
+                "desc": "The Splendid Series combines hydraulic bending power with controlled, consistent operation for precision metal fabrication. Designed for intricate bending applications, it supports smooth machine operation and accurate forming. Its quick-release tooling arrangements help simplify tool changes and reduce changeover time.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/splendid",
+                "sourceVerified": true
+              },
+              {
+                "id": 3,
+                "title": "Efficient",
+                "category": "CNC Press Brakes",
+                "desc": "The Efficient Series focuses on productive and accurate sheet metal bending for industrial manufacturing. Its CNC-controlled bending operations and efficient positioning capabilities help streamline production cycles and maintain consistency across repeat jobs. A practical solution for fabrication businesses handling varied production requirements.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/efficient",
+                "sourceVerified": true
+              },
+              {
+                "id": 4,
+                "title": "Tandem / Tridem",
+                "category": "CNC Press Brakes",
+                "desc": "Energy Mission Tandem / Tridem CNC Press Brakes are designed for applications requiring extended bending lengths and high-capacity metal forming. Synchronized operation of multiple press brakes enables the processing of oversized workpieces and supports demanding industrial fabrication requirements. Suitable configurations depend on the application and machine specifications.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/tandem-tridem",
+                "sourceVerified": true
+              },
+              {
+                "id": 5,
+                "title": "Magnum",
+                "category": "CNC Press Brakes",
+                "desc": "The Magnum Series is developed for heavy-duty metal bending applications that demand substantial bending force and robust machine construction. Its heavy-duty design supports the processing of thick metal plates and large components for industrial fabrication. Select the appropriate machine capacity according to material thickness, bending length and production requirements.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/magnum",
+                "sourceVerified": true
+              },
+              {
+                "id": 6,
+                "title": "Prudent",
+                "category": "CNC Press Brakes",
+                "desc": "The Prudent Series offers a compact, practical approach to CNC sheet metal bending. Designed for workshops and manufacturers with specialized production needs, it combines controlled bending operations with a space-conscious machine design. An option for businesses seeking reliable metal forming capabilities suited to their available workspace and production demands.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/prudent",
+                "sourceVerified": true
+              },
+              {
+                "id": 7,
+                "title": "NC Press Brake (Front)",
+                "category": "CNC Press Brakes",
+                "desc": "The NC Press Brake (Front) provides numerically controlled metal bending for manufacturing and fabrication applications. Its front-cylinder configuration offers an alternative within Energy Mission's NC press brake range. A suitable choice for businesses seeking controlled bending operations without requiring every feature of an advanced CNC system. Confirm the available controls and configuration before selection.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/nc-press-brake-front",
+                "sourceVerified": true
+              },
+              {
+                "id": 8,
+                "title": "NC Press Brake (Rear)",
+                "category": "CNC Press Brakes",
+                "desc": "The NC Press Brake (Rear) is designed for controlled sheet metal bending in industrial production environments. Its rear-cylinder configuration offers an alternative for manufacturers evaluating press brake designs for their operational requirements. Contact MTAT Technologies to confirm machine capacity, control options, dimensions and suitability for your application.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/nc-press-brake-rear",
+                "sourceVerified": true
+              },
+              {
+                "id": 9,
+                "title": "Hydraulic Press Brake",
+                "category": "CNC Press Brakes",
+                "desc": "Energy Mission Hydraulic Press Brakes provide hydraulic-powered metal forming for a variety of industrial bending applications. Designed to accommodate different fabrication requirements, these machines offer a practical solution for forming sheet metal and metal plates. Available configurations and optional features should be confirmed according to the required bending force, working length and application.",
+                "image": "/Images/products/energy-mission/cnc-press-brakes.webp",
+                "manufacturerUrl": "https://www.energymission.com/category/cnc-press-brake-machines/",
+                "href": "/products/metal-forming/energy-mission/cnc-press-brakes/hydraulic-press-brake",
+                "sourceVerified": true
+              }
+            ],
+            "manufacturerCategoryUrl": "https://www.energymission.com/category/cnc-press-brake-machines/"
+          }
+        ,
+       "shearing-machines": {
+    "title": "Shearing Machines",
+    "hero": {
+      "title": "Energy Mission Shearing Machines",
+      "description": "Explore industrial shearing machines from Energy Mission, engineered for efficient sheet metal cutting, accurate sizing and reliable performance across metal fabrication applications.",
+      "primaryBtn": "Explore Machines",
+      "secondaryBtn": "Enquire Now",
+      "bgImage": "/Images/products/energy-mission/shearing-machines.webp"
+    },
+    "intro": {
+      "subtitle": "Precision Metal Cutting",
+      "heading": "Energy Mission Shearing Machines",
+      "description": "Energy Mission offers a range of industrial shearing solutions for cutting sheet metal and metal plates to the required dimensions. Explore CNC Shearing, NC Shearing and Hydraulic Shearing machines designed for different levels of automation and production requirements. Contact MTAT Technologies to identify the right machine based on material thickness, cutting length, production volume and required control features."
+    },
+    "categories": [
+      "All",
+      "CNC Shearing",
+      "NC Shearing",
+      "Hydraulic Shearing"
+    ],
+    "products": [
+      {
+        "id": 1,
+        "title": "CNC Shearing Machine",
+        "category": "CNC Shearing",
+        "desc": "Energy Mission CNC Hydraulic Shearing Machines are designed for precise and efficient sheet metal cutting in modern fabrication environments. Computer-controlled operation and programmable positioning options help improve cutting consistency and production workflow. The range includes variable rake angle configurations suited to different sheet thicknesses. Cutting capacity, controller options and available accessories depend on the selected machine configuration.",
+        "image": "/Images/products/energy-mission/shearing-machines.webp",
+        "manufacturerUrl": "https://www.energymission.com/cnc-shearing/",
+        "href": "/products/metal-cutting/energy-mission/shearing-machines/cnc-shearing",
+        "sourceVerified": true
+      },
+      {
+        "id": 2,
+        "title": "NC Shearing Machine",
+        "category": "NC Shearing",
+        "desc": "Energy Mission NC Shearing Machines provide numerically controlled metal cutting for manufacturing units and fabrication workshops. NC controls can simplify back gauge positioning and repetitive cutting operations, helping operators achieve consistent dimensions with reduced manual adjustment. These machines are suitable for businesses seeking a balance between operational control, productivity and investment. Confirm the available controller, positioning functions and cutting capacity for the selected configuration.",
+        "image": "/Images/products/energy-mission/shearing-machines.webp",
+        "manufacturerUrl": "https://www.energymission.com/category/shearing-machines/",
+        "href": "/products/metal-cutting/energy-mission/shearing-machines/nc-shearing",
+        "sourceVerified": true
+      },
+      {
+        "id": 3,
+        "title": "Hydraulic Shearing Machine",
+        "category": "Hydraulic Shearing",
+        "desc": "Energy Mission Hydraulic Shearing Machines are designed for dependable sheet metal and plate cutting across industrial fabrication applications. The hydraulic guillotine design with variable rake angle supports cutting requirements across different material thicknesses. Features such as adjustable blade clearance and back gauge options can help improve cut quality and dimensional consistency. Machine capacity, control options and accessories should be selected according to the material, thickness and required cutting length.",
+        "image": "/Images/products/energy-mission/shearing-machines.webp",
+        "manufacturerUrl": "https://www.energymission.com/hydraulic-shearing/",
+        "href": "/products/metal-cutting/energy-mission/shearing-machines/hydraulic-shearing",
+        "sourceVerified": true
+      }
+    ],
+    "manufacturerCategoryUrl": "https://www.energymission.com/category/shearing-machines/"
+  },
+  
+  "hydraulic-presses": {
+    "title": "Hydraulic Presses",
+    "hero": {
+      "title": "Energy Mission Hydraulic Presses",
+      "description": "Discover industrial hydraulic press machines from Energy Mission, engineered for controlled pressing, metal forming, deep drawing and precision manufacturing applications.",
+      "primaryBtn": "Explore Machines",
+      "secondaryBtn": "Enquire Now",
+      "bgImage": "/Images/products/energy-mission/hydraulic-presses.webp"
+    },
+    "intro": {
+      "subtitle": "Industrial Metal Forming",
+      "heading": "Energy Mission Hydraulic Press Machines",
+      "description": "Energy Mission manufactures hydraulic press machines for a wide range of industrial pressing and metal forming applications. Explore H Frame Press, C Frame Press, Deep Drawing Press and Servo Press configurations designed to meet different workpiece sizes, forming requirements and production needs. Contact MTAT Technologies for assistance with machine selection, available configurations and technical specifications."
+    },
+    "categories": [
+      "All",
+      "H Frame Press",
+      "C Frame Press",
+      "Deep Drawing Press",
+      "Servo Press"
+    ],
+    "products": [
+      {
+        "id": 1,
+        "title": "H Frame Press",
+        "category": "H Frame Press",
+        "desc": "Energy Mission H Frame Hydraulic Presses feature a robust frame structure designed to handle demanding industrial pressing operations. Their rigid construction and adjustable dovetail guides support heavy-duty applications involving metal forming, straightening, assembly and general-purpose pressing. The H-frame design provides a stable working structure for manufacturers handling larger workpieces and substantial pressing loads. Select the machine capacity and configuration according to your application requirements.",
+        "image": "/Images/products/energy-mission/h-frame-press.webp",
+        "manufacturerUrl": "https://www.energymission.com/h-frame-press/",
+        "href": "/products/metal-forming/energy-mission/hydraulic-presses/h-frame-press",
+        "sourceVerified": true
+      },
+      {
+        "id": 2,
+        "title": "C Frame Press",
+        "category": "C Frame Press",
+        "desc": "Energy Mission C Frame Hydraulic Presses are designed for pressing applications that require convenient access to the working area. The compact C-shaped frame facilitates workpiece positioning and handling from multiple sides, making the machine suitable for punching, metal forming, assembly and other workshop operations. Different table sizes and throat depths can accommodate varying job requirements. Contact MTAT Technologies to confirm the available capacity and configuration for your application.",
+        "image": "/Images/products/energy-mission/c-frame-press.webp",
+        "manufacturerUrl": "https://www.energymission.com/c-frame-press/",
+        "href": "/products/metal-forming/energy-mission/hydraulic-presses/c-frame-press",
+        "sourceVerified": true
+      },
+      {
+        "id": 3,
+        "title": "Deep Drawing Press",
+        "category": "Deep Drawing Press",
+        "desc": "Energy Mission Deep Drawing Hydraulic Presses are designed to transform flat metal sheets into hollow components and formed parts through controlled drawing operations. Available press configurations can include single-action, double-action and triple-action designs to suit different tooling and forming requirements. Hydraulic cushion arrangements and controlled pressing movements support applications where material flow and forming consistency are important. Suitable for manufacturers producing metal housings, containers, cookware components and other deep-drawn parts. Confirm the required press design and tooling configuration before selection.",
+        "image": "/Images/products/energy-mission/deep-drawing-press.webp",
+        "manufacturerUrl": "https://www.energymission.com/category/presses-machines/",
+        "href": "/products/metal-forming/energy-mission/hydraulic-presses/deep-drawing-press",
+        "sourceVerified": true
+      },
+      {
+        "id": 4,
+        "title": "Servo Press",
+        "category": "Servo Press",
+        "desc": "Energy Mission Servo Presses combine hydraulic pressing technology with servo-driven control for applications requiring controlled pressing performance. Programmable operation can help manage pressing movements and improve process consistency according to the selected configuration. Available designs include H Type, C Type and Piller Type structures, allowing manufacturers to evaluate different machine layouts for their production needs. Suitable applications include precision forming, pressing and industrial assembly. Contact MTAT Technologies to verify the control system, available options and technical specifications.",
+        "image": "/Images/products/energy-mission/servo-press.webp",
+        "manufacturerUrl": "https://www.energymission.com/servo-press/",
+        "href": "/products/metal-forming/energy-mission/hydraulic-presses/servo-press",
+        "sourceVerified": true
+      }
+    ],
+    "manufacturerCategoryUrl": "https://www.energymission.com/category/presses-machines/"
+  
+},
+
+        "iron-worker": {
+          "title": "Iron Worker",
+          "hero": {
+            "title": "Iron Worker",
+            "description": "Explore Energy Mission iron worker for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/energy-mission/iron-worker.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "Energy Mission Iron Worker",
+            "description": "Explore the Energy Mission iron worker range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Iron Worker"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "IW 50",
+              "category": "Iron Worker",
+              "desc": "IW 50 for iron worker applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/iron-worker.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/iron-worker/iw-50",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "IW 65",
+              "category": "Iron Worker",
+              "desc": "IW 65 for iron worker applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/iron-worker.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/iron-worker/iw-65",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "IW 80",
+              "category": "Iron Worker",
+              "desc": "IW 80 for iron worker applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/iron-worker.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/iron-worker/iw-80",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "IW 110",
+              "category": "Iron Worker",
+              "desc": "IW 110 for iron worker applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/iron-worker.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/iron-worker/iw-110",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "IW 165",
+              "category": "Iron Worker",
+              "desc": "IW 165 for iron worker applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/iron-worker.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/iron-worker/iw-165",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.energymission.com"
+        },
+        "busbar-machine": {
+          "title": "BusBar Machine",
+          "hero": {
+            "title": "BusBar Machine",
+            "description": "Explore Energy Mission busbar machine for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/energy-mission/busbar-machine.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "Energy Mission BusBar Machine",
+            "description": "Explore the Energy Mission busbar machine range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "BusBar Machine"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "BU 30",
+              "category": "BusBar Machine",
+              "desc": "BU 30 for busbar machine applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/busbar-machine.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/busbar-machine/bu-30",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "BU 50",
+              "category": "BusBar Machine",
+              "desc": "BU 50 for busbar machine applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/busbar-machine.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/busbar-machine/bu-50",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "BU 80",
+              "category": "BusBar Machine",
+              "desc": "BU 80 for busbar machine applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/busbar-machine.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/busbar-machine/bu-80",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.energymission.com"
+        },
+        "v-grooving-machine": {
+          "title": "V-Grooving Machine",
+          "hero": {
+            "title": "V-Grooving Machine",
+            "description": "Explore Energy Mission v-grooving machine for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/energy-mission/v-grooving-machine.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "Energy Mission V-Grooving Machine",
+            "description": "Explore the Energy Mission v-grooving machine range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "V-Grooving Machine"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "Horizontal V-Grooving Machine",
+              "category": "V-Grooving Machine",
+              "desc": "Horizontal V-Grooving Machine for v-grooving machine applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/energy-mission/v-grooving-machine.webp",
+              "manufacturerUrl": "https://www.energymission.com",
+              "href": "/products/metal-forming/energy-mission/v-grooving-machine/horizontal-v-grooving-machine",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.energymission.com"
+        }
+      }
+    },
+    "singhal-press": {
+    "name": "Singhal Press (SEW)",
+    "slug": "singhal-press",
+    "description": "Explore SEW mechanical power presses, cross-shaft presses, eccentric-drive presses, link-motion power presses and integrated coil-feeding automation systems for precision metal stamping and industrial manufacturing.",
+    "manufacturerUrl": "https://www.sewpresses.com/products/",
+    "categories": {
+      "cross-shaft-press": {
+        "title": "Cross Shaft Press",
+        "hero": {
+          "title": "SEW Cross Shaft Power Presses",
+          "description": "Explore precision-engineered cross-shaft power presses designed for metal stamping, blanking, punching and forming operations across industrial manufacturing applications.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/cross-shaft-press.webp"
+        },
+        "intro": {
+          "subtitle": "Precision Metal Stamping",
+          "heading": "SEW Cross Shaft Press Machines",
+          "description": "SEW offers cross-shaft power presses in C-frame and ring-frame configurations for a range of metalworking requirements. Explore the SNX, SNX-2, SNXR and SLXR series for applications involving stamping, blanking, punching and forming. Machine capacity, frame configuration and automation options vary by model. Contact MTAT Technologies for technical details and assistance selecting the appropriate press."
+        },
+        "categories": [
+          "All",
+          "Cross Shaft Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "SNX Series Single Point C Frame Cross Shaft Power Presses",
+            "category": "Cross Shaft Press",
+            "desc": "The SNX Series features a single-point C-frame cross-shaft design for industrial metal stamping and forming. Its precision crankshaft, guided slide, programmable electronic cam system and integrated control features support repeatable production operations. Available capacities range from 25 to 320 tonnes, depending on the model.",
+            "image": "/Images/products/singhal-press/cross-shaft-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/c-frame-cross-shaft-power-presses/snx-series-single-point-c-frame-cross-shaft-power-presses-snx",
+            "href": "/products/metal-forming/singhal-press/cross-shaft-press/snx-series-single-point-c-frame-cross-shaft-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "SNX Series Two Point C Frame Cross Shaft Power Presses",
+            "category": "Cross Shaft Press",
+            "desc": "The SNX-2 Series is a double-crank C-frame cross-shaft power press designed for two-point slide suspension. It supports stamping and forming operations that benefit from distributed slide support and a wider working area. Programmable controls and available automation accessories help manufacturers configure the press for their production requirements.",
+            "image": "/Images/products/singhal-press/cross-shaft-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/c-frame-cross-shaft-2-point-power-presses/snx-series-two-point-power-presses-snx-2-series",
+            "href": "/products/metal-forming/singhal-press/cross-shaft-press/snx-series-two-point-c-frame-cross-shaft-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "SNXR Series Ring Frame Cross Shaft Power Presses",
+            "category": "Cross Shaft Press",
+            "desc": "The SNXR Series uses a ring-frame structure with a cross-shaft drive arrangement for industrial stamping and forming applications. The frame design supports demanding production operations where rigidity and consistent slide movement are important. Confirm the available tonnage, dimensions and tooling compatibility for the required configuration.",
+            "image": "/Images/products/singhal-press/cross-shaft-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/ring-frame-cross-shaft-power-presses/snxr-series-ring-frame-cross-shaft-power-presses-snxr",
+            "href": "/products/metal-forming/singhal-press/cross-shaft-press/snxr-series-ring-frame-cross-shaft-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "SLXR Series Link Motion Cross Shaft Geared Ring Frame Press",
+            "category": "Cross Shaft Press",
+            "desc": "The SLXR Series combines a geared ring-frame construction with cross-shaft and link-motion technology. It is suited to progressive metal forming applications where controlled slide movement, production consistency and resistance to off-centre loading are important. Confirm the required tonnage, stroke, tooling arrangement and available configuration with MTAT Technologies.",
+            "image": "/Images/products/singhal-press/cross-shaft-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/products/",
+            "href": "/products/metal-forming/singhal-press/cross-shaft-press/slxr-series-link-motion-cross-shaft-geared-ring-frame-press",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      },
+
+      "two-point-press": {
+        "title": "Two Point Press",
+        "hero": {
+          "title": "SEW Two Point Power Presses",
+          "description": "Discover two-point power presses engineered for stable slide guidance, precision stamping and demanding metal forming applications in industrial production.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/two-point-press.webp"
+        },
+        "intro": {
+          "subtitle": "High-Precision Pressing",
+          "heading": "SEW Two Point Power Press Machines",
+          "description": "SEW's two-point press range includes C-frame, H-frame and straight-sided configurations for different stamping and forming requirements. Explore the SNX-2, SXP, SCL-2, HMX, SDC and APH series, along with the AIDA C2-200-2 model listed in the manufacturer's catalogue. Select a press according to the required tonnage, bolster dimensions, stroke, tooling and production process."
+        },
+        "categories": [
+          "All",
+          "Two Point Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "SNX Series Two Point C Frame Cross Shaft Power Presses",
+            "category": "Two Point Press",
+            "desc": "The SNX-2 Series features a double-crank C-frame design with two-point slide suspension. It is intended for metal stamping and forming operations requiring a wider working area and balanced slide support. The range includes multiple capacities and offers control and automation options according to the selected configuration.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/c-frame-cross-shaft-2-point-power-presses/snx-series-two-point-power-presses-snx-2-series",
+            "href": "/products/metal-forming/singhal-press/two-point-press/snx-series-two-point-c-frame-cross-shaft-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "SXP Series Double Column Two Point H Frame Power Presses",
+            "category": "Two Point Press",
+            "desc": "The SXP Series is a double-column H-frame mechanical power press with two-point slide suspension. Its stress-relieved fabricated-steel construction, eight-point slide gibbing and pneumatic clutch-brake arrangement support stable operation. The manufacturer lists applications including shallow drawing, forming, blanking and piercing.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/h-frame-double-column-2-point-power-presses/sxp-series-double-column-2-point-h-frame-power-presses-sxp-2-point-h-frame-power-presses",
+            "href": "/products/metal-forming/singhal-press/two-point-press/sxp-series-double-column-two-point-h-frame-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "SCL-2 Series H Frame Two Point Eccentric Drive Power Presses",
+            "category": "Two Point Press",
+            "desc": "The SCL-2 Series is an H-frame two-point power press featuring an eccentric-drive arrangement. It is designed for demanding stamping, blanking and forming applications that benefit from two-point slide support and a rigid frame structure. The manufacturer offers different configurations to accommodate varying production and tooling requirements.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/h-frame-two-point-eccentric-drive-presses/scl-2-series-h-frame-twopoint-eccentric-drive-power-presses-scl-2-series-eccentric-drive-power-presses",
+            "href": "/products/metal-forming/singhal-press/two-point-press/scl-2-series-h-frame-two-point-eccentric-drive-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "HMX Series Straight Sided Two Point Link Motion Power Presses",
+            "category": "Two Point Press",
+            "desc": "The HMX Series is a straight-sided two-point link-motion press developed for progressive die and precision stamping applications. Its rigid frame and widely spaced suspension points help manage off-centre loads. The series supports manufacturing processes such as blanking, bending and shallow drawing, including applications involving precision components.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/straight-sided-two-point-link-motion-presses/hmx-series-straight-sided-two-point-link-motion-power-presses-hmx-series-straight-two-point-link-motion-power-presses",
+            "href": "/products/metal-forming/singhal-press/two-point-press/hmx-series-straight-sided-two-point-link-motion-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "SDC Series Straight Sided Double Column Two Point Power Press",
+            "category": "Two Point Press",
+            "desc": "The SDC Series is a straight-sided, double-column two-point power press intended for industrial stamping and forming. Its two-point configuration provides distributed slide support for suitable tooling and production applications. Confirm the available tonnage, stroke, bolster dimensions and drive configuration with MTAT Technologies.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/products/",
+            "href": "/products/metal-forming/singhal-press/two-point-press/sdc-series-straight-sided-double-column-two-point-power-press",
+            "sourceVerified": true
+          },
+          {
+            "id": 6,
+            "title": "APH Series H Frame Two Point High Speed Presses",
+            "category": "Two Point Press",
+            "desc": "The APH Series is a high-speed H-frame two-point press designed for continuous stamping operations. Its stress-relieved frame, precision slide guidance and dynamic balancing features support stable production at high operating speeds. It is suited to high-volume manufacturing where repeatability, rigidity and consistent stamping quality are important.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/imported-high-speed-h-frame-presses/aph-series-h-frame-two-point-high-speed-presses-aph-series-h-frame-two-point-high-speed-presses",
+            "href": "/products/metal-forming/singhal-press/two-point-press/aph-series-h-frame-two-point-high-speed-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 7,
+            "title": "AIDA C2-200-2 Two Point C Frame Cross Shaft Power Press",
+            "category": "Two Point Press",
+            "desc": "The AIDA C2-200-2 is listed in SEW's catalogue as a two-point C-frame cross-shaft power press. It provides an option for manufacturers evaluating a two-point press configuration for industrial stamping and forming. Confirm the machine's condition, availability, specifications and commercial terms before purchase.",
+            "image": "/Images/products/singhal-press/two-point-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/used-presses/aida-c2-200-2-two-point-c-frame-cross-shaft-power-press-aida-c2-200-2-two-point-c-frame-cross-shaft-power-press",
+            "href": "/products/metal-forming/singhal-press/two-point-press/aida-c2-200-2-two-point-c-frame-cross-shaft-power-press",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      },
+
+      "eccentric-driven-press": {
+        "title": "Eccentric Driven Press",
+        "hero": {
+          "title": "SEW Eccentric Drive Power Presses",
+          "description": "Explore eccentric-drive mechanical power presses designed for industrial blanking, punching, cutting, stamping and metal forming operations.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/eccentric-driven-press.webp"
+        },
+        "intro": {
+          "subtitle": "Mechanical Power Presses",
+          "heading": "SEW Eccentric Drive Press Machines",
+          "description": "Eccentric-drive power presses convert rotary drive motion into reciprocating slide movement for industrial metalworking. SEW's SCL-1 and SCL-2 series provide single-point and two-point H-frame configurations for different production needs. The COTELLI-130 T is also listed in the manufacturer's used-press catalogue and should be treated as a pre-owned machine."
+        },
+        "categories": [
+          "All",
+          "Eccentric Driven Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "SCL-1 Series H Frame Single Point Eccentric Drive Power Presses",
+            "category": "Eccentric Driven Press",
+            "desc": "The SCL-1 Series is an H-frame single-point eccentric-drive power press developed for heavy blanking, forming and stamping. Its symmetrical frame, extended stroke options and guided slide design support demanding metalworking operations. The range is suitable for manufacturers requiring a robust mechanical press for cutting, bending, punching and shallow forming applications.",
+            "image": "/Images/products/singhal-press/eccentric-driven-press.webp",
+            "manufacturerUrl": "https://sewpresses.com/product_details/h-frame-single-point-eccentric-drive-presses/scl-1-series-h-frame-single-point-eccentric-drive-power-presses-scl-1-series-eccentric-drive-power-presses",
+            "href": "/products/metal-forming/singhal-press/eccentric-driven-press/scl-1-series-h-frame-single-point-eccentric-drive-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "SCL-2 Series H Frame Two Point Eccentric Drive Power Presses",
+            "category": "Eccentric Driven Press",
+            "desc": "The SCL-2 Series combines an eccentric-drive mechanism with a two-point H-frame configuration. Designed for industrial stamping, blanking and forming, it provides a rigid working structure and distributed slide support for suitable tooling arrangements. Multiple configurations are available to meet different capacity and production requirements.",
+            "image": "/Images/products/singhal-press/eccentric-driven-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/h-frame-two-point-eccentric-drive-presses/scl-2-series-h-frame-twopoint-eccentric-drive-power-presses-scl-2-series-eccentric-drive-power-presses",
+            "href": "/products/metal-forming/singhal-press/eccentric-driven-press/scl-2-series-h-frame-two-point-eccentric-drive-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "COTELLI-130 T C Frame Mechanical Eccentric Press",
+            "category": "Eccentric Driven Press",
+            "desc": "The COTELLI-130 T is a 130-tonne C-frame mechanical eccentric press listed in SEW's used-press catalogue. Published specifications include a 150 mm adjustable stroke and a 650 × 1,100 mm table. As this is a pre-owned machine listing, confirm current availability, condition, service history and specifications before purchase.",
+            "image": "/Images/products/singhal-press/eccentric-driven-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/used-presses/cotelli-130-t-c-frame-mechanical-eccentric-press-cotelli-130-t-c-frame-mechanical-eccentric-press",
+            "href": "/products/metal-forming/singhal-press/eccentric-driven-press/cotelli-130-t-c-frame-mechanical-eccentric-press",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      },
+
+      "link-motion-power-press": {
+        "title": "Link Motion Power Press",
+        "hero": {
+          "title": "SEW Link Motion Power Presses",
+          "description": "Discover link-motion power presses engineered for progressive die stamping, precision forming and demanding high-productivity metalworking applications.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/link-motion-power-press.webp"
+        },
+        "intro": {
+          "subtitle": "Progressive Die Technology",
+          "heading": "SEW Link Motion Power Press Machines",
+          "description": "SEW's link-motion press range includes straight-sided two-point and ring-frame configurations designed for progressive stamping and precision forming. Explore the HMX and SLXR series for applications involving blanking, bending and shallow drawing. Select the appropriate configuration according to the tooling layout, required capacity, material and production rate."
+        },
+        "categories": [
+          "All",
+          "Link Motion Power Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "HMX Series Straight Sided Two Point Link Motion Power Presses",
+            "category": "Link Motion Power Press",
+            "desc": "The HMX Series is designed for progressive forming and high-precision stamping. Its link-motion mechanism supports controlled slide movement, while the straight-sided frame and widely spaced suspension points help accommodate off-centre loads. Suitable processes include precision blanking, bending and shallow drawing for demanding production applications.",
+            "image": "/Images/products/singhal-press/link-motion-power-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/straight-sided-two-point-link-motion-presses/hmx-series-straight-sided-two-point-link-motion-power-presses-hmx-series-straight-two-point-link-motion-power-presses",
+            "href": "/products/metal-forming/singhal-press/link-motion-power-press/hmx-series-straight-sided-two-point-link-motion-power-presses",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "SLXR Series Link Motion Cross Shaft Geared Ring Frame Press",
+            "category": "Link Motion Power Press",
+            "desc": "The SLXR Series combines link-motion technology with a geared ring-frame cross-shaft press design. It is intended for progressive metal forming and stamping operations that require controlled slide movement and a rigid press structure. Confirm the required tonnage, tooling arrangement, stroke and machine configuration with MTAT Technologies.",
+            "image": "/Images/products/singhal-press/link-motion-power-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/products/",
+            "href": "/products/metal-forming/singhal-press/link-motion-power-press/slxr-series-link-motion-cross-shaft-geared-ring-frame-press",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      },
+
+      "knuckle-joint-press": {
+        "title": "Knuckle Joint Press",
+        "hero": {
+          "title": "SEW Knuckle Joint Presses",
+          "description": "Explore knuckle joint power presses designed for specialized metal forming and precision stamping applications requiring a dedicated mechanical linkage.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/knuckle-joint-press.webp"
+        },
+        "intro": {
+          "subtitle": "Specialized Metal Forming",
+          "heading": "SEW Knuckle Joint Power Press",
+          "description": "SEW knuckle joint presses use a mechanical linkage mechanism to deliver a specialized slide-motion profile for suitable forming and stamping applications. The range includes multiple machine capacities, with model selection depending on the required pressing force, stroke, die dimensions and production process. Contact MTAT Technologies for current specifications and application guidance."
+        },
+        "categories": [
+          "All",
+          "Knuckle Joint Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "SEW Knuckle Joint Press",
+            "category": "Knuckle Joint Press",
+            "desc": "The SEW Knuckle Joint Press range is designed for specialized industrial pressing and metal forming operations. Its knuckle-link mechanism produces a distinct mechanical motion profile suited to applications that require controlled forming action. Published models include GK-400, GK-630, GK-800, GK-1000, GK-1200, GK-1600 and GK-2500. Confirm model-specific capacity, stroke and operating specifications before selection.",
+            "image": "/Images/products/singhal-press/knuckle-joint-press.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/knuckle-joint-presses/knuckle-joint-press-knuckle-joint-press",
+            "href": "/products/metal-forming/singhal-press/knuckle-joint-press/sew-knuckle-joint-press",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      },
+
+      "2-in-1-and-3-in-1-automation-system": {
+        "title": "2 in 1 and 3 in 1 Automation System",
+        "hero": {
+          "title": "SEW Coil Feeding Automation Systems",
+          "description": "Improve coil handling and press-feeding workflows with integrated decoiling, straightening and servo-feeding solutions designed for industrial sheet metal production.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp"
+        },
+        "intro": {
+          "subtitle": "Automated Coil Processing",
+          "heading": "SEW 2-in-1 and 3-in-1 Automation Lines",
+          "description": "SEW provides coil-feeding equipment and integrated automation lines for sheet metal processing. The range includes NC servo feeders, 2-in-1 decoiler-cum-straighteners and MAF-series 3-in-1 lines. These systems combine material handling, straightening and feeding functions according to the selected configuration, helping streamline coil processing and supply material to downstream presses. Choose a system based on material width, thickness, coil weight and required feed rate."
+        },
+        "categories": [
+          "All",
+          "2 in 1 Automation",
+          "3 in 1 Automation",
+          "Servo Feeder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "NC Servo Feeder & 2-in-1 Decoiler-cum-Straightener",
+            "category": "2 in 1 Automation",
+            "desc": "This product combines an NC servo feeder with a decoiler-cum-straightener arrangement for automated coil handling and material feeding. The integrated configuration supports unwinding, straightening and accurately feeding strip material into a press or production line. Select the appropriate setup according to material width, thickness, coil weight and feed requirements.",
+            "image": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/automation-line/nc-servo-feeder-2in1-decoiler-cum-straightener-nc-servo-feeder-2in1-decoiler-cum-straightener",
+            "href": "/products/metal-forming/singhal-press/2-in-1-and-3-in-1-automation-system/nc-servo-feeder-2-in-1-decoiler-cum-straightener",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "MAF3 Series 3-in-1 Automation Line",
+            "category": "3 in 1 Automation",
+            "desc": "The MAF3 Series is a 3-in-1 coil-processing line identified by SEW for thin-material applications. It integrates coil handling, straightening and feeding functions into a coordinated system. Material thickness, coil capacity, working width and operating speed depend on the selected model and material requirements.",
+            "image": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/automation-line/the-feeder-3-in-1-for-thin-material-maf3-series-3in1-line",
+            "href": "/products/metal-forming/singhal-press/2-in-1-and-3-in-1-automation-system/maf3-series-3-in-1-automation-line",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "MAF4 Series 3-in-1 Automation Line",
+            "category": "3 in 1 Automation",
+            "desc": "The MAF4 Series combines decoiling, straightening and servo feeding in an integrated coil-processing line. The manufacturer lists multiple material-width configurations, allowing the system to be matched to different sheet metal handling requirements. Confirm material thickness, coil weight, line speed and model compatibility before selection.",
+            "image": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/automation-line/maf4-series-3in1-automation-line-maf4-series-3in1-automation-line",
+            "href": "/products/metal-forming/singhal-press/2-in-1-and-3-in-1-automation-system/maf4-series-3-in-1-automation-line",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "MAF6 Series 3-in-1 Automation Line",
+            "category": "3 in 1 Automation",
+            "desc": "The MAF6 Series is an integrated 3-in-1 coil-processing system for automated decoiling, straightening and feeding. Available configurations accommodate different material widths and thickness requirements. It is intended to support consistent material supply to press and stamping operations while reducing the need for separate material-handling units.",
+            "image": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/automation-line/maf6-series-3in1-automation-line-maf6-series-3in1-automation-line",
+            "href": "/products/metal-forming/singhal-press/2-in-1-and-3-in-1-automation-system/maf6-series-3-in-1-automation-line",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "MAF6G Series 3-in-1 Automation Line",
+            "category": "3 in 1 Automation",
+            "desc": "The MAF6G Series is a 3-in-1 automation line designed for integrated coil handling, straightening and servo feeding. The manufacturer lists configurations for a range of material widths and thicknesses, with capacity depending on the selected model and material properties. Consult MTAT Technologies to identify the appropriate line for your production requirements.",
+            "image": "/Images/products/singhal-press/2-in-1-and-3-in-1-automation-system.webp",
+            "manufacturerUrl": "https://www.sewpresses.com/product_details/automation-line/maf6g-series-3in1-automation-line-maf6g-series-3in1-automation-line",
+            "href": "/products/metal-forming/singhal-press/2-in-1-and-3-in-1-automation-system/maf6g-series-3-in-1-automation-line",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.sewpresses.com/products/"
+      }
+    }
+  }
+,
+    "sukrit": {
+      "name": "SUKRIT",
+      "slug": "sukrit",
+      "description": "Explore SUKRIT industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://sukrit.in",
+      "categories": {
+        "ball-screw-driven": {
+          "title": "Ball Screw Driven",
+          "hero": {
+            "title": "Ball Screw Driven",
+            "description": "Explore SUKRIT ball screw driven for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/sukrit/ball-screw-driven.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "SUKRIT Ball Screw Driven",
+            "description": "Explore the SUKRIT ball screw driven range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Ball Screw Driven"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "SUKRIT Ball Screw Driven",
+              "category": "Ball Screw Driven",
+              "desc": "SUKRIT Ball Screw Driven for ball screw driven applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sukrit/ball-screw-driven.webp",
+              "manufacturerUrl": "https://sukrit.in",
+              "href": "/products/metal-forming/sukrit/ball-screw-driven/sukrit-ball-screw-driven",
+              "sourceVerified": false
+            }
+          ],
+          "manufacturerCategoryUrl": "https://sukrit.in"
+        },
+        "belt-driven": {
+          "title": "Belt Driven",
+          "hero": {
+            "title": "Belt Driven",
+            "description": "Explore SUKRIT belt driven for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/sukrit/belt-driven.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "SUKRIT Belt Driven",
+            "description": "Explore the SUKRIT belt driven range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Belt Driven"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "SUKRIT Belt Driven",
+              "category": "Belt Driven",
+              "desc": "SUKRIT Belt Driven for belt driven applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sukrit/belt-driven.webp",
+              "manufacturerUrl": "https://sukrit.in",
+              "href": "/products/metal-forming/sukrit/belt-driven/sukrit-belt-driven",
+              "sourceVerified": false
+            }
+          ],
+          "manufacturerCategoryUrl": "https://sukrit.in"
+        },
+        "servo-electric-press": {
+          "title": "Servo Electric Press",
+          "hero": {
+            "title": "Servo Electric Press",
+            "description": "Explore SUKRIT servo electric press for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/sukrit/servo-electric-press.webp"
+          },
+          "intro": {
+            "subtitle": "Metal Forming",
+            "heading": "SUKRIT Servo Electric Press",
+            "description": "Explore the SUKRIT servo electric press range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Servo Electric Press"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "EB ECO-Bend All-Electric Press Brake 22T x 900 mm",
+              "category": "Servo Electric Press",
+              "desc": "EB ECO-Bend All-Electric Press Brake 22T x 900 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sukrit/servo-electric-press.webp",
+              "manufacturerUrl": "https://sukrit.in",
+              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-22t-x-900-mm",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "EB ECO-Bend All-Electric Press Brake 22T x 1250 mm",
+              "category": "Servo Electric Press",
+              "desc": "EB ECO-Bend All-Electric Press Brake 22T x 1250 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sukrit/servo-electric-press.webp",
+              "manufacturerUrl": "https://sukrit.in",
+              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-22t-x-1250-mm",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "EB ECO-Bend All-Electric Press Brake 40T x 1600 mm",
+              "category": "Servo Electric Press",
+              "desc": "EB ECO-Bend All-Electric Press Brake 40T x 1600 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sukrit/servo-electric-press.webp",
+              "manufacturerUrl": "https://sukrit.in",
+              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-40t-x-1600-mm",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://sukrit.in"
+        }
+      }
+    },
+    "hexagon": {
+      "name": "Hexagon",
+      "slug": "hexagon",
+      "description": "Explore Hexagon industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://hexagon.com",
+      "categories": {
+        "optical-light-measuring-machines-olm": {
+          "title": "Optical Light Measuring Machines (OLM)",
+          "hero": {
+            "title": "Optical Light Measuring Machines (OLM)",
+            "description": "Explore Hexagon optical light measuring machines (olm) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp"
+          },
+          "intro": {
+            "subtitle": "Metrology",
+            "heading": "Hexagon Optical Light Measuring Machines (OLM)",
+            "description": "Explore the Hexagon optical light measuring machines (olm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Optical Light Measuring Machines (OLM)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "OPTIV M",
+              "category": "Optical Light Measuring Machines (OLM)",
+              "desc": "OPTIV M for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-m",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "OPTIV Reference",
+              "category": "Optical Light Measuring Machines (OLM)",
+              "desc": "OPTIV Reference for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-reference",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "VISIUS",
+              "category": "Optical Light Measuring Machines (OLM)",
+              "desc": "VISIUS for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/visius",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://hexagon.com"
+        },
+        "coordinate-measuring-machine-cmm": {
+          "title": "Coordinate Measuring Machine (CMM)",
+          "hero": {
+            "title": "Coordinate Measuring Machine (CMM)",
+            "description": "Explore Hexagon coordinate measuring machine (cmm) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp"
+          },
+          "intro": {
+            "subtitle": "Metrology",
+            "heading": "Hexagon Coordinate Measuring Machine (CMM)",
+            "description": "Explore the Hexagon coordinate measuring machine (cmm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Coordinate Measuring Machine (CMM)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "MAESTRO",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "MAESTRO for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/maestro",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "GLOBAL S",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "GLOBAL S for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/global-s",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "Leitz Reference",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "Leitz Reference for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/leitz-reference",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "GLORY",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "GLORY for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/glory",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "ENSPEC",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "ENSPEC for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/enspec",
+              "sourceVerified": true
+            },
+            {
+              "id": 6,
+              "title": "TIGO SF",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "TIGO SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/tigo-sf",
+              "sourceVerified": true
+            },
+            {
+              "id": 7,
+              "title": "4.5.4 SF",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "4.5.4 SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/4-5-4-sf",
+              "sourceVerified": true
+            },
+            {
+              "id": 8,
+              "title": "7.10.7 SF",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "7.10.7 SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/7-10-7-sf",
+              "sourceVerified": true
+            },
+            {
+              "id": 9,
+              "title": "OPTIV M",
+              "category": "Coordinate Measuring Machine (CMM)",
+              "desc": "OPTIV M for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/optiv-m",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://hexagon.com"
+        },
+        "romer-arm-portable-arm": {
+          "title": "Romer Arm (Portable Arm)",
+          "hero": {
+            "title": "Romer Arm (Portable Arm)",
+            "description": "Explore Hexagon romer arm (portable arm) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/hexagon/romer-arm-portable-arm.webp"
+          },
+          "intro": {
+            "subtitle": "Metrology",
+            "heading": "Hexagon Romer Arm (Portable Arm)",
+            "description": "Explore the Hexagon romer arm (portable arm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Romer Arm (Portable Arm)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "Absolute Arm 7-Axis",
+              "category": "Romer Arm (Portable Arm)",
+              "desc": "Absolute Arm 7-Axis for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-7-axis",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "Absolute Arm 6-Axis",
+              "category": "Romer Arm (Portable Arm)",
+              "desc": "Absolute Arm 6-Axis for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-6-axis",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "Absolute Arm Compact",
+              "category": "Romer Arm (Portable Arm)",
+              "desc": "Absolute Arm Compact for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-compact",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://hexagon.com"
+        },
+        "tool-and-job-probes": {
+          "title": "Tool and Job Probes",
+          "hero": {
+            "title": "Tool and Job Probes",
+            "description": "Explore Hexagon tool and job probes for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/hexagon/tool-and-job-probes.webp"
+          },
+          "intro": {
+            "subtitle": "Metrology",
+            "heading": "Hexagon Tool and Job Probes",
+            "description": "Explore the Hexagon tool and job probes range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Tool and Job Probes"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "Absolute Arm probes and accessories",
+              "category": "Tool and Job Probes",
+              "desc": "Absolute Arm probes and accessories for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/tool-and-job-probes/absolute-arm-probes-and-accessories",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "Touch-trigger probes",
+              "category": "Tool and Job Probes",
+              "desc": "Touch-trigger probes for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/tool-and-job-probes/touch-trigger-probes",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "Tool setting probes",
+              "category": "Tool and Job Probes",
+              "desc": "Tool setting probes for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/tool-and-job-probes/tool-setting-probes",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "Workpiece probing systems",
+              "category": "Tool and Job Probes",
+              "desc": "Workpiece probing systems for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
+              "manufacturerUrl": "https://hexagon.com",
+              "href": "/products/metrology/hexagon/tool-and-job-probes/workpiece-probing-systems",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://hexagon.com"
+        }
+      }
+    },
+    "sodick": {
+      "name": "Sodick",
+      "slug": "sodick",
+      "description": "Explore Sodick industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://sodick.com/machines/",
+      "categories": {
+        "edm-machines": {
+          "title": "EDM Machines",
+          "hero": {
+            "title": "EDM Machines",
+            "description": "Explore Sodick edm machines for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/sodick/edm-machines.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Sodick EDM Machines",
+            "description": "Explore the Sodick edm machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "EDM Machines"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "AD Series Sinker EDM",
+              "category": "EDM Machines",
+              "desc": "AD Series Sinker EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/edm-machines/ad-series-sinker-edm",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "ALN Series Wire EDM",
+              "category": "EDM Machines",
+              "desc": "ALN Series Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/edm-machines/aln-series-wire-edm",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "ALC Series Wire EDM",
+              "category": "EDM Machines",
+              "desc": "ALC Series Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/edm-machines/alc-series-wire-edm",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "AP Series Micro Wire EDM",
+              "category": "EDM Machines",
+              "desc": "AP Series Micro Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/edm-machines/ap-series-micro-wire-edm",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "Small Hole EDM",
+              "category": "EDM Machines",
+              "desc": "Small Hole EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/edm-machines/small-hole-edm",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://sodick.com/machines/"
+        },
+        "wire-edm-machines": {
+          "title": "Wire EDM Machines",
+          "hero": {
+            "title": "Wire EDM Machines",
+            "description": "Explore Sodick wire edm machines for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/sodick/wire-edm-machines.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Sodick Wire EDM Machines",
+            "description": "Explore the Sodick wire edm machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Wire EDM Machines"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "ALN400G",
+              "category": "Wire EDM Machines",
+              "desc": "ALN400G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln400g",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "ALN600G",
+              "category": "Wire EDM Machines",
+              "desc": "ALN600G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln600g",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "ALN600GH",
+              "category": "Wire EDM Machines",
+              "desc": "ALN600GH for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln600gh",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "ALN800G",
+              "category": "Wire EDM Machines",
+              "desc": "ALN800G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln800g",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "ALC400G",
+              "category": "Wire EDM Machines",
+              "desc": "ALC400G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/alc400g",
+              "sourceVerified": true
+            },
+            {
+              "id": 6,
+              "title": "ALC600G",
+              "category": "Wire EDM Machines",
+              "desc": "ALC600G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/alc600g",
+              "sourceVerified": true
+            },
+            {
+              "id": 7,
+              "title": "AL400P",
+              "category": "Wire EDM Machines",
+              "desc": "AL400P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/al400p",
+              "sourceVerified": true
+            },
+            {
+              "id": 8,
+              "title": "AL600P",
+              "category": "Wire EDM Machines",
+              "desc": "AL600P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/al600p",
+              "sourceVerified": true
+            },
+            {
+              "id": 9,
+              "title": "AL800P",
+              "category": "Wire EDM Machines",
+              "desc": "AL800P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/al800p",
+              "sourceVerified": true
+            },
+            {
+              "id": 10,
+              "title": "AP250L",
+              "category": "Wire EDM Machines",
+              "desc": "AP250L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/ap250l",
+              "sourceVerified": true
+            },
+            {
+              "id": 11,
+              "title": "AP450L",
+              "category": "Wire EDM Machines",
+              "desc": "AP450L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/ap450l",
+              "sourceVerified": true
+            },
+            {
+              "id": 12,
+              "title": "AQ750L",
+              "category": "Wire EDM Machines",
+              "desc": "AQ750L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq750l",
+              "sourceVerified": true
+            },
+            {
+              "id": 13,
+              "title": "AQ900L",
+              "category": "Wire EDM Machines",
+              "desc": "AQ900L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq900l",
+              "sourceVerified": true
+            },
+            {
+              "id": 14,
+              "title": "AQ1200L",
+              "category": "Wire EDM Machines",
+              "desc": "AQ1200L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq1200l",
+              "sourceVerified": true
+            },
+            {
+              "id": 15,
+              "title": "AQ1500L",
+              "category": "Wire EDM Machines",
+              "desc": "AQ1500L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq1500l",
+              "sourceVerified": true
+            },
+            {
+              "id": 16,
+              "title": "VN400Q",
+              "category": "Wire EDM Machines",
+              "desc": "VN400Q for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/vn400q",
+              "sourceVerified": true
+            },
+            {
+              "id": 17,
+              "title": "VN600Q",
+              "category": "Wire EDM Machines",
+              "desc": "VN600Q for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/vn600q",
+              "sourceVerified": true
+            },
+            {
+              "id": 18,
+              "title": "VL600QH",
+              "category": "Wire EDM Machines",
+              "desc": "VL600QH for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/vl600qh",
+              "sourceVerified": true
+            },
+            {
+              "id": 19,
+              "title": "AX350L",
+              "category": "Wire EDM Machines",
+              "desc": "AX350L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/ax350l",
+              "sourceVerified": true
+            },
+            {
+              "id": 20,
+              "title": "EXC100L+",
+              "category": "Wire EDM Machines",
+              "desc": "EXC100L+ for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/sodick/wire-edm-machines.webp",
+              "manufacturerUrl": "https://sodick.com/machines/",
+              "href": "/products/tool-room-software/sodick/wire-edm-machines/exc100l",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://sodick.com/machines/"
+        }
+      }
+    },
+    "pinnacle": {
+      "name": "Pinnacle",
+      "slug": "pinnacle",
+      "description": "Explore Pinnacle industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+      "categories": {
+        "surface-grinders-semi-automatic": {
+          "title": "Surface Grinders (Semi Automatic)",
+          "hero": {
+            "title": "Surface Grinders (Semi Automatic)",
+            "description": "Explore Pinnacle surface grinders (semi automatic) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Pinnacle Surface Grinders (Semi Automatic)",
+            "description": "Explore the Pinnacle surface grinders (semi automatic) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Surface Grinders (Semi Automatic)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "GSH Series",
+              "category": "Surface Grinders (Semi Automatic)",
+              "desc": "GSH Series for surface grinders (semi automatic) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/gsh-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "PHR SEMI Series",
+              "category": "Surface Grinders (Semi Automatic)",
+              "desc": "PHR SEMI Series for surface grinders (semi automatic) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/phr-semi-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
+        },
+        "cnc-surface-grinders": {
+          "title": "CNC Surface Grinders",
+          "hero": {
+            "title": "CNC Surface Grinders",
+            "description": "Explore Pinnacle cnc surface grinders for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/pinnacle/cnc-surface-grinders.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Pinnacle CNC Surface Grinders",
+            "description": "Explore the Pinnacle cnc surface grinders range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC Surface Grinders"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "CNC 2X Series",
+              "category": "CNC Surface Grinders",
+              "desc": "CNC 2X Series for cnc surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/cnc-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-2x-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "CNC 3X Series",
+              "category": "CNC Surface Grinders",
+              "desc": "CNC 3X Series for cnc surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/cnc-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-3x-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
+        },
+        "rotary-surface-grinders": {
+          "title": "Rotary Surface Grinders",
+          "hero": {
+            "title": "Rotary Surface Grinders",
+            "description": "Explore Pinnacle rotary surface grinders for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/pinnacle/rotary-surface-grinders.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Pinnacle Rotary Surface Grinders",
+            "description": "Explore the Pinnacle rotary surface grinders range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Rotary Surface Grinders"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "PHR SEMI Series",
+              "category": "Rotary Surface Grinders",
+              "desc": "PHR SEMI Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-semi-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "PHR NC Series",
+              "category": "Rotary Surface Grinders",
+              "desc": "PHR NC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-nc-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "PHR CNC Series",
+              "category": "Rotary Surface Grinders",
+              "desc": "PHR CNC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-cnc-series",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "PVR CNC Series",
+              "category": "Rotary Surface Grinders",
+              "desc": "PVR CNC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
+              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/pvr-cnc-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
+        }
+      }
+    },
+    "kiya": {
+      "name": "Kiya",
+      "slug": "kiya",
+      "description": "Explore Kiya industrial machines and manufacturing solutions.",
+      "manufacturerUrl": "https://kiyaproducts.com",
+      "categories": {
+        "cnc-hybrid-grinder-id-od": {
+          "title": "CNC Hybrid Grinder (ID/OD)",
+          "hero": {
+            "title": "CNC Hybrid Grinder (ID/OD)",
+            "description": "Explore Kiya cnc hybrid grinder (id/od) for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/cnc-hybrid-grinder-id-od.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya CNC Hybrid Grinder (ID/OD)",
+            "description": "Explore the Kiya cnc hybrid grinder (id/od) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC Hybrid Grinder (ID/OD)"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "INEX Series",
+              "category": "CNC Hybrid Grinder (ID/OD)",
+              "desc": "INEX Series for cnc hybrid grinder (id/od) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/cnc-hybrid-grinder-id-od.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/cnc-hybrid-grinder-id-od/inex-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        },
+        "cnc-external-cylindrical-grinder": {
+          "title": "CNC External Cylindrical Grinder",
+          "hero": {
+            "title": "CNC External Cylindrical Grinder",
+            "description": "Explore Kiya cnc external cylindrical grinder for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/cnc-external-cylindrical-grinder.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya CNC External Cylindrical Grinder",
+            "description": "Explore the Kiya cnc external cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC External Cylindrical Grinder"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "EG/AG Series",
+              "category": "CNC External Cylindrical Grinder",
+              "desc": "EG/AG Series for cnc external cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/cnc-external-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/cnc-external-cylindrical-grinder/eg-ag-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        },
+        "cnc-internal-cylindrical-grinder": {
+          "title": "CNC Internal Cylindrical Grinder",
+          "hero": {
+            "title": "CNC Internal Cylindrical Grinder",
+            "description": "Explore Kiya cnc internal cylindrical grinder for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/cnc-internal-cylindrical-grinder.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya CNC Internal Cylindrical Grinder",
+            "description": "Explore the Kiya cnc internal cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC Internal Cylindrical Grinder"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "IG Series",
+              "category": "CNC Internal Cylindrical Grinder",
+              "desc": "IG Series for cnc internal cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/cnc-internal-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/cnc-internal-cylindrical-grinder/ig-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        },
+        "cnc-external-bush-track-grinder": {
+          "title": "CNC External Bush/Track Grinder",
+          "hero": {
+            "title": "CNC External Bush/Track Grinder",
+            "description": "Explore Kiya cnc external bush/track grinder for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/cnc-external-bush-track-grinder.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya CNC External Bush/Track Grinder",
+            "description": "Explore the Kiya cnc external bush/track grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC External Bush/Track Grinder"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "EBG Series",
+              "category": "CNC External Bush/Track Grinder",
+              "desc": "EBG Series for cnc external bush/track grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/cnc-external-bush-track-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/cnc-external-bush-track-grinder/ebg-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        },
+        "hydraulic-cylindrical-grinder": {
+          "title": "Hydraulic Cylindrical Grinder",
+          "hero": {
+            "title": "Hydraulic Cylindrical Grinder",
+            "description": "Explore Kiya hydraulic cylindrical grinder for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya Hydraulic Cylindrical Grinder",
+            "description": "Explore the Kiya hydraulic cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "Hydraulic Cylindrical Grinder"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "HCG-E 450",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-E 450 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-450",
+              "sourceVerified": true
+            },
+            {
+              "id": 2,
+              "title": "HCG-E 600",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-E 600 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-600",
+              "sourceVerified": true
+            },
+            {
+              "id": 3,
+              "title": "HCG-E 800",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-E 800 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-800",
+              "sourceVerified": true
+            },
+            {
+              "id": 4,
+              "title": "HCG-E 1000",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-E 1000 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-1000",
+              "sourceVerified": true
+            },
+            {
+              "id": 5,
+              "title": "HCG-E 1200",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-E 1200 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-1200",
+              "sourceVerified": true
+            },
+            {
+              "id": 6,
+              "title": "HCG-I 450",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-I 450 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-i-450",
+              "sourceVerified": true
+            },
+            {
+              "id": 7,
+              "title": "HCG-I 600",
+              "category": "Hydraulic Cylindrical Grinder",
+              "desc": "HCG-I 600 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-i-600",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        },
+        "cnc-lip-grinder": {
+          "title": "CNC LIP Grinder",
+          "hero": {
+            "title": "CNC LIP Grinder",
+            "description": "Explore Kiya cnc lip grinder for industrial manufacturing and precision production applications.",
+            "primaryBtn": "Explore Machines",
+            "secondaryBtn": "Enquire Now",
+            "bgImage": "/Images/products/kiya/cnc-lip-grinder.webp"
+          },
+          "intro": {
+            "subtitle": "Tool Room & Software",
+            "heading": "Kiya CNC LIP Grinder",
+            "description": "Explore the Kiya cnc lip grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          },
+          "categories": [
+            "All",
+            "CNC LIP Grinder"
+          ],
+          "products": [
+            {
+              "id": 1,
+              "title": "LG Series",
+              "category": "CNC LIP Grinder",
+              "desc": "LG Series for cnc lip grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
+              "image": "/Images/products/kiya/cnc-lip-grinder.webp",
+              "manufacturerUrl": "https://kiyaproducts.com",
+              "href": "/products/tool-room-software/kiya/cnc-lip-grinder/lg-series",
+              "sourceVerified": true
+            }
+          ],
+          "manufacturerCategoryUrl": "https://kiyaproducts.com"
+        }
+      }
+    }
+  },
+  "productCategories": [
+    {
+      "title": "Metal Cutting",
+      "slug": "metal-cutting",
+      "desc": "Jyoti CNC & EIFCO machining and gear hobbing solutions.",
+      "brands": [
+        {
+          "title": "Jyoti CNC",
+          "slug": "jyoti",
+          "subcategories": [
+            {
+              "title": "Turning Centres",
+              "slug": "turning-centres"
+            },
+            {
+              "title": "Vertical Turning Lathes (VTL)",
+              "slug": "vertical-turning-lathes-vtl"
+            },
+            {
+              "title": "Vertical Machining Centres (VMC)",
+              "slug": "vertical-machining-centres-vmc"
+            },
+            {
+              "title": "Turn-Mill Centres (TMC)",
+              "slug": "turn-mill-centres-tmc"
+            },
+            {
+              "title": "Horizontal Machining Centres",
+              "slug": "horizontal-machining-centres"
+            },
+            {
+              "title": "5-Axis Machines",
+              "slug": "5-axis-machines"
+            },
+            {
+              "title": "Double Column Machines",
+              "slug": "double-column-machines"
+            }
+          ]
+        },
+        {
+          "title": "EIFCO",
+          "slug": "eifco",
+          "subcategories": [
+            {
+              "title": "Vertical Gear Hobber",
+              "slug": "vertical-gear-hobber"
+            },
+            {
+              "title": "Horizontal Gear Hobber",
+              "slug": "horizontal-gear-hobber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Metal Forming",
+      "slug": "metal-forming",
+      "desc": "Energy Mission, Singhal Press & SUKRIT sheet metal systems.",
+      "brands": [
+        {
+          "title": "Energy Mission",
+          "slug": "energy-mission",
+          "subcategories": [
+            {
+              "title": "CNC Press Brakes",
+              "slug": "cnc-press-brakes"
+            },
+            {
+              "title": "Shearing Machines",
+              "slug": "shearing-machines"
+            },
+            {
+              "title": "Hydraulic Presses",
+              "slug": "hydraulic-presses"
+            },
+            {
+              "title": "Iron Worker",
+              "slug": "iron-worker"
+            },
+            {
+              "title": "BusBar Machine",
+              "slug": "busbar-machine"
+            },
+            {
+              "title": "V-Grooving Machine",
+              "slug": "v-grooving-machine"
+            }
+          ]
+        },
+        {
+          "title": "Singhal Press (SEW)",
+          "slug": "singhal-press",
+          "subcategories": [
+            {
+              "title": "Cross Shaft Press",
+              "slug": "cross-shaft-press"
+            },
+            {
+              "title": "Two Point Press",
+              "slug": "two-point-press"
+            },
+            {
+              "title": "Eccentric Driven Press",
+              "slug": "eccentric-driven-press"
+            },
+            {
+              "title": "Link Motion Power Press",
+              "slug": "link-motion-power-press"
+            },
+            {
+              "title": "Knuckle Joint Press",
+              "slug": "knuckle-joint-press"
+            },
+            {
+              "title": "2 in 1 and 3 in 1 Automation System",
+              "slug": "2-in-1-and-3-in-1-automation-system"
+            }
+          ]
+        },
+        {
+          "title": "SUKRIT",
+          "slug": "sukrit",
+          "subcategories": [
+            {
+              "title": "Ball Screw Driven",
+              "slug": "ball-screw-driven"
+            },
+            {
+              "title": "Belt Driven",
+              "slug": "belt-driven"
+            },
+            {
+              "title": "Servo Electric Press",
+              "slug": "servo-electric-press"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Metrology",
+      "slug": "metrology",
+      "desc": "Hexagon precision measurement, CMM & optical inspection.",
+      "brands": [
+        {
+          "title": "Hexagon",
+          "slug": "hexagon",
+          "subcategories": [
+            {
+              "title": "Optical Light Measuring Machines (OLM)",
+              "slug": "optical-light-measuring-machines-olm"
+            },
+            {
+              "title": "Coordinate Measuring Machine (CMM)",
+              "slug": "coordinate-measuring-machine-cmm"
+            },
+            {
+              "title": "Romer Arm (Portable Arm)",
+              "slug": "romer-arm-portable-arm"
+            },
+            {
+              "title": "Tool and Job Probes",
+              "slug": "tool-and-job-probes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tool Room & Software",
+      "slug": "tool-room-software",
+      "desc": "Sodick EDM, Pinnacle & Kiya grinders and workshop solutions.",
+      "brands": [
+        {
+          "title": "Sodick",
+          "slug": "sodick",
+          "subcategories": [
+            {
+              "title": "EDM Machines",
+              "slug": "edm-machines"
+            },
+            {
+              "title": "Wire EDM Machines",
+              "slug": "wire-edm-machines"
+            }
+          ]
+        },
+        {
+          "title": "Pinnacle",
+          "slug": "pinnacle",
+          "subcategories": [
+            {
+              "title": "Surface Grinders (Semi Automatic)",
+              "slug": "surface-grinders-semi-automatic"
+            },
+            {
+              "title": "CNC Surface Grinders",
+              "slug": "cnc-surface-grinders"
+            },
+            {
+              "title": "Rotary Surface Grinders",
+              "slug": "rotary-surface-grinders"
+            }
+          ]
+        },
+        {
+          "title": "Kiya",
+          "slug": "kiya",
+          "subcategories": [
+            {
+              "title": "CNC Hybrid Grinder (ID/OD)",
+              "slug": "cnc-hybrid-grinder-id-od"
+            },
+            {
+              "title": "CNC External Cylindrical Grinder",
+              "slug": "cnc-external-cylindrical-grinder"
+            },
+            {
+              "title": "CNC Internal Cylindrical Grinder",
+              "slug": "cnc-internal-cylindrical-grinder"
+            },
+            {
+              "title": "CNC External Bush/Track Grinder",
+              "slug": "cnc-external-bush-track-grinder"
+            },
+            {
+              "title": "Hydraulic Cylindrical Grinder",
+              "slug": "hydraulic-cylindrical-grinder"
+            },
+            {
+              "title": "CNC LIP Grinder",
+              "slug": "cnc-lip-grinder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Model/range names are included where identifiable from public manufacturer pages or catalogues; they are not a guarantee of current stock or local availability.",
+    "Energy Mission CNC press brake models include Optima, Splendid, Efficient, Tandem/Tridem and Magnum; its busbar range includes BU 30, BU 50 and BU 80.",
+    "Sodick Wire EDM examples include ALN, ALC, ALP, AP, AQ, VN/VL and AX/EXC series.",
+    "Pinnacle published ranges include GSH, PHR SEMI, PHR NC, PHR CNC, PVR CNC, CNC 2X and CNC 3X.",
+    "Kiya published ranges include INEX, EG/AG, IG, EBG, HCG and LG.",
+    "Some product families such as SUKRIT Ball Screw Driven and Belt Driven require manufacturer confirmation for exact model names.",
+    "Image paths and product detail hrefs are proposed local paths/routes; add matching images and ensure corresponding routes exist."
+  ]
+}
