@@ -1313,1132 +1313,1029 @@
     }
   }
 ,
-    "sukrit": {
-      "name": "SUKRIT",
-      "slug": "sukrit",
-      "description": "Explore SUKRIT industrial machines and manufacturing solutions.",
-      "manufacturerUrl": "https://sukrit.in",
-      "categories": {
-        "ball-screw-driven": {
-          "title": "Ball Screw Driven",
-          "hero": {
-            "title": "Ball Screw Driven",
-            "description": "Explore SUKRIT ball screw driven for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/sukrit/ball-screw-driven.webp"
-          },
-          "intro": {
-            "subtitle": "Metal Forming",
-            "heading": "SUKRIT Ball Screw Driven",
-            "description": "Explore the SUKRIT ball screw driven range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Ball Screw Driven"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "SUKRIT Ball Screw Driven",
-              "category": "Ball Screw Driven",
-              "desc": "SUKRIT Ball Screw Driven for ball screw driven applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sukrit/ball-screw-driven.webp",
-              "manufacturerUrl": "https://sukrit.in",
-              "href": "/products/metal-forming/sukrit/ball-screw-driven/sukrit-ball-screw-driven",
-              "sourceVerified": false
-            }
-          ],
-          "manufacturerCategoryUrl": "https://sukrit.in"
+
+  "sukrit": {
+    "name": "SUKRIT",
+    "slug": "sukrit",
+    "description": "Explore Sukrit machine tools, including all-electric servo press brakes designed for precision sheet metal bending, energy efficiency and productive manufacturing.",
+    "manufacturerUrl": "https://sukrit.in/",
+    "categories": {
+      "ball-screw-driven": {
+        "title": "Ball Screw Driven",
+        "hero": {
+          "title": "Sukrit Ball Screw Driven Press Brakes",
+          "description": "Discover precision ball-screw-driven press brakes designed for accurate sheet metal bending, repeatable positioning and efficient industrial production.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/sukrit/ball-screw-driven.webp"
         },
-        "belt-driven": {
-          "title": "Belt Driven",
-          "hero": {
-            "title": "Belt Driven",
-            "description": "Explore SUKRIT belt driven for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/sukrit/belt-driven.webp"
-          },
-          "intro": {
-            "subtitle": "Metal Forming",
-            "heading": "SUKRIT Belt Driven",
-            "description": "Explore the SUKRIT belt driven range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Belt Driven"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "SUKRIT Belt Driven",
-              "category": "Belt Driven",
-              "desc": "SUKRIT Belt Driven for belt driven applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sukrit/belt-driven.webp",
-              "manufacturerUrl": "https://sukrit.in",
-              "href": "/products/metal-forming/sukrit/belt-driven/sukrit-belt-driven",
-              "sourceVerified": false
-            }
-          ],
-          "manufacturerCategoryUrl": "https://sukrit.in"
+        "intro": {
+          "subtitle": "Precision Bending Technology",
+          "heading": "Sukrit Ball Screw Driven Press Brakes",
+          "description": "Sukrit's ECO-Bend EB Series uses brushless AC servo motors and a synchronized dual ball-screw drive to move the press beam. This all-electric design supports accurate, repeatable bending, fast movement and reduced energy consumption. The manufacturer lists three models: 22 Ton × 900 mm, 22 Ton × 1250 mm and 40 Ton × 1600 mm."
         },
-        "servo-electric-press": {
-          "title": "Servo Electric Press",
-          "hero": {
-            "title": "Servo Electric Press",
-            "description": "Explore SUKRIT servo electric press for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/sukrit/servo-electric-press.webp"
+        "categories": [
+          "All",
+          "Ball Screw Driven"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "ECO-Bend EB 22 Ton × 900 mm",
+            "category": "Ball Screw Driven",
+            "desc": "A compact all-electric press brake designed for precision bending of smaller sheet metal components. Its servo-driven ball-screw mechanism supports accurate ram positioning and repeatable bending operations. Suitable for manufacturers seeking productive bending performance in a compact working format.",
+            "image": "/Images/products/sukrit/eco-bend-eb-22t-900.webp",
+            "manufacturerUrl": "https://sukrit.in/press_brake/",
+            "href": "https://sukrit.in/wp-content/uploads/2018/09/eco-1.png?utm_source=chatgpt.com",
+            "sourceVerified": true
           },
-          "intro": {
-            "subtitle": "Metal Forming",
-            "heading": "SUKRIT Servo Electric Press",
-            "description": "Explore the SUKRIT servo electric press range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
+          {
+            "id": 2,
+            "title": "ECO-Bend EB 22 Ton × 1250 mm",
+            "category": "Ball Screw Driven",
+            "desc": "The 22-tonne ECO-Bend EB model with a 1250 mm working length combines servo-electric actuation with ball-screw-driven beam movement. It is designed for repeatable sheet metal bending, with programmable controls and backgauge options to support different component geometries.",
+            "image": "/Images/products/sukrit/eco-bend-eb-22t-1250.webp",
+            "manufacturerUrl": "https://sukrit.in/press_brake/",
+            "href": "https://sukrit.in/wp-content/uploads/2018/09/image1-1.png?utm_source=chatgpt.com",
+            "sourceVerified": true
           },
-          "categories": [
-            "All",
-            "Servo Electric Press"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "EB ECO-Bend All-Electric Press Brake 22T x 900 mm",
-              "category": "Servo Electric Press",
-              "desc": "EB ECO-Bend All-Electric Press Brake 22T x 900 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sukrit/servo-electric-press.webp",
-              "manufacturerUrl": "https://sukrit.in",
-              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-22t-x-900-mm",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "EB ECO-Bend All-Electric Press Brake 22T x 1250 mm",
-              "category": "Servo Electric Press",
-              "desc": "EB ECO-Bend All-Electric Press Brake 22T x 1250 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sukrit/servo-electric-press.webp",
-              "manufacturerUrl": "https://sukrit.in",
-              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-22t-x-1250-mm",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "EB ECO-Bend All-Electric Press Brake 40T x 1600 mm",
-              "category": "Servo Electric Press",
-              "desc": "EB ECO-Bend All-Electric Press Brake 40T x 1600 mm for servo electric press applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sukrit/servo-electric-press.webp",
-              "manufacturerUrl": "https://sukrit.in",
-              "href": "/products/metal-forming/sukrit/servo-electric-press/eb-eco-bend-all-electric-press-brake-40t-x-1600-mm",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://sukrit.in"
-        }
-      }
-    },
-    "hexagon": {
-      "name": "Hexagon",
-      "slug": "hexagon",
-      "description": "Explore Hexagon industrial machines and manufacturing solutions.",
-      "manufacturerUrl": "https://hexagon.com",
-      "categories": {
-        "optical-light-measuring-machines-olm": {
-          "title": "Optical Light Measuring Machines (OLM)",
-          "hero": {
-            "title": "Optical Light Measuring Machines (OLM)",
-            "description": "Explore Hexagon optical light measuring machines (olm) for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp"
-          },
-          "intro": {
-            "subtitle": "Metrology",
-            "heading": "Hexagon Optical Light Measuring Machines (OLM)",
-            "description": "Explore the Hexagon optical light measuring machines (olm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Optical Light Measuring Machines (OLM)"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "OPTIV M",
-              "category": "Optical Light Measuring Machines (OLM)",
-              "desc": "OPTIV M for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-m",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "OPTIV Reference",
-              "category": "Optical Light Measuring Machines (OLM)",
-              "desc": "OPTIV Reference for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-reference",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "VISIUS",
-              "category": "Optical Light Measuring Machines (OLM)",
-              "desc": "VISIUS for optical light measuring machines (olm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/visius",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://hexagon.com"
+          {
+            "id": 3,
+            "title": "ECO-Bend EB 40 Ton × 1600 mm",
+            "category": "Ball Screw Driven",
+            "desc": "The 40-tonne ECO-Bend EB model with a 1600 mm working length offers a higher-capacity option within Sukrit's all-electric press brake range. Servo-driven ball screws support controlled beam movement and repeatable bending for suitable sheet metal fabrication applications.",
+            "image": "/Images/products/sukrit/eco-bend-eb-40t-1600.webp",
+            "manufacturerUrl": "https://sukrit.in/press_brake/",
+            "href": "https://sukrit.in/wp-content/uploads/2018/09/advantage.png?utm_source=chatgpt.com",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://sukrit.in/press_brake/"
+      },
+
+      "belt-driven": {
+        "title": "Belt Driven",
+        "hero": {
+          "title": "Sukrit Belt Driven Machines",
+          "description": "Explore Sukrit machine tools and discuss the right drive configuration for your manufacturing requirements with MTAT Technologies.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/sukrit/belt-driven.webp"
         },
-        "coordinate-measuring-machine-cmm": {
-          "title": "Coordinate Measuring Machine (CMM)",
-          "hero": {
-            "title": "Coordinate Measuring Machine (CMM)",
-            "description": "Explore Hexagon coordinate measuring machine (cmm) for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp"
-          },
-          "intro": {
-            "subtitle": "Metrology",
-            "heading": "Hexagon Coordinate Measuring Machine (CMM)",
-            "description": "Explore the Hexagon coordinate measuring machine (cmm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Coordinate Measuring Machine (CMM)"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "MAESTRO",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "MAESTRO for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/maestro",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "GLOBAL S",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "GLOBAL S for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/global-s",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "Leitz Reference",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "Leitz Reference for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/leitz-reference",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "GLORY",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "GLORY for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/glory",
-              "sourceVerified": true
-            },
-            {
-              "id": 5,
-              "title": "ENSPEC",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "ENSPEC for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/enspec",
-              "sourceVerified": true
-            },
-            {
-              "id": 6,
-              "title": "TIGO SF",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "TIGO SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/tigo-sf",
-              "sourceVerified": true
-            },
-            {
-              "id": 7,
-              "title": "4.5.4 SF",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "4.5.4 SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/4-5-4-sf",
-              "sourceVerified": true
-            },
-            {
-              "id": 8,
-              "title": "7.10.7 SF",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "7.10.7 SF for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/7-10-7-sf",
-              "sourceVerified": true
-            },
-            {
-              "id": 9,
-              "title": "OPTIV M",
-              "category": "Coordinate Measuring Machine (CMM)",
-              "desc": "OPTIV M for coordinate measuring machine (cmm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/optiv-m",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://hexagon.com"
+        "intro": {
+          "subtitle": "Industrial Drive Systems",
+          "heading": "Sukrit Belt Driven Machine Solutions",
+          "description": "Sukrit documents belt-driven power transmission in its CNC turning machine range. However, its published ECO-Bend press brake documentation describes a servo-electric, ball-screw-driven design rather than a belt-driven press brake. Contact MTAT Technologies to confirm whether a suitable belt-driven product is available for this category."
         },
-        "romer-arm-portable-arm": {
-          "title": "Romer Arm (Portable Arm)",
-          "hero": {
-            "title": "Romer Arm (Portable Arm)",
-            "description": "Explore Hexagon romer arm (portable arm) for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/hexagon/romer-arm-portable-arm.webp"
-          },
-          "intro": {
-            "subtitle": "Metrology",
-            "heading": "Hexagon Romer Arm (Portable Arm)",
-            "description": "Explore the Hexagon romer arm (portable arm) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Romer Arm (Portable Arm)"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "Absolute Arm 7-Axis",
-              "category": "Romer Arm (Portable Arm)",
-              "desc": "Absolute Arm 7-Axis for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-7-axis",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "Absolute Arm 6-Axis",
-              "category": "Romer Arm (Portable Arm)",
-              "desc": "Absolute Arm 6-Axis for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-6-axis",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "Absolute Arm Compact",
-              "category": "Romer Arm (Portable Arm)",
-              "desc": "Absolute Arm Compact for romer arm (portable arm) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/romer-arm-portable-arm.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-compact",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://hexagon.com"
+        "categories": [
+          "All",
+          "Belt Driven"
+        ],
+        "products": [],
+        "manufacturerCategoryUrl": "https://sukrit.in/"
+      },
+
+      "servo-electric-press": {
+        "title": "Servo Electric Press",
+        "hero": {
+          "title": "Sukrit Servo Electric Press Brakes",
+          "description": "Experience precision sheet metal bending with Sukrit's ECO-Bend all-electric press brakes, featuring servo-driven movement, programmable controls and energy-efficient operation.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/sukrit/servo-electric-press.webp"
         },
-        "tool-and-job-probes": {
-          "title": "Tool and Job Probes",
-          "hero": {
-            "title": "Tool and Job Probes",
-            "description": "Explore Hexagon tool and job probes for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/hexagon/tool-and-job-probes.webp"
-          },
-          "intro": {
-            "subtitle": "Metrology",
-            "heading": "Hexagon Tool and Job Probes",
-            "description": "Explore the Hexagon tool and job probes range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Tool and Job Probes"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "Absolute Arm probes and accessories",
-              "category": "Tool and Job Probes",
-              "desc": "Absolute Arm probes and accessories for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/tool-and-job-probes/absolute-arm-probes-and-accessories",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "Touch-trigger probes",
-              "category": "Tool and Job Probes",
-              "desc": "Touch-trigger probes for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/tool-and-job-probes/touch-trigger-probes",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "Tool setting probes",
-              "category": "Tool and Job Probes",
-              "desc": "Tool setting probes for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/tool-and-job-probes/tool-setting-probes",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "Workpiece probing systems",
-              "category": "Tool and Job Probes",
-              "desc": "Workpiece probing systems for tool and job probes applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/hexagon/tool-and-job-probes.webp",
-              "manufacturerUrl": "https://hexagon.com",
-              "href": "/products/metrology/hexagon/tool-and-job-probes/workpiece-probing-systems",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://hexagon.com"
-        }
-      }
-    },
-    "sodick": {
-      "name": "Sodick",
-      "slug": "sodick",
-      "description": "Explore Sodick industrial machines and manufacturing solutions.",
-      "manufacturerUrl": "https://sodick.com/machines/",
-      "categories": {
-        "edm-machines": {
-          "title": "EDM Machines",
-          "hero": {
-            "title": "EDM Machines",
-            "description": "Explore Sodick edm machines for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/sodick/edm-machines.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Sodick EDM Machines",
-            "description": "Explore the Sodick edm machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "EDM Machines"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "AD Series Sinker EDM",
-              "category": "EDM Machines",
-              "desc": "AD Series Sinker EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/edm-machines/ad-series-sinker-edm",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "ALN Series Wire EDM",
-              "category": "EDM Machines",
-              "desc": "ALN Series Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/edm-machines/aln-series-wire-edm",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "ALC Series Wire EDM",
-              "category": "EDM Machines",
-              "desc": "ALC Series Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/edm-machines/alc-series-wire-edm",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "AP Series Micro Wire EDM",
-              "category": "EDM Machines",
-              "desc": "AP Series Micro Wire EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/edm-machines/ap-series-micro-wire-edm",
-              "sourceVerified": true
-            },
-            {
-              "id": 5,
-              "title": "Small Hole EDM",
-              "category": "EDM Machines",
-              "desc": "Small Hole EDM for edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/edm-machines/small-hole-edm",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://sodick.com/machines/"
+        "intro": {
+          "subtitle": "All-Electric Press Brake Technology",
+          "heading": "Sukrit ECO-Bend Servo Electric Press Brakes",
+          "description": "Sukrit's ECO-Bend EB Series combines brushless AC servo motors, synchronized ball screws and CNC controls to deliver controlled, repeatable sheet metal bending. The all-electric drive eliminates the hydraulic oil, pumps, valves and cylinders associated with conventional hydraulic press brakes. Published models include 22 Ton × 900 mm, 22 Ton × 1250 mm and 40 Ton × 1600 mm. Contact MTAT Technologies for current availability and configuration details."
         },
-        "wire-edm-machines": {
-          "title": "Wire EDM Machines",
-          "hero": {
-            "title": "Wire EDM Machines",
-            "description": "Explore Sodick wire edm machines for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/sodick/wire-edm-machines.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Sodick Wire EDM Machines",
-            "description": "Explore the Sodick wire edm machines range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Wire EDM Machines"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "ALN400G",
-              "category": "Wire EDM Machines",
-              "desc": "ALN400G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln400g",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "ALN600G",
-              "category": "Wire EDM Machines",
-              "desc": "ALN600G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln600g",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "ALN600GH",
-              "category": "Wire EDM Machines",
-              "desc": "ALN600GH for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln600gh",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "ALN800G",
-              "category": "Wire EDM Machines",
-              "desc": "ALN800G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aln800g",
-              "sourceVerified": true
-            },
-            {
-              "id": 5,
-              "title": "ALC400G",
-              "category": "Wire EDM Machines",
-              "desc": "ALC400G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/alc400g",
-              "sourceVerified": true
-            },
-            {
-              "id": 6,
-              "title": "ALC600G",
-              "category": "Wire EDM Machines",
-              "desc": "ALC600G for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/alc600g",
-              "sourceVerified": true
-            },
-            {
-              "id": 7,
-              "title": "AL400P",
-              "category": "Wire EDM Machines",
-              "desc": "AL400P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/al400p",
-              "sourceVerified": true
-            },
-            {
-              "id": 8,
-              "title": "AL600P",
-              "category": "Wire EDM Machines",
-              "desc": "AL600P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/al600p",
-              "sourceVerified": true
-            },
-            {
-              "id": 9,
-              "title": "AL800P",
-              "category": "Wire EDM Machines",
-              "desc": "AL800P for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/al800p",
-              "sourceVerified": true
-            },
-            {
-              "id": 10,
-              "title": "AP250L",
-              "category": "Wire EDM Machines",
-              "desc": "AP250L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/ap250l",
-              "sourceVerified": true
-            },
-            {
-              "id": 11,
-              "title": "AP450L",
-              "category": "Wire EDM Machines",
-              "desc": "AP450L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/ap450l",
-              "sourceVerified": true
-            },
-            {
-              "id": 12,
-              "title": "AQ750L",
-              "category": "Wire EDM Machines",
-              "desc": "AQ750L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq750l",
-              "sourceVerified": true
-            },
-            {
-              "id": 13,
-              "title": "AQ900L",
-              "category": "Wire EDM Machines",
-              "desc": "AQ900L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq900l",
-              "sourceVerified": true
-            },
-            {
-              "id": 14,
-              "title": "AQ1200L",
-              "category": "Wire EDM Machines",
-              "desc": "AQ1200L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq1200l",
-              "sourceVerified": true
-            },
-            {
-              "id": 15,
-              "title": "AQ1500L",
-              "category": "Wire EDM Machines",
-              "desc": "AQ1500L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/aq1500l",
-              "sourceVerified": true
-            },
-            {
-              "id": 16,
-              "title": "VN400Q",
-              "category": "Wire EDM Machines",
-              "desc": "VN400Q for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/vn400q",
-              "sourceVerified": true
-            },
-            {
-              "id": 17,
-              "title": "VN600Q",
-              "category": "Wire EDM Machines",
-              "desc": "VN600Q for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/vn600q",
-              "sourceVerified": true
-            },
-            {
-              "id": 18,
-              "title": "VL600QH",
-              "category": "Wire EDM Machines",
-              "desc": "VL600QH for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/vl600qh",
-              "sourceVerified": true
-            },
-            {
-              "id": 19,
-              "title": "AX350L",
-              "category": "Wire EDM Machines",
-              "desc": "AX350L for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/ax350l",
-              "sourceVerified": true
-            },
-            {
-              "id": 20,
-              "title": "EXC100L+",
-              "category": "Wire EDM Machines",
-              "desc": "EXC100L+ for wire edm machines applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/sodick/wire-edm-machines.webp",
-              "manufacturerUrl": "https://sodick.com/machines/",
-              "href": "/products/tool-room-software/sodick/wire-edm-machines/exc100l",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://sodick.com/machines/"
-        }
-      }
-    },
-    "pinnacle": {
-      "name": "Pinnacle",
-      "slug": "pinnacle",
-      "description": "Explore Pinnacle industrial machines and manufacturing solutions.",
-      "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-      "categories": {
-        "surface-grinders-semi-automatic": {
-          "title": "Surface Grinders (Semi Automatic)",
-          "hero": {
-            "title": "Surface Grinders (Semi Automatic)",
-            "description": "Explore Pinnacle surface grinders (semi automatic) for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Pinnacle Surface Grinders (Semi Automatic)",
-            "description": "Explore the Pinnacle surface grinders (semi automatic) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Surface Grinders (Semi Automatic)"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "GSH Series",
-              "category": "Surface Grinders (Semi Automatic)",
-              "desc": "GSH Series for surface grinders (semi automatic) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/gsh-series",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "PHR SEMI Series",
-              "category": "Surface Grinders (Semi Automatic)",
-              "desc": "PHR SEMI Series for surface grinders (semi automatic) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/phr-semi-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
-        },
-        "cnc-surface-grinders": {
-          "title": "CNC Surface Grinders",
-          "hero": {
-            "title": "CNC Surface Grinders",
-            "description": "Explore Pinnacle cnc surface grinders for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/pinnacle/cnc-surface-grinders.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Pinnacle CNC Surface Grinders",
-            "description": "Explore the Pinnacle cnc surface grinders range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC Surface Grinders"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "CNC 2X Series",
-              "category": "CNC Surface Grinders",
-              "desc": "CNC 2X Series for cnc surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/cnc-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-2x-series",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "CNC 3X Series",
-              "category": "CNC Surface Grinders",
-              "desc": "CNC 3X Series for cnc surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/cnc-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-3x-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
-        },
-        "rotary-surface-grinders": {
-          "title": "Rotary Surface Grinders",
-          "hero": {
-            "title": "Rotary Surface Grinders",
-            "description": "Explore Pinnacle rotary surface grinders for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/pinnacle/rotary-surface-grinders.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Pinnacle Rotary Surface Grinders",
-            "description": "Explore the Pinnacle rotary surface grinders range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Rotary Surface Grinders"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "PHR SEMI Series",
-              "category": "Rotary Surface Grinders",
-              "desc": "PHR SEMI Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-semi-series",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "PHR NC Series",
-              "category": "Rotary Surface Grinders",
-              "desc": "PHR NC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-nc-series",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "PHR CNC Series",
-              "category": "Rotary Surface Grinders",
-              "desc": "PHR CNC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-cnc-series",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "PVR CNC Series",
-              "category": "Rotary Surface Grinders",
-              "desc": "PVR CNC Series for rotary surface grinders applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/pinnacle/rotary-surface-grinders.webp",
-              "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
-              "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/pvr-cnc-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
-        }
-      }
-    },
-    "kiya": {
-      "name": "Kiya",
-      "slug": "kiya",
-      "description": "Explore Kiya industrial machines and manufacturing solutions.",
-      "manufacturerUrl": "https://kiyaproducts.com",
-      "categories": {
-        "cnc-hybrid-grinder-id-od": {
-          "title": "CNC Hybrid Grinder (ID/OD)",
-          "hero": {
-            "title": "CNC Hybrid Grinder (ID/OD)",
-            "description": "Explore Kiya cnc hybrid grinder (id/od) for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/cnc-hybrid-grinder-id-od.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya CNC Hybrid Grinder (ID/OD)",
-            "description": "Explore the Kiya cnc hybrid grinder (id/od) range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC Hybrid Grinder (ID/OD)"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "INEX Series",
-              "category": "CNC Hybrid Grinder (ID/OD)",
-              "desc": "INEX Series for cnc hybrid grinder (id/od) applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/cnc-hybrid-grinder-id-od.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/cnc-hybrid-grinder-id-od/inex-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        },
-        "cnc-external-cylindrical-grinder": {
-          "title": "CNC External Cylindrical Grinder",
-          "hero": {
-            "title": "CNC External Cylindrical Grinder",
-            "description": "Explore Kiya cnc external cylindrical grinder for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/cnc-external-cylindrical-grinder.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya CNC External Cylindrical Grinder",
-            "description": "Explore the Kiya cnc external cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC External Cylindrical Grinder"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "EG/AG Series",
-              "category": "CNC External Cylindrical Grinder",
-              "desc": "EG/AG Series for cnc external cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/cnc-external-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/cnc-external-cylindrical-grinder/eg-ag-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        },
-        "cnc-internal-cylindrical-grinder": {
-          "title": "CNC Internal Cylindrical Grinder",
-          "hero": {
-            "title": "CNC Internal Cylindrical Grinder",
-            "description": "Explore Kiya cnc internal cylindrical grinder for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/cnc-internal-cylindrical-grinder.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya CNC Internal Cylindrical Grinder",
-            "description": "Explore the Kiya cnc internal cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC Internal Cylindrical Grinder"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "IG Series",
-              "category": "CNC Internal Cylindrical Grinder",
-              "desc": "IG Series for cnc internal cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/cnc-internal-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/cnc-internal-cylindrical-grinder/ig-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        },
-        "cnc-external-bush-track-grinder": {
-          "title": "CNC External Bush/Track Grinder",
-          "hero": {
-            "title": "CNC External Bush/Track Grinder",
-            "description": "Explore Kiya cnc external bush/track grinder for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/cnc-external-bush-track-grinder.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya CNC External Bush/Track Grinder",
-            "description": "Explore the Kiya cnc external bush/track grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC External Bush/Track Grinder"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "EBG Series",
-              "category": "CNC External Bush/Track Grinder",
-              "desc": "EBG Series for cnc external bush/track grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/cnc-external-bush-track-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/cnc-external-bush-track-grinder/ebg-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        },
-        "hydraulic-cylindrical-grinder": {
-          "title": "Hydraulic Cylindrical Grinder",
-          "hero": {
-            "title": "Hydraulic Cylindrical Grinder",
-            "description": "Explore Kiya hydraulic cylindrical grinder for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya Hydraulic Cylindrical Grinder",
-            "description": "Explore the Kiya hydraulic cylindrical grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "Hydraulic Cylindrical Grinder"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "HCG-E 450",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-E 450 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-450",
-              "sourceVerified": true
-            },
-            {
-              "id": 2,
-              "title": "HCG-E 600",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-E 600 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-600",
-              "sourceVerified": true
-            },
-            {
-              "id": 3,
-              "title": "HCG-E 800",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-E 800 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-800",
-              "sourceVerified": true
-            },
-            {
-              "id": 4,
-              "title": "HCG-E 1000",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-E 1000 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-1000",
-              "sourceVerified": true
-            },
-            {
-              "id": 5,
-              "title": "HCG-E 1200",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-E 1200 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-e-1200",
-              "sourceVerified": true
-            },
-            {
-              "id": 6,
-              "title": "HCG-I 450",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-I 450 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-i-450",
-              "sourceVerified": true
-            },
-            {
-              "id": 7,
-              "title": "HCG-I 600",
-              "category": "Hydraulic Cylindrical Grinder",
-              "desc": "HCG-I 600 for hydraulic cylindrical grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-i-600",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        },
-        "cnc-lip-grinder": {
-          "title": "CNC LIP Grinder",
-          "hero": {
-            "title": "CNC LIP Grinder",
-            "description": "Explore Kiya cnc lip grinder for industrial manufacturing and precision production applications.",
-            "primaryBtn": "Explore Machines",
-            "secondaryBtn": "Enquire Now",
-            "bgImage": "/Images/products/kiya/cnc-lip-grinder.webp"
-          },
-          "intro": {
-            "subtitle": "Tool Room & Software",
-            "heading": "Kiya CNC LIP Grinder",
-            "description": "Explore the Kiya cnc lip grinder range. Confirm machine availability, configurations and technical specifications with MTAT Technologies."
-          },
-          "categories": [
-            "All",
-            "CNC LIP Grinder"
-          ],
-          "products": [
-            {
-              "id": 1,
-              "title": "LG Series",
-              "category": "CNC LIP Grinder",
-              "desc": "LG Series for cnc lip grinder applications. Contact MTAT Technologies to confirm current availability, configuration and specifications.",
-              "image": "/Images/products/kiya/cnc-lip-grinder.webp",
-              "manufacturerUrl": "https://kiyaproducts.com",
-              "href": "/products/tool-room-software/kiya/cnc-lip-grinder/lg-series",
-              "sourceVerified": true
-            }
-          ],
-          "manufacturerCategoryUrl": "https://kiyaproducts.com"
-        }
+        "categories": [
+          "All",
+          "Servo Electric Press"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "ECO-Bend EB CNC Servo Electric Press Brake",
+            "category": "Servo Electric Press",
+            "desc": "Sukrit's ECO-Bend EB Series is an all-electric CNC press brake designed for accurate and productive sheet metal bending. Brushless AC servo motors drive synchronized ball screws to move the press beam, supporting precise positioning and repeatable results. Features include a touchscreen controller, programmable Y-axis, direct angle programming, angle correction, stroke control and CNC backgauge options. Available model sizes listed by the manufacturer are 22 Ton × 900 mm, 22 Ton × 1250 mm and 40 Ton × 1600 mm.",
+            "image": "/Images/products/sukrit/servo-electric-press.webp",
+            "manufacturerUrl": "https://sukrit.in/press_brake/",
+            "href": "https://sukrit.in/wp-content/uploads/2018/09/Untitled.png?utm_source=chatgpt.com",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://sukrit.in/press_brake/"
       }
     }
+  },
+  "hexagon": {
+    "name": "Hexagon",
+    "slug": "hexagon",
+    "description": "Explore Hexagon metrology solutions, coordinate measuring machines, optical measuring systems, portable measuring arms and machine-tool probing technologies.",
+    "manufacturerUrl": "https://hexagon.com",
+    "categories": {
+      "optical-light-measuring-machines-olm": {
+        "title": "Optical Light Measuring Machines (OLM)",
+        "hero": {
+          "title": "Optical Light Measuring Machines (OLM)",
+          "description": "Discover Hexagon optical and multisensor measuring systems designed for accurate dimensional inspection of precision components.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/hexagon/optical-light-measuring-machines-olm.webp"
+        },
+        "intro": {
+          "subtitle": "Metrology",
+          "heading": "Hexagon Optical Measuring Machines",
+          "description": "Hexagon optical coordinate measuring systems combine non-contact vision measurement with configurable sensor technologies for inspecting delicate, complex and precision-manufactured components. Confirm regional availability and configurations with MTAT Technologies."
+        },
+        "categories": [
+          "All",
+          "Optical Light Measuring Machines (OLM)"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "OPTIV M",
+            "category": "Optical Light Measuring Machines (OLM)",
+            "desc": "OPTIV M is a modular multisensor optical coordinate measuring machine family designed for dimensional inspection of precision parts. Depending on configuration, it can combine vision measurement with tactile probing and other sensor options.",
+            "image": "/Images/products/hexagon/optiv-m.webp",
+            "manufacturerUrl": "https://hexagon.com/products/optiv-m-vision",
+            "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-m",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "OPTIV Reference",
+            "category": "Optical Light Measuring Machines (OLM)",
+            "desc": "OPTIV Reference is a high-accuracy multisensor coordinate measuring system for demanding inspection applications. Its OPTIV Dual technology supports optical and tactile measurement using independent sensor axes.",
+            "image": "/Images/products/hexagon/optiv-reference.webp",
+            "manufacturerUrl": "https://hexagon.com/products/optiv-reference",
+            "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/optiv-reference",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "VISIUS",
+            "category": "Optical Light Measuring Machines (OLM)",
+            "desc": "VISIUS is an optical coordinate measuring machine designed for automated, high-speed 2D vision measurement. It supports non-contact inspection of small features and delicate components, with guided workflows through Metus software.",
+            "image": "/Images/products/hexagon/visius.webp",
+            "manufacturerUrl": "https://hexagon.com/products/visius",
+            "href": "/products/metrology/hexagon/optical-light-measuring-machines-olm/visius",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/coordinate-measuring-machines/multisensor-optical-cmms"
+      },
+
+      "coordinate-measuring-machine-cmm": {
+        "title": "Coordinate Measuring Machine (CMM)",
+        "hero": {
+          "title": "Coordinate Measuring Machine (CMM)",
+          "description": "Explore Hexagon coordinate measuring machines for accurate dimensional inspection, quality control and precision manufacturing.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/hexagon/coordinate-measuring-machine-cmm.webp"
+        },
+        "intro": {
+          "subtitle": "Metrology",
+          "heading": "Hexagon Coordinate Measuring Machines",
+          "description": "Hexagon CMM solutions support dimensional inspection across laboratories and production environments. The portfolio includes high-performance systems, versatile bridge CMMs and machines designed for shop-floor measurement. Confirm machine configuration and regional availability with MTAT Technologies."
+        },
+        "categories": [
+          "All",
+          "Coordinate Measuring Machine (CMM)"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "MAESTRO",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "MAESTRO is an all-digital, connected coordinate measuring machine platform designed to support high-throughput inspection, adaptable measurement configurations and integration with modern manufacturing systems.",
+            "image": "/Images/products/hexagon/maestro.webp",
+            "manufacturerUrl": "https://hexagon.com/products/maestro",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/maestro",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "GLORY",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "GLORY is a configurable coordinate measuring machine platform for general-purpose dimensional inspection. Available configurations support touch-trigger probing, scanning probes and optical sensors to suit different measurement requirements.",
+            "image": "/Images/products/hexagon/glory.webp",
+            "manufacturerUrl": "https://hexagon.com/products/glory",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/glory",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "ENSPEC",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "ENSPEC is a bridge CMM range designed to make professional-grade dimensional measurement accessible to growing manufacturers. Its configurations support different inspection tasks, with PC-DMIS metrology software and upgrade options.",
+            "image": "/Images/products/hexagon/enspec.webp",
+            "manufacturerUrl": "https://hexagon.com/products/coordinate-measuring-machines",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/enspec",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "TIGO SF",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "TIGO SF is a compact, protected coordinate measuring machine designed for shop-floor inspection. Its robust construction and enclosed moving components support reliable measurement in demanding production environments.",
+            "image": "/Images/products/hexagon/tigo-sf.webp",
+            "manufacturerUrl": "https://hexagon.com/products/tigo-sf",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/tigo-sf",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "Leitz Reference",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "Leitz Reference is a high-accuracy bridge coordinate measuring machine designed for demanding form and profile tolerances. Configurations can be selected to suit precision inspection and metrology laboratory requirements.",
+            "image": "/Images/products/hexagon/leitz-reference.webp",
+            "manufacturerUrl": "https://hexagon.com/products/coordinate-measuring-machines",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/leitz-reference",
+            "sourceVerified": true
+          },
+          {
+            "id": 6,
+            "title": "OPTIV M",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "OPTIV M is a multisensor optical CMM family for measuring geometric features on precision parts. Depending on the selected configuration, vision, tactile probing and additional sensors can be combined in one inspection workflow.",
+            "image": "/Images/products/hexagon/optiv-m.webp",
+            "manufacturerUrl": "https://hexagon.com/products/optiv-m-vision",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/optiv-m",
+            "sourceVerified": true
+          },
+          {
+            "id": 7,
+            "title": "OPTIV Reference",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "OPTIV Reference is a high-precision multisensor CMM intended for complex three-dimensional measurements. Its optical and tactile sensor options support inspection in demanding manufacturing and metrology applications.",
+            "image": "/Images/products/hexagon/optiv-reference.webp",
+            "manufacturerUrl": "https://hexagon.com/products/optiv-reference",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/optiv-reference",
+            "sourceVerified": true
+          },
+          {
+            "id": 8,
+            "title": "VISIUS",
+            "category": "Coordinate Measuring Machine (CMM)",
+            "desc": "VISIUS is an optical CMM for fast, non-contact 2D dimensional measurement. It is designed for production quality control where speed, straightforward operation and repeatable measurement results are important.",
+            "image": "/Images/products/hexagon/visius.webp",
+            "manufacturerUrl": "https://hexagon.com/products/visius",
+            "href": "/products/metrology/hexagon/coordinate-measuring-machine-cmm/visius",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://hexagon.com/products/coordinate-measuring-machines"
+      },
+
+      "romer-arm-portable-arm": {
+        "title": "Romer Arm (Portable Arm)",
+        "hero": {
+          "title": "Romer Arm (Portable Arm)",
+          "description": "Discover Hexagon portable measuring arms for flexible, high-accuracy probing, 3D laser scanning and dimensional inspection directly at the component.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/hexagon/romer-arm-portable-arm.webp"
+        },
+        "intro": {
+          "subtitle": "Portable Metrology",
+          "heading": "Hexagon Absolute Arm",
+          "description": "Hexagon Absolute Arm systems bring portable metrology to inspection laboratories, production floors and large components. Select from configurations designed for tactile probing, 3D scanning and access to confined measurement areas."
+        },
+        "categories": [
+          "All",
+          "Romer Arm (Portable Arm)"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "Absolute Arm 7-Axis",
+            "category": "Romer Arm (Portable Arm)",
+            "desc": "The Absolute Arm 7-Axis combines tactile probing with 3D laser scanning and optional non-destructive testing capabilities. Its articulated design supports flexible inspection of complex geometries and hard-to-reach features.",
+            "image": "/Images/products/hexagon/absolute-arm-7-axis.webp",
+            "manufacturerUrl": "https://hexagon.com/products/absolute-arm",
+            "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-7-axis",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "Absolute Arm 6-Axis",
+            "category": "Romer Arm (Portable Arm)",
+            "desc": "The Absolute Arm 6-Axis is designed primarily for precise tactile probing. It provides a portable measurement solution for inspection tasks in laboratories, workshops and manufacturing environments.",
+            "image": "/Images/products/hexagon/absolute-arm-6-axis.webp",
+            "manufacturerUrl": "https://hexagon.com/products/absolute-arm",
+            "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-6-axis",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "Absolute Arm Compact",
+            "category": "Romer Arm (Portable Arm)",
+            "desc": "Absolute Arm Compact is a portable measuring-arm configuration intended for high-accuracy probing in compact workspaces and applications where access around small or complex components is important.",
+            "image": "/Images/products/hexagon/absolute-arm-compact.webp",
+            "manufacturerUrl": "https://hexagon.com/products/absolute-arm",
+            "href": "/products/metrology/hexagon/romer-arm-portable-arm/absolute-arm-compact",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://hexagon.com/products/absolute-arm"
+      },
+
+      "tool-and-job-probes": {
+        "title": "Tool and Job Probes",
+        "hero": {
+          "title": "Tool and Job Probes",
+          "description": "Explore Hexagon machine-tool probing systems and tool setters for workpiece alignment, in-process measurement and reliable tool inspection.",
+          "primaryBtn": "Explore Systems",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/hexagon/tool-and-job-probes.webp"
+        },
+        "intro": {
+          "subtitle": "Machine Tool Metrology",
+          "heading": "Hexagon Tool and Workpiece Probing Systems",
+          "description": "Hexagon machine-tool measurement solutions help manufacturers establish workpiece positions, inspect dimensions during machining and measure tool geometry. The portfolio includes tactile probes, radio and infrared probing systems, and tool setters. Confirm compatibility with the machine tool and controller before ordering."
+        },
+        "categories": [
+          "All",
+          "Tool and Job Probes"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "m&h TP-R-400",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h TP-R-400 is a radio-wave touch probe for workpiece measurement directly on compatible machine tools. Its modular design supports flexible probing applications during setup and production.",
+            "image": "/Images/products/hexagon/tp-r-400.webp",
+            "manufacturerUrl": "https://hexagon.com/products/machine-tool-measuring-systems",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/tp-r-400",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "m&h RWP20.50",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h RWP20.50 is a radio-wave touch-probe system with a modular design and interchangeable measuring units. It supports workpiece setup, alignment and in-process inspection on compatible machine tools.",
+            "image": "/Images/products/hexagon/rwp20-50.webp",
+            "manufacturerUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/machine-tool-measurement/radio-wave-probing-systems",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/rwp20-50",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "m&h TS-R-400 Tool Setter",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h TS-R-400 is a radio tool-setting system used to determine tool geometry. Tool measurement data can support machine setup and production quality when used with a compatible machine-tool system.",
+            "image": "/Images/products/hexagon/ts-r-400.webp",
+            "manufacturerUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/machine-tool-measurement/tool-setters",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/ts-r-400-tool-setter",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "m&h IRT35.70 Infrared Tool Setter",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h IRT35.70 is an infrared tool setter designed for milling machines and machining centres. It measures tool geometry directly on the machine and supports automated tool measurement workflows.",
+            "image": "/Images/products/hexagon/irt35-70.webp",
+            "manufacturerUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/machine-tool-measurement/tool-setters",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/irt35-70-infrared-tool-setter",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "m&h LTS35.65 Laser Tool Setter",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h LTS35.65 is a non-contact laser tool setter for tool measurement, machine setup and tool-breakage monitoring. Confirm the appropriate model and machine compatibility for the intended application.",
+            "image": "/Images/products/hexagon/lts35-65.webp",
+            "manufacturerUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/machine-tool-measurement/laser-tool-setters",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/lts35-65-laser-tool-setter",
+            "sourceVerified": true
+          },
+          {
+            "id": 6,
+            "title": "m&h TS35.20 Tool Setter",
+            "category": "Tool and Job Probes",
+            "desc": "The m&h TS35.20 is a tactile tool setter for milling and machining centres. It is designed to determine tool geometry as part of a machine-tool measurement workflow.",
+            "image": "/Images/products/hexagon/ts35-20.webp",
+            "manufacturerUrl": "https://hexagon.com/products/product-groups/measurement-inspection-hardware/machine-tool-measurement/tool-setters",
+            "href": "/products/metrology/hexagon/tool-and-job-probes/ts35-20-tool-setter",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://hexagon.com/products/machine-tool-measuring-systems"
+      }
+    }
+  },
+
+  "sodick": {
+    "name": "Sodick",
+    "slug": "sodick",
+    "description": "Explore Sodick precision EDM machines engineered for accurate machining, complex geometries, fine surface finishes and demanding toolroom applications.",
+    "manufacturerUrl": "https://sodick.com/",
+    "categories": {
+      "edm-machines": {
+        "title": "EDM Machines",
+        "hero": {
+          "title": "Sodick EDM Machines",
+          "description": "Discover CNC sinker EDM and small-hole EDM solutions for precision mold making, die manufacturing and intricate machining applications.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/sodick/edm-machines.webp"
+        },
+        "intro": {
+          "subtitle": "Electrical Discharge Machining",
+          "heading": "Sodick CNC EDM Machines",
+          "description": "Sodick electrical discharge machining systems use controlled electrical discharges to machine electrically conductive materials. Explore sinker EDM and small-hole drilling solutions for precision cavities, molds, dies and fine holes. Confirm the suitable machine configuration with MTAT Technologies."
+        },
+        "categories": [
+          "All",
+          "Sinker EDM",
+          "Small-Hole EDM"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "AD Series",
+            "category": "Sinker EDM",
+            "desc": "Sodick AD Series CNC sinker EDM machines are designed for precision cavity machining, mold making and general production applications. Linear motor technology and advanced discharge control support accurate machining and fine surface finishes.",
+            "image": "/Images/products/sodick/ad-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/sinker-edm/",
+            "href": "/products/tool-room-software/sodick/edm-machines/ad-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "ALG+ Series",
+            "category": "Sinker EDM",
+            "desc": "The Sodick ALG+ Series combines linear motor drives, advanced discharge control and CNC programming technology for precision die-sinking operations. It is designed for accurate cavity machining and demanding mold and die applications.",
+            "image": "/Images/products/sodick/alg-plus-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/sinker-edm/",
+            "href": "/products/tool-room-software/sodick/edm-machines/alg-plus-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "AG Series",
+            "category": "Sinker EDM",
+            "desc": "Sodick AG Series sinker EDM machines provide high-precision electrical discharge machining for molds, dies and complex conductive components. The range includes machines for different workpiece sizes and production requirements.",
+            "image": "/Images/products/sodick/ag-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/sinker-edm/",
+            "href": "/products/tool-room-software/sodick/edm-machines/ag-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "AP30L",
+            "category": "Sinker EDM",
+            "desc": "The AP30L is a high-precision sinker EDM designed for micro-machining applications requiring intricate features, tight tolerances and fine surface finishes. Its oil-dielectric technology supports demanding precision applications.",
+            "image": "/Images/products/sodick/ap30l.webp",
+            "manufacturerUrl": "https://sodick.com/machines/sinker-edm/",
+            "href": "/products/tool-room-software/sodick/edm-machines/ap30l",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "K1C",
+            "category": "Small-Hole EDM",
+            "desc": "The Sodick K1C is a manually operated small-hole EDM drilling machine designed for producing small holes in electrically conductive materials. It offers a straightforward solution for specialised drilling requirements.",
+            "image": "/Images/products/sodick/k1c.webp",
+            "manufacturerUrl": "https://sodick.com/technology/edm-technology/",
+            "href": "/products/tool-room-software/sodick/edm-machines/k1c",
+            "sourceVerified": true
+          },
+          {
+            "id": 6,
+            "title": "K3HS",
+            "category": "Small-Hole EDM",
+            "desc": "The Sodick K3HS is a CNC-controlled small-hole EDM drilling machine designed for production applications that require repeatable hole machining and automated operation capabilities.",
+            "image": "/Images/products/sodick/k3hs.webp",
+            "manufacturerUrl": "https://sodick.com/technology/edm-technology/",
+            "href": "/products/tool-room-software/sodick/edm-machines/k3hs",
+            "sourceVerified": true
+          },
+          {
+            "id": 7,
+            "title": "K4HL",
+            "category": "Small-Hole EDM",
+            "desc": "The Sodick K4HL is a small-hole EDM drilling solution designed for extended production operation and automation compatibility. It is suitable for manufacturers requiring consistent hole drilling in conductive workpieces.",
+            "image": "/Images/products/sodick/k4hl.webp",
+            "manufacturerUrl": "https://sodick.com/technology/edm-technology/",
+            "href": "/products/tool-room-software/sodick/edm-machines/k4hl",
+            "sourceVerified": true
+          },
+          {
+            "id": 8,
+            "title": "K1BL",
+            "category": "Small-Hole EDM",
+            "desc": "The Sodick K1BL is designed for specialised small-hole EDM applications, including very small holes in electrically conductive materials. Confirm electrode, hole-size and workpiece requirements for the intended application.",
+            "image": "/Images/products/sodick/k1bl.webp",
+            "manufacturerUrl": "https://sodick.com/technology/edm-technology/",
+            "href": "/products/tool-room-software/sodick/edm-machines/k1bl",
+            "sourceVerified": true
+          },
+          {
+            "id": 9,
+            "title": "K3BL",
+            "category": "Small-Hole EDM",
+            "desc": "The Sodick K3BL is a small-hole drilling EDM designed for precision drilling across a range of electrode and hole sizes. Automation options can support production workflows requiring repeated drilling operations.",
+            "image": "/Images/products/sodick/k3bl.webp",
+            "manufacturerUrl": "https://sodick.com/technology/edm-technology/",
+            "href": "/products/tool-room-software/sodick/edm-machines/k3bl",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://sodick.com/machines/sinker-edm/"
+      },
+
+      "wire-edm-machines": {
+        "title": "Wire EDM Machines",
+        "hero": {
+          "title": "Sodick Wire EDM Machines",
+          "description": "Explore precision wire-cut EDM machines designed for intricate profiles, accurate contours, fine finishes and complex tooling applications.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/sodick/wire-edm-machines.webp"
+        },
+        "intro": {
+          "subtitle": "Wire Electrical Discharge Machining",
+          "heading": "Sodick Precision Wire EDM",
+          "description": "Sodick Wire EDM machines use a continuously fed wire electrode to cut complex shapes in electrically conductive materials. The range includes high-performance production machines, precision die-machining systems, micro-wire EDMs and large-format machines. Select a configuration based on workpiece dimensions, taper requirements and accuracy needs."
+        },
+        "categories": [
+          "All",
+          "Wire EDM Machines"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "ALN Series",
+            "category": "Wire EDM Machines",
+            "desc": "The ALN Series is a high-performance wire EDM range featuring rigid linear motor technology, advanced control systems and automated wire-threading capabilities. Models accommodate different workpiece sizes and machining requirements.",
+            "image": "/Images/products/sodick/aln-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/aln-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "ALC Series",
+            "category": "Wire EDM Machines",
+            "desc": "Sodick ALC Series wire EDM machines combine a rigid linear motor drive system with advanced SPW power technology. The enclosed design and precision motion control support demanding production and toolroom applications.",
+            "image": "/Images/products/sodick/alc-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/alc-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "ALP Series",
+            "category": "Wire EDM Machines",
+            "desc": "The ALP Series is engineered for high-precision wire EDM applications requiring excellent dimensional accuracy and surface finish. Its precision-oriented construction supports complex profiles and demanding die manufacturing tasks.",
+            "image": "/Images/products/sodick/alp-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/alp-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "AP Series",
+            "category": "Wire EDM Machines",
+            "desc": "Sodick AP Series micro-wire EDM machines are designed for small, intricate components that require extremely fine machining accuracy. Oil-dielectric technology supports precision cutting and fine surface finishes.",
+            "image": "/Images/products/sodick/ap-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/ap-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 5,
+            "title": "AQ Series",
+            "category": "Wire EDM Machines",
+            "desc": "The AQ Series includes large-format wire EDM machines designed for oversized workpieces, large tooling and extreme-taper cutting applications. Multiple machine sizes provide different axis travels and work envelopes.",
+            "image": "/Images/products/sodick/aq-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/aq-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 6,
+            "title": "VN/VL Series",
+            "category": "Wire EDM Machines",
+            "desc": "Sodick VN and VL Series wire EDM machines are designed to balance precision, productivity and ease of operation. Linear motor drives and automated wire threading support consistent machining performance.",
+            "image": "/Images/products/sodick/vn-vl-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/vn-vl-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 7,
+            "title": "AX/EXC Series",
+            "category": "Wire EDM Machines",
+            "desc": "The AX and EXC Series are designed for high-accuracy micro-machining and applications with demanding tolerances. Their precision-oriented construction supports small features and complex geometries.",
+            "image": "/Images/products/sodick/ax-exc-series.webp",
+            "manufacturerUrl": "https://sodick.com/machines/wire-edm/",
+            "href": "/products/tool-room-software/sodick/wire-edm-machines/ax-exc-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://sodick.com/machines/wire-edm/"
+      }
+    }
+  },
+
+  "pinnacle": {
+    "name": "Pinnacle",
+    "slug": "pinnacle",
+    "description": "Explore Pinnacle precision surface grinding machines for flatness, surface finish, dimensional accuracy and efficient production grinding.",
+    "manufacturerUrl": "https://www.pinnaclegrinder.com/",
+    "categories": {
+      "surface-grinders-semi-automatic": {
+        "title": "Surface Grinders (Semi Automatic)",
+        "hero": {
+          "title": "Semi-Automatic Surface Grinders",
+          "description": "Discover Pinnacle surface grinders designed for accurate flat-surface finishing, stable operation and dependable workshop performance.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/pinnacle/surface-grinders-semi-automatic.webp"
+        },
+        "intro": {
+          "subtitle": "Surface Grinding",
+          "heading": "Pinnacle Semi-Automatic Surface Grinding Machines",
+          "description": "Pinnacle surface grinding machines are designed for precision finishing of metal components, tools and dies. The range includes hydraulic semi-automatic reciprocating-table machines and semi-automatic rotary-table grinders. Machine selection depends on job dimensions, required surface finish and production volume."
+        },
+        "categories": [
+          "All",
+          "Surface Grinders (Semi Automatic)"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "GSH Series",
+            "category": "Surface Grinders (Semi Automatic)",
+            "desc": "The GSH Series consists of hydraulic semi-automatic horizontal-spindle surface grinders with reciprocating tables and a moving-column design. The range covers table sizes from approximately 500 × 250 mm to 3000 × 500 mm.",
+            "image": "/Images/products/pinnacle/gsh-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+            "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/gsh-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "PHR SEMI Series",
+            "category": "Surface Grinders (Semi Automatic)",
+            "desc": "The PHR SEMI Series comprises semi-automatic horizontal-spindle rotary-table surface grinders. Its hydrodynamic rotary table is designed to support stable grinding of components requiring accurate flat surfaces.",
+            "image": "/Images/products/pinnacle/phr-semi-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/horizontal-rotary-surface-grinder-machine.html",
+            "href": "/products/tool-room-software/pinnacle/surface-grinders-semi-automatic/phr-semi-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/products.html"
+      },
+
+      "cnc-surface-grinders": {
+        "title": "CNC Surface Grinders",
+        "hero": {
+          "title": "CNC Surface Grinding Machines",
+          "description": "Explore Pinnacle CNC surface grinders engineered for programmable grinding cycles, accurate axis movement and repeatable surface finishing.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/pinnacle/cnc-surface-grinders.webp"
+        },
+        "intro": {
+          "subtitle": "CNC Grinding Technology",
+          "heading": "Pinnacle CNC Surface Grinders",
+          "description": "Pinnacle CNC surface grinding machines support programmable grinding cycles and precision control of machine axes. The CNC 2X and 3X series feature moving-column designs and options for automated dressing and compensation, making them suitable for precision and production grinding."
+        },
+        "categories": [
+          "All",
+          "CNC Surface Grinders"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "CNC 2X Series",
+            "category": "CNC Surface Grinders",
+            "desc": "The CNC 2X Series comprises two-axis CNC-controlled horizontal-spindle reciprocating-table surface grinders. Automatic dressing and compensation options support repeatable grinding operations and precision finishing.",
+            "image": "/Images/products/pinnacle/cnc-2x-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/cnc-surface-grinding-machine.html",
+            "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-2x-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "CNC 3X Series",
+            "category": "CNC Surface Grinders",
+            "desc": "The CNC 3X Series offers three-axis CNC-controlled surface grinding with programmable grinding cycles. Its moving-column design, controlled axes and optional automatic dressing functions support accurate, repeatable production.",
+            "image": "/Images/products/pinnacle/cnc-3x-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/cnc-surface-grinding-machine.html",
+            "href": "/products/tool-room-software/pinnacle/cnc-surface-grinders/cnc-3x-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/cnc-surface-grinding-machine.html"
+      },
+
+      "rotary-surface-grinders": {
+        "title": "Rotary Surface Grinders",
+        "hero": {
+          "title": "Rotary Surface Grinding Machines",
+          "description": "Discover Pinnacle rotary surface grinders designed for precision grinding of flat components using horizontal or vertical spindle configurations.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/pinnacle/rotary-surface-grinders.webp"
+        },
+        "intro": {
+          "subtitle": "Rotary Table Grinding",
+          "heading": "Pinnacle Rotary Surface Grinders",
+          "description": "Pinnacle rotary surface grinders are designed for machining components that require flatness, consistent surface finish and repeatable results. The product range includes semi-automatic, NC-controlled and CNC horizontal-spindle machines, as well as CNC vertical-spindle rotary grinders."
+        },
+        "categories": [
+          "All",
+          "Rotary Surface Grinders"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "PHR SEMI Series",
+            "category": "Rotary Surface Grinders",
+            "desc": "The PHR SEMI Series features semi-automatic horizontal-spindle rotary-table surface grinders. Available table diameters range from 400 mm to 800 mm, depending on model.",
+            "image": "/Images/products/pinnacle/phr-semi-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/horizontal-rotary-surface-grinder-machine.html",
+            "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-semi-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "PHR NC Series",
+            "category": "Rotary Surface Grinders",
+            "desc": "The PHR NC Series comprises NC-controlled horizontal-spindle rotary-table surface grinders for automated grinding operations. The series offers configurations with table diameters from approximately 500 mm to 1500 mm.",
+            "image": "/Images/products/pinnacle/phr-nc-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/rotary-surface-grinding-machine.html",
+            "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-nc-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 3,
+            "title": "PHR CNC Series",
+            "category": "Rotary Surface Grinders",
+            "desc": "The PHR CNC Series consists of CNC-controlled horizontal-spindle rotary-table surface grinders with programmable axes and automatic dressing and compensation options. Models cover a range of component diameters and grinding requirements.",
+            "image": "/Images/products/pinnacle/phr-cnc-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/rotary-surface-grinding-machine.html",
+            "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/phr-cnc-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 4,
+            "title": "PVR CNC Series",
+            "category": "Rotary Surface Grinders",
+            "desc": "The PVR CNC Series features CNC-controlled vertical-spindle rotary-table surface grinders. This configuration is intended for surface grinding applications suited to vertical-spindle machining and rotary-table workholding.",
+            "image": "/Images/products/pinnacle/pvr-cnc-series.webp",
+            "manufacturerUrl": "https://www.pinnaclegrinder.com/products.html",
+            "href": "/products/tool-room-software/pinnacle/rotary-surface-grinders/pvr-cnc-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://www.pinnaclegrinder.com/rotary-surface-grinding-machine.html"
+      }
+    }
+  },
+
+  "kiya": {
+    "name": "Kiya",
+    "slug": "kiya",
+    "description": "Explore Kiya precision grinding machines for internal and external cylindrical grinding, hybrid ID/OD grinding, bush and track grinding, hydraulic grinding and lip grinding applications.",
+    "manufacturerUrl": "https://kiyaproducts.com/",
+    "categories": {
+      "cnc-hybrid-grinder-id-od": {
+        "title": "CNC Hybrid Grinder (ID/OD)",
+        "hero": {
+          "title": "CNC Hybrid Grinder (ID/OD)",
+          "description": "Discover Kiya CNC hybrid grinding technology for internal, external and face grinding operations in a single setup.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/cnc-hybrid-grinder-id-od.webp"
+        },
+        "intro": {
+          "subtitle": "CNC Precision Grinding",
+          "heading": "Kiya INEX Series CNC Hybrid Grinder",
+          "description": "The Kiya INEX Series is designed for combined internal and external grinding operations. Its dual-wheelhead arrangement supports ID, OD, face, groove, radius, step and taper grinding in a single setup, helping reduce repositioning and improve concentricity."
+        },
+        "categories": [
+          "All",
+          "CNC Hybrid Grinder (ID/OD)"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "INEX-40",
+            "category": "CNC Hybrid Grinder (ID/OD)",
+            "desc": "The INEX-40 CNC hybrid grinder supports multiple internal and external grinding operations in a single chucking. Its dual independent wheelheads, rigid cast-iron bed and CNC-controlled axes are designed for accurate multi-operation grinding.",
+            "image": "/Images/products/kiya/inex-40.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/our-products/cnc-hybrid-grinder-inex-series/",
+            "href": "/products/tool-room-software/kiya/cnc-hybrid-grinder-id-od/inex-40",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/our-products/cnc-hybrid-grinder-inex-series/"
+      },
+
+      "cnc-external-cylindrical-grinder": {
+        "title": "CNC External Cylindrical Grinder",
+        "hero": {
+          "title": "CNC External Cylindrical Grinders",
+          "description": "Explore Kiya CNC cylindrical grinders for precision external grinding of shafts, rollers and cylindrical components.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/cnc-external-cylindrical-grinder.webp"
+        },
+        "intro": {
+          "subtitle": "Cylindrical Grinding",
+          "heading": "Kiya EG/AG Series CNC External Cylindrical Grinders",
+          "description": "Kiya EG/AG Series CNC external cylindrical grinders are designed for precision grinding of cylindrical workpieces. CNC-controlled axes, programmable grinding cycles and optional measuring and dressing accessories support repeatable production and accurate finishing."
+        },
+        "categories": [
+          "All",
+          "CNC External Cylindrical Grinder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "EG Series",
+            "category": "CNC External Cylindrical Grinder",
+            "desc": "The EG Series provides CNC external cylindrical grinding for small-to-medium workpieces. Its programmable grinding and dressing cycles support repeatability, dimensional control and efficient production grinding.",
+            "image": "/Images/products/kiya/eg-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/",
+            "href": "/products/tool-room-software/kiya/cnc-external-cylindrical-grinder/eg-series",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "AG Series",
+            "category": "CNC External Cylindrical Grinder",
+            "desc": "The AG Series is part of Kiya's CNC external cylindrical grinding range, designed for controlled grinding cycles and precision finishing. Confirm model capacity, controller and available options for the required application.",
+            "image": "/Images/products/kiya/ag-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/",
+            "href": "/products/tool-room-software/kiya/cnc-external-cylindrical-grinder/ag-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/"
+      },
+
+      "cnc-internal-cylindrical-grinder": {
+        "title": "CNC Internal Cylindrical Grinder",
+        "hero": {
+          "title": "CNC Internal Cylindrical Grinders",
+          "description": "Discover Kiya internal grinding solutions for accurate bore finishing and precision machining of internal cylindrical surfaces.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/cnc-internal-cylindrical-grinder.webp"
+        },
+        "intro": {
+          "subtitle": "Internal Grinding",
+          "heading": "Kiya IG Series CNC Internal Cylindrical Grinders",
+          "description": "Kiya IG Series machines are designed for precision internal cylindrical grinding of bores and internal features. CNC-controlled grinding cycles support repeatable finishing for bearing components and other precision-manufactured parts."
+        },
+        "categories": [
+          "All",
+          "CNC Internal Cylindrical Grinder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "IG Series",
+            "category": "CNC Internal Cylindrical Grinder",
+            "desc": "The IG Series CNC internal cylindrical grinders are designed for accurate bore grinding and repeatable internal finishing. Model selection depends on bore diameter, grinding depth, workpiece dimensions and production requirements.",
+            "image": "/Images/products/kiya/ig-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/",
+            "href": "/products/tool-room-software/kiya/cnc-internal-cylindrical-grinder/ig-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/"
+      },
+
+      "cnc-external-bush-track-grinder": {
+        "title": "CNC External Bush/Track Grinder",
+        "hero": {
+          "title": "CNC External Bush/Track Grinders",
+          "description": "Explore Kiya CNC grinding solutions for external bush, track and cylindrical component finishing.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/cnc-external-bush-track-grinder.webp"
+        },
+        "intro": {
+          "subtitle": "Special-Purpose Grinding",
+          "heading": "Kiya EBG Series External Bush/Track Grinder",
+          "description": "The Kiya EBG Series is designed for external grinding applications involving bush and track-type components. Its purpose-oriented machine configuration supports repeatable finishing and dimensional consistency in production environments."
+        },
+        "categories": [
+          "All",
+          "CNC External Bush/Track Grinder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "EBG Series",
+            "category": "CNC External Bush/Track Grinder",
+            "desc": "The EBG Series CNC external bush and track grinder is designed for precision finishing of specialised cylindrical components. Confirm the available configuration and workpiece capacity with the manufacturer for your application.",
+            "image": "/Images/products/kiya/ebg-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/",
+            "href": "/products/tool-room-software/kiya/cnc-external-bush-track-grinder/ebg-series",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/"
+      },
+
+      "hydraulic-cylindrical-grinder": {
+        "title": "Hydraulic Cylindrical Grinder",
+        "hero": {
+          "title": "Hydraulic Cylindrical Grinders",
+          "description": "Discover Kiya hydraulic cylindrical grinding machines for reliable external and internal grinding of precision cylindrical components.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/hydraulic-cylindrical-grinder.webp"
+        },
+        "intro": {
+          "subtitle": "Hydraulic Grinding",
+          "heading": "Kiya HCG Series Hydraulic Cylindrical Grinders",
+          "description": "Kiya HCG Series hydraulic cylindrical grinders are designed for external and internal cylindrical grinding applications. The range includes multiple between-centres capacities and dedicated internal grinding configurations for different workpiece requirements."
+        },
+        "categories": [
+          "All",
+          "Hydraulic Cylindrical Grinder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "HCG External Cylindrical Grinder",
+            "category": "Hydraulic Cylindrical Grinder",
+            "desc": "The HCG external cylindrical grinding range includes machines with between-centres capacities from 450 mm to 1200 mm, depending on model. These machines are designed for external grinding of cylindrical workpieces and precision finishing.",
+            "image": "/Images/products/kiya/hcg-external-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/our-products/hydraulic-cylindrical-grinders-hcg-series/",
+            "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-external-cylindrical-grinder",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "HCG Internal Cylindrical Grinder",
+            "category": "Hydraulic Cylindrical Grinder",
+            "desc": "The HCG internal grinding range is designed for accurate internal bore finishing. The published range includes HCG-I 450 and HCG-I 600 configurations, with specifications dependent on model.",
+            "image": "/Images/products/kiya/hcg-internal-series.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/our-products/hydraulic-cylindrical-grinders-hcg-series/",
+            "href": "/products/tool-room-software/kiya/hydraulic-cylindrical-grinder/hcg-internal-cylindrical-grinder",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/our-products/hydraulic-cylindrical-grinders-hcg-series/"
+      },
+
+      "cnc-lip-grinder": {
+        "title": "CNC LIP Grinder",
+        "hero": {
+          "title": "CNC Lip Grinder",
+          "description": "Explore Kiya CNC lip grinding solutions for accurate surface, lip and face grinding of bush and bearing-type components.",
+          "primaryBtn": "Explore Machines",
+          "secondaryBtn": "Enquire Now",
+          "bgImage": "/Images/products/kiya/cnc-lip-grinder.webp"
+        },
+        "intro": {
+          "subtitle": "Precision Lip Grinding",
+          "heading": "Kiya LG Series CNC Lip Grinder",
+          "description": "The Kiya LG Series is designed for surface, lip and face grinding of flat components, bushes and bearing-type parts. Its horizontal spindle and configurable rotary table or magnetic centreless shoe provide flexibility for different component geometries."
+        },
+        "categories": [
+          "All",
+          "CNC LIP Grinder"
+        ],
+        "products": [
+          {
+            "id": 1,
+            "title": "LG 300",
+            "category": "CNC LIP Grinder",
+            "desc": "The LG 300 is configured with a magnetic centreless shoe for suitable lip and face grinding applications. Its precision ball-screw-driven axis and rigid cast-iron structure support stable movement and consistent grinding results.",
+            "image": "/Images/products/kiya/lg-300.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/our-products/cnc-lip-grinder-lg-series/",
+            "href": "/products/tool-room-software/kiya/cnc-lip-grinder/lg-300",
+            "sourceVerified": true
+          },
+          {
+            "id": 2,
+            "title": "LG 500",
+            "category": "CNC LIP Grinder",
+            "desc": "The LG 500 features a vertical rotary magnetic table for appropriate surface and lip grinding applications. The machine's rigid bed, cartridge-type wheel spindle and precision axis drive support repeatable component finishing.",
+            "image": "/Images/products/kiya/lg-500.webp",
+            "manufacturerUrl": "https://kiyaproducts.com/our-products/cnc-lip-grinder-lg-series/",
+            "href": "/products/tool-room-software/kiya/cnc-lip-grinder/lg-500",
+            "sourceVerified": true
+          }
+        ],
+        "manufacturerCategoryUrl": "https://kiyaproducts.com/our-products/cnc-lip-grinder-lg-series/"
+      }
+    }
+  }
   },
   "productCategories": [
     {
