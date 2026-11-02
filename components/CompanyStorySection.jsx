@@ -21,7 +21,7 @@ export default function CompanyStorySection() {
   
 
       {/* Company Story Heading */}
-      <div className="mx-auto mb-12 max-w-7xl space-y-5 px-4 text-center sm:px-6 md:px-12 lg:px-24 xl:px-40">
+      <div className="mx-auto mb-12 max-w-7xl space-y-5 text-center  px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
 
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#004DA3]">
           Our Story Since 1995
@@ -36,19 +36,11 @@ export default function CompanyStorySection() {
         </h2>
 
         <p className="mx-auto text-base leading-relaxed text-slate-600">
-          MTAT&apos;s journey began with a vision to bring advanced industrial
-          technologies closer to Indian manufacturers. From our early
-          beginnings in factory automation to an expanding portfolio of
-          precision machine tools, we have continued to evolve alongside
-          the needs of the manufacturing industry.
+      Established in Ludhiana, Punjab, in 1995, MTAT Technologies began with a vision to connect manufacturing businesses with dependable machine tools and practical engineering solutions.
         </p>
 
         <p className="mx-auto text-sm leading-7 text-slate-500 md:text-base">
-          Today, MTAT Technologies Private Limited brings together solutions
-          across metal cutting, metal forming, metrology and tool-room
-          applications, supported by a commitment to customer relationships,
-          machine sales, service and spares.
-        </p>
+         From an initial team of two professionals, we have grown into an organisation of approximately 60 professionals, developing our technology portfolio, strengthening industry partnerships and expanding our customer support capabilities.   <br /><br />Today, we continue to support manufacturing businesses with advanced machinery, application-oriented guidance and a commitment to long-term relationships. </p>
 
         <a
           href="/about"
@@ -80,9 +72,7 @@ export default function CompanyStorySection() {
         </div>
 
         <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-6 text-slate-500">
-          Discover MTAT Technologies, our journey in industrial machinery,
-          and our commitment to supporting the evolving needs of manufacturing.
-        </p>
+      From precision machining to advanced manufacturing technologies, we connect industrial expertise with solutions built for progress.  </p>
       </div>
 
 
@@ -93,8 +83,8 @@ export default function CompanyStorySection() {
             Our Technology Partners
           </p>
           <p className="mt-2 text-sm text-slate-500">
-            Exploring manufacturing excellence through specialised machine-tool solutions.
-          </p>
+    Global Technology.
+Trusted Expertise. Local Support.      </p>
         </div>
 
         <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">

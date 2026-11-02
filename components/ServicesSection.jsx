@@ -133,12 +133,11 @@ export default function ServicesSection() {
           {/* Description */}
           <div className="space-y-4 text-sm leading-7 md:text-base">
             <p className="font-medium text-slate-800">
-              MTAT Technologies brings together advanced machine tools and industrial technologies to support the evolving needs of modern manufacturing. From metal cutting and metal forming to precision metrology and specialised tool-room equipment, we connect industries with solutions designed for accuracy, productivity and performance.
-            </p>
+            MTAT Technologies brings together advanced machine tools, industrial machinery and precision measurement technologies to support the evolving needs of modern manufacturing.   </p>
 
             <p className="text-slate-500">
-              With a portfolio of established machine-tool brands and a focus on sales, service and spares, we help businesses explore the right technologies for their manufacturing requirements.
-            </p>
+          
+             From metal cutting and sheet metal processing to tool room equipment and metrology, we connect businesses with established technology partners and solutions designed to enhance accuracy, productivity and operational efficiency.  <br /><br />With a customer-focused approach and a commitment to dependable support, we help manufacturers identify the right technologies for their production requirements. </p>
           </div>
         </div>
 
@@ -152,7 +151,7 @@ export default function ServicesSection() {
               <div
                 key={`${service.title}-${index}`}
                 data-card
-                className="group relative flex h-96 w-[260px] shrink-0 snap-start flex-col justify-end overflow-visible bg-slate-900 md:h-80 md:w-72"
+                className="group relative flex h-96 w-65 shrink-0 snap-start flex-col justify-end overflow-visible bg-slate-900 md:h-80 md:w-72"
               >
                 {/* Card Link Container */}
                 <a

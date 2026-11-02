@@ -343,7 +343,7 @@ const brands = {
     description:
       "Mechanical power presses support manufacturing processes involving metal forming, stamping and component production. Different press configurations address different tooling arrangements, material requirements and production applications.",
 
-    website: "https://www.singhalpress.com/",
+    website: "https://www.sewpresses.com/",
     websiteLabel: "Visit Manufacturer Website",
 
     logo: "/Images/brands/sew.webp",
