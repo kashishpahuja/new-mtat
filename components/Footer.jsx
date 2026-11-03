@@ -31,12 +31,10 @@ const Footer = () => (
       </div>
 
       {/* Column 2: Quick Links */}
-      <nav className="grid grid-cols-2 gap-x-12 gap-y-6 text-sm text-slate-700">
+      <nav className="grid  gap-x-12 gap-y-4 text-sm text-slate-700">
         {[
           { label: "Home", href: "/" },
-          { label: "Brands", href: "/brands" },
-          { label: "Solutions", href: "/solutions" },
-          { label: "Services", href: "/services" },
+          { label: "Our Presence", href: "/our-presence" },
           { label: "About", href: "/about" },
           { label: "Contact", href: "/contact" },
         ].map((link) => (

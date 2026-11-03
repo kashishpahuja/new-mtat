@@ -137,7 +137,7 @@ export default function WhyUsSection() {
           </div>
 
           {/* Right: Infinite Scrolling Image Columns */}
-          <div className="relative flex h-[550px] gap-3 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0,black_64px,black_calc(100%-64px),transparent_100%)] sm:h-[650px] lg:col-span-4">
+          <div className="relative flex h-137.5 gap-3 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0,black_64px,black_calc(100%-64px),transparent_100%)] sm:h-[650px] lg:col-span-4">
 
             {/* Column 1 */}
             <div className="animate-scroll-up flex w-1/2 flex-col gap-3">

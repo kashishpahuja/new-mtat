@@ -24,7 +24,7 @@ export default function CompanyCommitment() {
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[#05070A]/75" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-[#05070A] via-transparent to-[#05070A]"
+        className="absolute inset-0 -z-10 bg-linear-to-b from-[#05070A] via-transparent to-[#05070A]"
       />
 
       <div className="mx-auto max-w-5xl px-6 lg:px-10">

@@ -50,27 +50,27 @@ const images = {
 
 const team = [
   {
-    role: "Leadership",
+    role: "Consultation & Sales",
     description:
-      "Guiding our vision, building partnerships, and supporting long-term business growth.",
+      "Understanding customer requirements and helping identify suitable machine tools and manufacturing technologies.",
     image: images.team1,
   },
   {
-    role: "Sales & Solutions",
+    role: "Technical Coordination",
     description:
-      "Helping customers explore machine tools and technologies suited to their requirements.",
+      "Facilitating technical discussions around machining processes, applications and equipment capabilities.",
     image: images.team2,
   },
   {
-    role: "Technical Support",
+    role: "Service & Support",
     description:
-      "Supporting customers with service coordination and machinery-related assistance.",
+      "Coordinating installation assistance, maintenance requirements and after-sales service support.",
     image: images.team3,
   },
   {
     role: "Customer Partnerships",
     description:
-      "Building lasting relationships with customers, suppliers, and technology partners.",
+      "Building lasting relationships with customers, principals and technology partners through dependable support.",
     image: images.team4,
   },
 ];
@@ -78,66 +78,62 @@ const team = [
 // Replace these sample cards with verified customer reviews before publishing.
 const testimonials = [
   {
-    name: "Rajesh Sharma",
-    role: "Managing Director, Apex Precision Engineering",
+    name: "Machine Selection",
+    role: "Understanding Production Requirements",
     content:
-      "MTAT's Vertical Machining Centers completely transformed our production output. Exceptional build quality and unparalleled local support in Punjab.",
+      "Every manufacturing requirement is different. We focus on understanding production objectives, component specifications and application needs before exploring suitable machine tool solutions.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    machine: "VMC-850 High Speed Series",
+    image: images.team1,
+    machine: "Consultation & Selection",
   },
   {
-    name: "Gurpreet Singh",
-    role: "Director, Dashmesh Agricultural Works",
+    name: "Technology Solutions",
+    role: "Connecting with the Right Technologies",
     content:
-      "Their CNC Lathes and turning solutions deliver supreme precision and reliability under heavy industrial workloads. Highly dependable team.",
+      "Our diverse technology portfolio connects manufacturers with established Indian and international machine tool brands across multiple industrial applications.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
-    machine: "CNC Heavy Duty Lathe",
+    image: images.team2,
+    machine: "Technology Partnerships",
   },
   {
-    name: "Vikram Malhotra",
-    role: "Founder, Novatech Components",
+    name: "Technical Coordination",
+    role: "Supporting Manufacturing Applications",
     content:
-      "Investing in their 5-Axis machining systems elevated our aerospace component accuracy to an entirely new tier. Truly world-class machinery.",
+      "From machining processes to equipment capabilities, technical coordination helps customers evaluate solutions aligned with their manufacturing requirements.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
-    machine: "5-Axis Gantry Mill",
+    image: images.team3,
+    machine: "Application Support",
   },
   {
-    name: "Amit Bansal",
-    role: "Operations Head, Shivalik Die Makers",
+    name: "After-Sales Support",
+    role: "Support Beyond Machinery Supply",
     content:
-      "From consultation to installation and prompt after-sales service, MTAT has proven to be an indispensable manufacturing partner.",
+      "Our commitment extends beyond machine supply through installation coordination, service assistance, maintenance and spare parts support.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
-    machine: "EDM Wire Cut System",
+    image: images.team4,
+    machine: "Service & Maintenance",
   },
   {
-    name: "Harpreet Brar",
-    role: "Plant Manager, Kesar Industries",
+    name: "Long-Term Relationships",
+    role: "Building Partnerships Through Trust",
     content:
-      "The laser cutting systems we sourced are robust, incredibly fast, and operate with zero downtime. Outstanding performance overall.",
+      "We believe lasting business relationships are built through transparent communication, dependable coordination and an understanding of evolving customer needs.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80",
-    machine: "Fiber Laser Cutter",
+    image: images.team1,
+    machine: "Customer Commitment",
   },
   {
-    name: "Maninder Oberoi",
-    role: "Chief Engineer, Guru Nanak Tools",
+    name: "Manufacturing Progress",
+    role: "Three Decades of Industry Presence",
     content:
-      "Reliable tooling, accurate CMM metrology equipment, and expert guidance. They genuinely understand the nuances of industrial machining.",
+      "Since 1995, our journey has been shaped by technology partnerships, industry relationships and a continuing commitment to manufacturing progress.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-    machine: "Precision CMM System",
+    image: images.team2,
+    machine: "Established 1995",
   },
 ];
+
+
 
 function SectionEyebrow({ children }) {
   return (
@@ -268,9 +264,8 @@ export default function OurPresencePage() {
                 data-hero-content
                 className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-lg"
               >
-                People, partnerships, and industrial technologies working
-                together to support manufacturing progress.
-              </p>
+  Three decades of experience, established technology partnerships
+  and customer-focused solutions driving manufacturing progress.   </p>
 
               <a
                 data-hero-content
@@ -427,40 +422,293 @@ export default function OurPresencePage() {
           </div>
         </section>
 
+  
+
         {/* =====================================================
+          TEAM
+      ====================================================== */}
+        <section className="mx-auto px-4 py-20 sm:px-6 md:px-12 lg:px-24 xl:px-40">
+      <div
+  data-section-reveal
+  className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+>
+  <div>
+    <SectionEyebrow>Our People</SectionEyebrow>
+
+    <h2 className="mt-5 max-w-2xl text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
+      Approximately 60 Professionals.
+      <span className="block text-slate-400">
+        One Shared Vision.
+      </span>
+    </h2>
+  </div>
+
+  <p className="max-w-md text-sm leading-7 text-slate-500 sm:text-base">
+    From an initial team of two professionals to an organisation
+    of approximately 60, our journey reflects the dedication,
+    experience and collaborative efforts of our people.
+  </p>
+</div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {team.map((member, index) => (
+              <article key={member.role} data-reveal className="group">
+                <div className="relative overflow-hidden bg-slate-100">
+                  <img
+                    src={member.image}
+                    alt={`${member.role} representative image`}
+                    loading="lazy"
+                    className="h-[300px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[340px]"
+                  />
+
+                  <span className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#004DA3] shadow-sm">
+                    <FaArrowRight className="-rotate-45 text-sm transition group-hover:rotate-0" />
+                  </span>
+                </div>
+
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-[#004DA3]">
+                  0{index + 1}
+                </p>
+
+                <h3 className="mt-2 text-xl font-semibold text-slate-900">
+                  {member.role}
+                </h3>
+
+                <p className="mt-3 text-sm leading-6 text-slate-500">
+                  {member.description}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-6 text-xs leading-5 text-slate-400">
+            Team images are temporary stock photos. Replace them with actual
+            MTAT team photographs before publishing.
+          </p>
+        </section>
+
+
+ {/* INDUSTRIES WE SERVE */}
+      <section className="relative flex items-center overflow-hidden py-16 text-white lg:py-24">
+        {/* Background Overlay */}
+        <div
+          className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-15"
+          style={{ backgroundImage: "url('/Images/banner.webp')" }}
+        />
+        <div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-[#01050a83] via-[#021022] to-[#060d16d3]" />
+
+        <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
+          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
+            
+            {/* Left Content: Title & Short Intro */}
+            <div className="space-y-6 lg:col-span-5">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
+                  Industrial Reach
+                </p>
+                <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                  Supporting Diverse Manufacturing
+                </h2>
+                <div className="mt-4 h-1 w-16 bg-orange-500" />
+                <p className="mt-6 text-sm leading-relaxed text-gray-300 sm:text-base">
+                  Our solutions are engineered for a broad range of industrial sectors, delivering precision, reliability, and productivity where it matters most.
+                </p>
+              </div>
+
+              <div className="pt-2 text-xs text-gray-400">
+                <span>Explore our application domains on the right</span>
+              </div>
+            </div>
+
+            {/* Right: Infinite Scrolling Industry Columns */}
+            <div className="relative flex h-[480px] gap-4 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0,black_64px,black_calc(100%-64px),transparent_100%)] sm:h-[540px] lg:col-span-7">
+
+              {/* Column 1 (Scroll Up) */}
+              <div className="animate-scroll-up flex w-1/2 flex-col gap-4">
+                {[
+                  { title: "Automotive & Auto Components", desc: "Precision machining and production equipment." },
+                  { title: "Agriculture & Implements", desc: "Machinery solutions for equipment manufacturers." },
+                  { title: "Railways & Transportation", desc: "Machining and measurement technologies." },
+                  { title: "Aerospace & Precision", desc: "Advanced machining and inspection solutions." },
+                  { title: "Defence & Heavy Engineering", desc: "Manufacturing technologies for specialised requirements." },
+                  { title: "Medical Equipment & Devices", desc: "Precision machining and dimensional measurement." },
+                ].concat([
+                  { title: "Automotive & Auto Components", desc: "Precision machining and production equipment." },
+                  { title: "Agriculture & Implements", desc: "Machinery solutions for equipment manufacturers." },
+                  { title: "Railways & Transportation", desc: "Machining and measurement technologies." },
+                  { title: "Aerospace & Precision", desc: "Advanced machining and inspection solutions." },
+                  { title: "Defence & Heavy Engineering", desc: "Manufacturing technologies for specialised requirements." },
+                  { title: "Medical Equipment & Devices", desc: "Precision machining and dimensional measurement." },
+                ]).map((sector, idx) => (
+                  <div
+                    key={`col1-${idx}`}
+                    className="group flex flex-col justify-center rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07] hover:shadow-lg"
+                  >
+                    <h4 className="text-sm font-semibold tracking-tight text-white sm:text-base">
+                      {sector.title}
+                    </h4>
+                    <p className="mt-1.5 text-xs leading-relaxed text-gray-300">
+                      {sector.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Column 2 (Scroll Down) */}
+              <div className="animate-scroll-down flex w-1/2 flex-col gap-4">
+                {[
+                  { title: "Oil, Gas & Energy", desc: "Machining and fabrication solutions for industry." },
+                  { title: "Textiles & Industrial Equipment", desc: "Component manufacturing and equipment production." },
+                  { title: "Jewellery & Fine Engineering", desc: "Precision machining and specialised applications." },
+                  { title: "Telecommunications & Electronics", desc: "Technologies supporting precision components." },
+                  { title: "Scaffolding & Infrastructure", desc: "Fabrication and metal processing machinery." },
+                ].concat([
+                  { title: "Oil, Gas & Energy", desc: "Machining and fabrication solutions for industry." },
+                  { title: "Textiles & Industrial Equipment", desc: "Component manufacturing and equipment production." },
+                  { title: "Jewellery & Fine Engineering", desc: "Precision machining and specialised applications." },
+                  { title: "Telecommunications & Electronics", desc: "Technologies supporting precision components." },
+                  { title: "Scaffolding & Infrastructure", desc: "Fabrication and metal processing machinery." },
+                ]).map((sector, idx) => (
+                  <div
+                    key={`col2-${idx}`}
+                    className="group flex flex-col justify-center rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07] hover:shadow-lg"
+                  >
+                    <h4 className="text-sm font-semibold tracking-tight text-white sm:text-base">
+                      {sector.title}
+                    </h4>
+                    <p className="mt-1.5 text-xs leading-relaxed text-gray-300">
+                      {sector.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        {/* Infinite Scroll Animations */}
+        <style jsx global>{`
+          @keyframes scrollUp {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-50%);
+            }
+          }
+
+          @keyframes scrollDown {
+            0% {
+              transform: translateY(-50%);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          .animate-scroll-up {
+            animation: scrollUp 22s linear infinite;
+          }
+
+          .animate-scroll-down {
+            animation: scrollDown 22s linear infinite;
+          }
+
+          .animate-scroll-up:hover,
+          .animate-scroll-down:hover {
+            animation-play-state: paused;
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .animate-scroll-up,
+            .animate-scroll-down {
+              animation-play-state: paused;
+            }
+          }
+        `}</style>
+      </section>
+      {/* =====================================================
           OUR PRESENCE / APPROACH
       ====================================================== */}
         <section className="bg-slate-100/80 py-20 sm:py-28">
           <div className="mx-auto px-4 py-20 sm:px-6 md:px-12 lg:px-24 xl:px-40">
-            <div
-              data-section-reveal
-              className="grid gap-8 md:grid-cols-[0.65fr_1.35fr] md:gap-16"
-            >
-              <div>
-                <SectionEyebrow>Our Approach</SectionEyebrow>
+     <div
+  data-section-reveal
+  className="grid gap-8 md:grid-cols-[0.65fr_1.35fr] md:gap-16"
+>
+  <div>
+    <SectionEyebrow>Why Choose MTAT</SectionEyebrow>
 
-                <h2 className="mt-5 max-w-sm text-3xl font-medium leading-tight tracking-tight sm:text-4xl">
-                  More Than Machines.
-                  <span className="block text-slate-400">
-                    Stronger Connections.
-                  </span>
-                </h2>
-              </div>
+    <h2 className="mt-5 max-w-sm text-3xl font-medium leading-tight tracking-tight sm:text-4xl">
+      Experience That
+      <span className="block text-slate-400">
+        Moves Industry Forward.
+      </span>
+    </h2>
+  </div>
 
-              <div>
-                <p className="max-w-3xl text-lg leading-8 text-slate-800 sm:text-2xl sm:leading-10">
-                  We bring together machinery, technology partners, and
-                  customer-focused support to help businesses make informed
-                  manufacturing decisions.
-                </p>
+  <div>
+    <p className="max-w-3xl text-lg leading-8 text-slate-800 sm:text-2xl sm:leading-10">
+      Bringing together three decades of industry experience,
+      established technology partnerships and dependable
+      customer support.
+    </p>
 
-                <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-                  From exploring machine options to coordinating service and
-                  spares, our focus is on building dependable working
-                  relationships throughout the customer journey.
-                </p>
-              </div>
-            </div>
+    <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
+      From machine selection and technical coordination to
+      installation assistance, maintenance and spares, we work
+      towards solutions aligned with our customers' manufacturing
+      requirements and business priorities.
+    </p>
+  </div>
+</div>
+
+<div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+  {[
+    {
+      number: "01",
+      title: "Since 1995",
+      text: "Three decades of presence in the machine tool and manufacturing solutions sector.",
+    },
+    {
+      number: "02",
+      title: "Technology Portfolio",
+      text: "Solutions across metal cutting, metal forming, metrology and tool room machinery.",
+    },
+    {
+      number: "03",
+      title: "Established Partnerships",
+      text: "Connecting manufacturers with reputed Indian and international technology brands.",
+    },
+    {
+      number: "04",
+      title: "Beyond Sales",
+      text: "Installation coordination, after-sales service, maintenance and spare parts support.",
+    },
+  ].map((item) => (
+    <article
+      key={item.number}
+      data-reveal
+      className="group border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#004DA3]/40 sm:p-7"
+    >
+      <span className="text-sm font-semibold text-[#004DA3]">
+        {item.number}
+      </span>
+
+      <h3 className="mt-8 text-lg font-semibold text-slate-900">
+        {item.title}
+      </h3>
+
+      <p className="mt-3 text-sm leading-6 text-slate-500">
+        {item.text}
+      </p>
+
+      <FaArrowUpRightFromSquare className="mt-7 text-sm text-slate-300 transition group-hover:text-[#004DA3]" />
+    </article>
+  ))}
+</div>
 
             <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
@@ -509,67 +757,6 @@ export default function OurPresencePage() {
           </div>
         </section>
 
-        {/* =====================================================
-          TEAM
-      ====================================================== */}
-        <section className="mx-auto px-4 py-20 sm:px-6 md:px-12 lg:px-24 xl:px-40">
-          <div
-            data-section-reveal
-            className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
-          >
-            <div>
-              <SectionEyebrow>The People Behind MTAT</SectionEyebrow>
-
-              <h2 className="mt-5 max-w-2xl text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
-                Technology Moves Forward.
-                <span className="block text-slate-400">
-                  People Make It Happen.
-                </span>
-              </h2>
-            </div>
-
-            <p className="max-w-md text-sm leading-7 text-slate-500 sm:text-base">
-              Our team works across customer relationships, machine-tool
-              solutions, and support to help keep business moving.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((member, index) => (
-              <article key={member.role} data-reveal className="group">
-                <div className="relative overflow-hidden bg-slate-100">
-                  <img
-                    src={member.image}
-                    alt={`${member.role} representative image`}
-                    loading="lazy"
-                    className="h-[300px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[340px]"
-                  />
-
-                  <span className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#004DA3] shadow-sm">
-                    <FaArrowRight className="-rotate-45 text-sm transition group-hover:rotate-0" />
-                  </span>
-                </div>
-
-                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-[#004DA3]">
-                  0{index + 1}
-                </p>
-
-                <h3 className="mt-2 text-xl font-semibold text-slate-900">
-                  {member.role}
-                </h3>
-
-                <p className="mt-3 text-sm leading-6 text-slate-500">
-                  {member.description}
-                </p>
-              </article>
-            ))}
-          </div>
-
-          <p className="mt-6 text-xs leading-5 text-slate-400">
-            Team images are temporary stock photos. Replace them with actual
-            MTAT team photographs before publishing.
-          </p>
-        </section>
 
         {/* =====================================================
           CUSTOMER REVIEWS
@@ -577,51 +764,56 @@ export default function OurPresencePage() {
 
         <section className="overflow-hidden text-[#0a0c10] py-16 md:py-28 bg-white">
           {/* Header Container */}
-          <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004DA3]">
-                Customer Relationships
-              </span>
-              <h2 className="mt-5 text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
-                Trust Built Through
-                <span className="block text-slate-400">Every Interaction.</span>
-              </h2>
-              <div>
-                <p className="max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
-                  Lasting partnerships are built on communication, dependable
-                  support, and understanding each customer&apos;s requirements.
-                </p>
+         <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
+  <div>
+    <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004DA3]">
+      SALES, SERVICE & SUPPORT
+    </span>
 
-                <a
-                  href="/contact"
-                  className="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-[#004DA3] transition hover:gap-5"
-                >
-                  Connect With Our Team
-                  <FaArrowRight />
-                </a>
-              </div>
-            </div>
+    <h2 className="mt-5 text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
+      Support Beyond
+      <span className="block text-slate-400">
+        The Machine.
+      </span>
+    </h2>
 
-            {/* Navigation Arrows */}
-            <div className="flex items-center gap-3 justify-end w-full md:w-auto">
-              <button
-                type="button"
-                onClick={() => swiper?.slidePrev()}
-                aria-label="Previous testimonials"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
-              >
-                <BiChevronLeft className="h-6 w-6" />
-              </button>
-              <button
-                type="button"
-                onClick={() => swiper?.slideNext()}
-                aria-label="Next testimonials"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
-              >
-                <BiChevronRight className="h-6 w-6" />
-              </button>
-            </div>
-          </div>
+    <div>
+      <p className="max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
+        The value of a machine extends beyond its installation.
+        We focus on customer support, technical coordination
+        and dependable assistance throughout the equipment lifecycle.
+      </p>
+
+      <a
+        href="/contact"
+        className="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-[#004DA3] transition hover:gap-5"
+      >
+        Discuss Your Requirements
+        <FaArrowRight />
+      </a>
+    </div>
+  </div>
+
+  <div className="flex items-center gap-3 justify-end w-full md:w-auto">
+    <button
+      type="button"
+      onClick={() => swiper?.slidePrev()}
+      aria-label="Previous testimonials"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
+    >
+      <BiChevronLeft className="h-6 w-6" />
+    </button>
+
+    <button
+      type="button"
+      onClick={() => swiper?.slideNext()}
+      aria-label="Next testimonials"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 transition hover:border-[#004DA3] hover:bg-[#004DA3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
+    >
+      <BiChevronRight className="h-6 w-6" />
+    </button>
+  </div>
+</div>
 
           {/* Full-Width Swiper Carousel */}
           <div className="w-full">
@@ -696,6 +888,7 @@ export default function OurPresencePage() {
             </Swiper>
           </div>
         </section>
+
       </main>
       <EnquirySection />
     </>

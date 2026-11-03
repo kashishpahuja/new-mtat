@@ -363,20 +363,20 @@ const productCategories = [
                             : "hover:bg-gray-50"
                         }`}
                       >
-                        <Link href={`/products/${item.slug}`} className="block">
+                        <div className="block">
                           <span className="block font-semibold text-[#0b2345] transition-colors group-hover/item:text-[#467B23]">
                             {item.title}
                           </span>
                           <p className="mt-1 line-clamp-1 text-xs text-gray-500">
                             {item.desc}
                           </p>
-                        </Link>
+                        </div>
                       </div>
                     ))}
                   </div>
 
                   {/* Right Column: Brands and Subcategories */}
-                  <div className="col-span-7 pl-2 max-h-[380px] overflow-y-auto">
+                  <div className="col-span-7 pl-2 max-h-95 overflow-y-auto">
                     {productCategories
                       .filter((cat) => cat.slug === activeCategory)
                       .map((cat) => (
@@ -563,13 +563,13 @@ const productCategories = [
                 {productCategories.map((item) => (
                   <div key={item.slug} className="flex flex-col gap-1">
                     <div className="flex items-center justify-between rounded-md p-2 hover:bg-[#467B23]/10">
-                      <Link
-                        href={`/products/${item.slug}`}
+                      <div
+                        // href={`/products/${item.slug}`}
                         onClick={closeMobileMenu}
                         className="text-sm font-semibold text-[#0b2345]"
                       >
                         {item.title}
-                      </Link>
+                      </div>
                       <button
                         type="button"
                         onClick={() => toggleMobileCategory(item.slug)}

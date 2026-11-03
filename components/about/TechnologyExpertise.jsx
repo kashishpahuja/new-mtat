@@ -17,6 +17,7 @@ const SPANS = [
   'md:col-span-5',
   'md:col-span-5',
   'md:col-span-7',
+  'md:col-span-12',
 ];
 
 export default function TechnologyExpertise() {
@@ -54,7 +55,10 @@ export default function TechnologyExpertise() {
 
         <div className="mt-20 grid gap-x-8 gap-y-20 md:grid-cols-12">
           {EXPERTISE.map((item, i) => {
-            const img = ABOUT_IMAGES[item.image];
+            const img = ABOUT_IMAGES[item.image] || {
+              src: ABOUT_IMAGES.intro.src,
+              alt: item.title,
+            };
             return (
               <article key={item.id} className={`group ${SPANS[i]}`}>
                 <RevealImage

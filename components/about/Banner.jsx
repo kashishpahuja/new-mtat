@@ -7,29 +7,26 @@ export default function HeroBanner() {
     <div className="relative w-full">
       {/* Background Image Container - Height controlled by image aspect ratio */}
       <div className="relative w-full">
-    {/* 
-    
-    */}
-<Image
-  src="/about.webp"
-  alt="About Us Background"
-  width={1920}
-  height={600}
-  className="w-full h-auto object-cover lg:hidden"
-  priority
-  quality={100}
-/>
+      <Image
+        src="/about.webp"
+        alt="About Us Background"
+        width={1920}
+        height={600}
+        className="w-full h-auto object-cover lg:hidden"
+        priority
+        quality={100}
+      />
 
-{/* Desktop Image */}
-<Image
-  src="/about0.webp"
-  alt="About Us Background"
-  width={1920}
-  height={600}
-  className="hidden lg:block w-full h-auto object-cover"
-  priority
-  quality={100}
-/>
+      {/* Desktop Image */}
+      <Image
+        src="/about0.webp"
+        alt="About Us Background"
+        width={1920}
+        height={600}
+        className="hidden lg:block w-full h-auto object-cover"
+        priority
+        quality={100}
+      />
         
         {/* Dark Overlay - Optional, remove if not needed */}
         <div className="absolute inset-0 bg-linear-to-br from-transparent via-[#005D4F]/10 to-[#005D4F]/30" />

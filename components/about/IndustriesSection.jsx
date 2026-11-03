@@ -55,7 +55,7 @@ export default function IndustriesSection() {
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-[#05070A] via-[#05070A]/45 to-transparent"
+                  className="absolute inset-0 bg-linear-to-t from-[#05070A] via-[#05070A]/45 to-transparent"
                 />
                 <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                   <h3 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
