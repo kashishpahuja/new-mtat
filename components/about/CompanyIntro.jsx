@@ -31,7 +31,7 @@ export default function CompanyIntro() {
               stagger={0.06}
               distance={80}
               stretch={1.2}
-              textClassName="text-left text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl"
+              textClassName="text-left text-3xl font-semibold leading-[1.05] tracking-tight sm:text-3xl lg:text-5xl"
             >
               {INTRO.heading}
             </ScrollFloat>

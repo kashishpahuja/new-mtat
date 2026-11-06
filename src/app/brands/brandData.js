@@ -143,7 +143,7 @@ const brands = {
     description:
       "Sodick provides advanced electrical discharge machining technologies for precision manufacturing. Its EDM solutions support applications requiring intricate profiles, controlled material removal and accurate machining of electrically conductive materials.",
 
-    website: null,
+    website: "https://sodick.com/",
     websiteLabel: "Visit Manufacturer Website",
 
     logo: "/Images/brands/sodick.webp",
@@ -203,7 +203,7 @@ const brands = {
     description:
       "Pinnacle Engineering offers precision grinding machinery for manufacturing applications that require controlled material removal, dimensional accuracy and consistent surface finishing.",
 
-    website: null,
+    website: "https://www.pinnaclegrinder.com/",
     websiteLabel: "Visit Manufacturer Website",
 
     logo: "/Images/brands/pinnacle.webp",
@@ -472,7 +472,7 @@ const brands = {
     description:
       "Laser processing technologies support industrial applications such as material cutting, welding and marking. Equipment selection depends on the material, component specifications, production process and required output.",
 
-    website: null,
+    website: "https://lasertechnologies.co.in/",
     websiteLabel: "Enquire About Laser Solutions",
 
     logo: "/Images/brands/laser.webp",
@@ -619,7 +619,7 @@ const brands = {
     description:
       "SolidCAM provides CAD/CAM software for computer-aided manufacturing and CNC programming. Its software solutions support the preparation of machining operations from digital component designs, helping manufacturers plan and program CNC machining processes.",
 
-    website: null,
+    website: "https://solidcam.com/",
     websiteLabel: "Enquire About SolidCAM",
 
     logo: "/Images/brands/solidcam.webp",
@@ -679,7 +679,7 @@ const brands = {
     description:
       "Kiya's listed grinding machine categories address precision finishing applications in component manufacturing. Different grinding processes are suited to different component geometries, dimensional requirements and surface finishes.",
 
-    website: null,
+    website: "https://kiyaproducts.com/",
     websiteLabel: "Visit Manufacturer Website",
 
     logo: "/Images/brands/kiya.webp",

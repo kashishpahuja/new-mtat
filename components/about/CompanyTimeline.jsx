@@ -139,9 +139,10 @@ export default function CompanyTimeline() {
           </div>
 
           <p className="max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
-            Discover the milestones that have shaped MTAT Technologies,
-            from our beginnings in industrial automation to our expanding
-            machine-tool and manufacturing technology portfolio.
+   From our establishment in 1995 to becoming a growing industrial
+  solutions partner, our journey reflects continuous development,
+  trusted partnerships and an enduring commitment to manufacturing
+  excellence.
           </p>
         </div>
 

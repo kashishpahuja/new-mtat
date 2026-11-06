@@ -255,7 +255,7 @@ export default function OurPresencePage() {
 
               <h1
                 data-hero-content
-                className="mt-6 text-5xl font-medium tracking-tight sm:text-6xl lg:text-7xl"
+                className="mt-6 text-5xl font-medium tracking-tight sm:text-4xl lg:text-5xl"
               >
                 Our Presence
               </h1>

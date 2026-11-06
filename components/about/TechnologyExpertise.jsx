@@ -40,7 +40,7 @@ export default function TechnologyExpertise() {
                 scrollEnd="bottom 55%"
                 stagger={0.06}
                 distance={80}
-                textClassName="text-left text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-7xl"
+                textClassName="text-left text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl"
               >
                 {EXPERTISE_SECTION.heading}
               </ScrollFloat>

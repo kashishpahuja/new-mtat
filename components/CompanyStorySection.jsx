@@ -17,9 +17,6 @@ export default function CompanyStorySection() {
 
   return (
     <section className="overflow-hidden border-t border-slate-200 bg-slate-50 py-20 text-slate-900">
-
-  
-
       {/* Company Story Heading */}
       <div className="mx-auto mb-12 max-w-7xl space-y-5 text-center  px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
 

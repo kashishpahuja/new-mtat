@@ -30,7 +30,7 @@ export default function IndustriesSection() {
             scrollEnd="bottom 55%"
             stagger={0.06}
             distance={80}
-            textClassName="text-left text-4xl font-semibold leading-[1.05] tracking-tight text-[#05070A] sm:text-5xl lg:text-7xl"
+            textClassName="text-left text-3xl font-semibold leading-[1.05] tracking-tight text-[#05070A] sm:text-4xl lg:text-5xl"
           >
             {INDUSTRIES_SECTION.heading}
           </ScrollFloat>

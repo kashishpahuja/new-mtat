@@ -26,6 +26,7 @@ export default function CompanyStorySection() {
           </p>
           <p className="mt-2 text-sm text-slate-500">
             Exploring manufacturing excellence through specialised machine-tool solutions.
+            <br /> <br />Together, our technology partnerships enable us to offer a diverse range of manufacturing solutions backed by industry expertise, technical coordination and customer-focused support.
           </p>
         </div>
 

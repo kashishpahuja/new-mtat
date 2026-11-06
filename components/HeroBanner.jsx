@@ -42,8 +42,8 @@ function HeroBanner() {
 
           {/* Explore More Action Button */}
           <div className="pt-4">
-            <Link
-              href="/products"
+            <div
+            
               className="inline-flex items-center justify-between bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/20 rounded-[4px] px-6 py-4 text-white text-xs font-semibold tracking-[1.2px] uppercase transition-all duration-300 group shadow-lg"
             >
                <span className="flex items-center gap-3">
@@ -52,7 +52,7 @@ function HeroBanner() {
                   <BsArrowUpRight className="w-4 h-4 text-white" />
                 </span>
               </span>
-            </Link>
+            </div>
           </div>
 
         </div>

@@ -257,7 +257,7 @@ export default function ScrollExpand({
         {title ? (
           <h1
             ref={titleRef}
-            className="pointer-events-none absolute inset-x-0 top-1/2 z-10 mx-auto max-w-5xl -translate-y-1/2 px-6 text-center text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
+            className="pointer-events-none absolute inset-x-0 top-1/2 z-10 mx-auto max-w-5xl -translate-y-1/2 px-6 text-center text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl"
           >
             {title}
           </h1>

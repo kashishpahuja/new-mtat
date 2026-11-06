@@ -6,6 +6,8 @@ import { LiaTimesSolid } from "react-icons/lia";
 import Link from "next/link";
 import gsap from "gsap";
 import { FaChevronDown } from "react-icons/fa";
+import brands from '../src/app/brands/brandData'
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,9 +15,8 @@ function Navbar() {
   const [brandMenuOpen, setBrandMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("metal-cutting");
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState({});
-
-  const btnRef = useRef(null);
-  const borderRef = useRef(null);
+  // const btnRef = useRef(null);
+  // const borderRef = useRef(null);
   const dropdownRef = useRef(null);
 
   // Prevent background scrolling when mobile menu is open.
@@ -45,49 +46,49 @@ function Navbar() {
   }, []);
 
   // CTA button hover animations.
-  const handleMouseEnter = () => {
-    if (btnRef.current) {
-      gsap.to(btnRef.current, {
-        y: 2,
-        scale: 0.98,
-        duration: 0.2,
-        ease: "power3.inOut",
-      });
-    }
+  // const handleMouseEnter = () => {
+  //   if (btnRef.current) {
+  //     gsap.to(btnRef.current, {
+  //       y: 2,
+  //       scale: 0.98,
+  //       duration: 0.2,
+  //       ease: "power3.inOut",
+  //     });
+  //   }
 
-    if (borderRef.current) {
-      gsap.fromTo(
-        borderRef.current,
-        { scale: 1, opacity: 0.5 },
-        {
-          scale: 1.1,
-          opacity: 1,
-          duration: 0.2,
-          ease: "power3.out",
-        }
-      );
-    }
-  };
+  //   if (borderRef.current) {
+  //     gsap.fromTo(
+  //       borderRef.current,
+  //       { scale: 1, opacity: 0.5 },
+  //       {
+  //         scale: 1.1,
+  //         opacity: 1,
+  //         duration: 0.2,
+  //         ease: "power3.out",
+  //       }
+  //     );
+  //   }
+  // };
 
-  const handleMouseLeave = () => {
-    if (btnRef.current) {
-      gsap.to(btnRef.current, {
-        y: 0,
-        scale: 1,
-        duration: 0.2,
-        ease: "power3.inOut",
-      });
-    }
+  // const handleMouseLeave = () => {
+  //   if (btnRef.current) {
+  //     gsap.to(btnRef.current, {
+  //       y: 0,
+  //       scale: 1,
+  //       duration: 0.2,
+  //       ease: "power3.inOut",
+  //     });
+  //   }
 
-    if (borderRef.current) {
-      gsap.to(borderRef.current, {
-        scale: 1,
-        opacity: 0.5,
-        duration: 0.4,
-        ease: "power2.inOut",
-      });
-    }
-  };
+  //   if (borderRef.current) {
+  //     gsap.to(borderRef.current, {
+  //       scale: 1,
+  //       opacity: 0.5,
+  //       duration: 0.4,
+  //       ease: "power2.inOut",
+  //     });
+  //   }
+  // };
 
   const toggleMenu = () => {
     setMenuOpen((previous) => !previous);
@@ -265,53 +266,53 @@ const productCategories = [
   },
 ];
 
-  const brandPartners = [
-    {
-      title: "Jyoti CNC",
-      slug: "jyoti",
-      desc: "Advanced machining centers and turning solutions.",
-    },
-    {
-      title: "EIFCO",
-      slug: "eifco",
-      desc: "Vertical and horizontal gear hobbers.",
-    },
-    {
-      title: "Energy Mission",
-      slug: "energy-mission",
-      desc: "CNC press brakes, shearing machines & hydraulic presses.",
-    },
-    {
-      title: "Singhal Press (SEW)",
-      slug: "singhal-press",
-      desc: "Cross-shaft, two-point & eccentric-driven presses.",
-    },
-    {
-      title: "SUKRIT",
-      slug: "sukrit",
-      desc: "Specialized metal forming and finishing systems.",
-    },
-    {
-      title: "Hexagon",
-      slug: "hexagon",
-      desc: "Coordinate measuring machines and optical systems.",
-    },
-    {
-      title: "Sodick",
-      slug: "sodick",
-      desc: "EDM and wire EDM machine solutions.",
-    },
-    {
-      title: "Pinnacle",
-      slug: "pinnacle",
-      desc: "Surface grinders and precision tool room machines.",
-    },
-    {
-      title: "Kiya",
-      slug: "kiya",
-      desc: "Cylindrical, internal, and external grinders.",
-    },
-  ];
+  // const brands = [
+  //   {
+  //     title: "Jyoti CNC",
+  //     slug: "jyoti",
+  //     desc: "Advanced machining centers and turning solutions.",
+  //   },
+  //   {
+  //     title: "EIFCO",
+  //     slug: "eifco",
+  //     desc: "Vertical and horizontal gear hobbers.",
+  //   },
+  //   {
+  //     title: "Energy Mission",
+  //     slug: "energy-mission",
+  //     desc: "CNC press brakes, shearing machines & hydraulic presses.",
+  //   },
+  //   {
+  //     title: "Singhal Press (SEW)",
+  //     slug: "singhal-press",
+  //     desc: "Cross-shaft, two-point & eccentric-driven presses.",
+  //   },
+  //   {
+  //     title: "SUKRIT",
+  //     slug: "sukrit",
+  //     desc: "Specialized metal forming and finishing systems.",
+  //   },
+  //   {
+  //     title: "Hexagon",
+  //     slug: "hexagon",
+  //     desc: "Coordinate measuring machines and optical systems.",
+  //   },
+  //   {
+  //     title: "Sodick",
+  //     slug: "sodick",
+  //     desc: "EDM and wire EDM machine solutions.",
+  //   },
+  //   {
+  //     title: "Pinnacle",
+  //     slug: "pinnacle",
+  //     desc: "Surface grinders and precision tool room machines.",
+  //   },
+  //   {
+  //     title: "Kiya",
+  //     slug: "kiya",
+  //     desc: "Cylindrical, internal, and external grinders.",
+  //   },
+  // ];
 
   const closeMobileMenu = () => {
     setMenuOpen(false);
@@ -323,7 +324,7 @@ const productCategories = [
   return (
     <>
       <div className="relative z-50 w-full bg-white shadow-sm backdrop-blur-md px-4 sm:px-6 md:px-12 lg:px-24 xl:pl-40">
-        <div className="flex h-[70px] items-center justify-between text-black lg:h-[80px]">
+        <div className="flex h-17.5 items-center justify-between text-black lg:h-[80px]">
           {/* Logo */}
           <Link
             href="/"
@@ -340,14 +341,14 @@ const productCategories = [
           <ul className="poppins hidden items-center space-x-7 text-base font-medium text-[#01193B] xl:flex">
             {/* Products dropdown */}
             <li className="group relative py-6">
-              <Link
-                href="/products"
+              <div
+                
                 className="group relative inline-flex items-center gap-1.5"
               >
                 <span>Products</span>
                 <FaChevronDown className="text-xs text-gray-500 transition-transform duration-300 group-hover:rotate-180" />
                 <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#467B23] transition-[width] duration-300 group-hover:w-full" />
-              </Link>
+              </div>
 
               <div className="invisible absolute left-[-150px] top-full z-50 w-[850px] rounded-xl border border-[#467B23]/20 bg-white/95 p-6 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <div className="grid grid-cols-12 gap-6 text-start">
@@ -417,12 +418,12 @@ const productCategories = [
                   <span className="text-xs font-medium text-gray-400">
                     Explore complete catalogue & specifications
                   </span>
-                  <Link
+                  {/* <Link
                     href="/products"
                     className="text-sm font-semibold text-[#467B23] hover:underline"
                   >
                     View All Products →
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </li>
@@ -451,17 +452,17 @@ const productCategories = [
 
               <div className="invisible absolute left-0 top-full z-50 w-[300px] max-h-[400px] overflow-y-auto rounded-xl border border-[#467B23]/20 bg-white/95 p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <div className="flex flex-col gap-1">
-                  {brandPartners.map((brand) => (
+                  {Object.values(brands).map((brand) => (
                     <Link
                       href={`/brands/${brand.slug}`}
                       key={brand.slug}
                       className="group/brand rounded-lg p-3 transition-all duration-300 hover:bg-[#467B23]/10"
                     >
                       <span className="block font-semibold text-[#0b2345] group-hover/brand:text-[#467B23]">
-                        {brand.title}
+                        {brand.name}
                       </span>
                       <p className="mt-0.5 text-xs text-gray-500">
-                        {brand.desc}
+                        {brand.tagline}
                       </p>
                     </Link>
                   ))}
@@ -655,7 +656,7 @@ const productCategories = [
               }`}
             >
               <div className="mt-1 flex flex-col gap-1 rounded-lg bg-gray-50/50 p-2 pl-3">
-                {brandPartners.map((brand) => (
+                {Object.values(brands).map((brand) => (
                   <Link
                     key={brand.slug}
                     href={`/brands/${brand.slug}`}
@@ -663,10 +664,10 @@ const productCategories = [
                     className="rounded-md p-2.5 text-sm hover:bg-[#467B23]/10"
                   >
                     <span className="block font-medium text-[#0b2345]">
-                      {brand.title}
+                      {brand.name}
                     </span>
                     <span className="text-xs text-gray-500">
-                      {brand.desc}
+                      {brand.tagline}
                     </span>
                   </Link>
                 ))}
