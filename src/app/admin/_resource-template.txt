@@ -1,0 +1,1 @@
+Use this reusable page pattern for each resource page. The supplied pages below implement list + create + delete basics. Extend the form fields for your final content requirements.
