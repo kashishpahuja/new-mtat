@@ -57,7 +57,7 @@ export default function FloatingActions() {
       </a>
 
       {/* Scroll to Top Button */}
-      {/* <button
+       <button
         type="button"
         onClick={scrollToTop}
         aria-label="Scroll to top"
@@ -69,7 +69,7 @@ export default function FloatingActions() {
         }`}
       >
         <FaArrowUp className="text-lg" />
-      </button> */}
+      </button> 
     </>
   );
 }

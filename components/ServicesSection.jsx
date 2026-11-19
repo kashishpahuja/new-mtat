@@ -1,51 +1,66 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { getMediaUrl } from "../src/app/lib/mediaUrl";
+import Link from "next/link";
+import { useRef } from "react";
 
-const services = [
-  {
-    title: "1. Metal Cutting Solutions",
-    description: "Explore advanced CNC turning centres, machining centres, multi-axis machines and gear-hobbing solutions for precision machining applications.",
-    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
-    href: "/products/metal-cutting",
-    buttonText: "Explore Metal Cutting",
-  },
-  {
-    title: "02. Metal Forming Solutions",
-    description: "Discover press brakes, power presses, hydraulic presses and sheet metal processing technologies for industrial forming applications.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
-    href: "/products/metal-forming",
-    buttonText: "Explore Metal Forming",
-  },
-  {
-    title: "03. Precision Metrology",
-    description: "Explore dimensional measurement and inspection solutions, including coordinate measuring machines, optical measuring systems and portable measuring arms.",
-    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
-    href: "/products/metrology",
-    buttonText: "Explore Metrology",
-  },
-  {
-    title: "04. Tool Room Solutions",
-    description: "Discover specialised machinery for precision tooling and finishing, including EDM, wire EDM, surface grinding and cylindrical grinding solutions.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
-    href: "/products/tool-room-accessories",
-    buttonText: "Explore Tool Room Solutions",
-  },
-  {
-    title: "05. Machine Selection & Supply",
-    description: "Explore machine options from our product portfolio with assistance in identifying equipment suited to your production requirements and applications.",
-    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
-    href: "/contact",
-    buttonText: "Enquire About Machinery",
-  },
-  {
-    title: "06. Service & Spares Support",
-    description: "Connect with our team for service assistance and spare-parts enquiries for supported machines and brands.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
-    href: "/contact",
-    buttonText: "Get Support",
-  },
-];
+
+// [
+//   {
+//     title: "1. Metal Cutting Solutions",
+//     description:
+//       "Explore advanced CNC turning centres, machining centres, multi-axis machines and gear-hobbing solutions for precision machining applications.",
+//     image:
+//       "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+//     href: "/products/metal-cutting",
+//     buttonText: "Explore Metal Cutting",
+//   },
+//   {
+//     title: "02. Metal Forming Solutions",
+//     description:
+//       "Discover press brakes, power presses, hydraulic presses and sheet metal processing technologies for industrial forming applications.",
+//     image:
+//       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+//     href: "/products/metal-forming",
+//     buttonText: "Explore Metal Forming",
+//   },
+//   {
+//     title: "03. Precision Metrology",
+//     description:
+//       "Explore dimensional measurement and inspection solutions, including coordinate measuring machines, optical measuring systems and portable measuring arms.",
+//     image:
+//       "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+//     href: "/products/metrology",
+//     buttonText: "Explore Metrology",
+//   },
+//   {
+//     title: "04. Tool Room Solutions",
+//     description:
+//       "Discover specialised machinery for precision tooling and finishing, including EDM, wire EDM, surface grinding and cylindrical grinding solutions.",
+//     image:
+//       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+//     href: "/products/tool-room-accessories",
+//     buttonText: "Explore Tool Room Solutions",
+//   },
+//   {
+//     title: "05. Machine Selection & Supply",
+//     description:
+//       "Explore machine options from our product portfolio with assistance in identifying equipment suited to your production requirements and applications.",
+//     image:
+//       "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80",
+//     href: "/contact",
+//     buttonText: "Enquire About Machinery",
+//   },
+//   {
+//     title: "06. Service & Spares Support",
+//     description:
+//       "Connect with our team for service assistance and spare-parts enquiries for supported machines and brands.",
+//     image:
+//       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80",
+//     href: "/contact",
+//     buttonText: "Get Support",
+//   },
+// ];
 
 const ArrowUpRight = () => (
   <svg
@@ -56,17 +71,13 @@ const ArrowUpRight = () => (
     strokeWidth="1.5"
     aria-hidden="true"
   >
-    <path
-      d="M7 17 17 7M8 7h9v9"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M7 17 17 7M8 7h9v9" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
-export default function ServicesSection() {
+export default function ServicesSection({ data }) {
   const trackRef = useRef(null);
-
+  const services = data?.items || [];
   const scrollByCard = (dir) => {
     const el = trackRef.current;
     if (!el) return;
@@ -113,31 +124,42 @@ export default function ServicesSection() {
         <div className="grid gap-8 md:grid-cols-2 md:items-end md:gap-16">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
-              OUR EXPERTISE
+              {/* OUR EXPERTISE */}
+              {data?.eyebrow}
             </p>
 
             <h2 className="mt-4 max-w-md text-3xl font-medium leading-tight tracking-tight text-slate-900 md:text-5xl">
-              Complete Manufacturing Solutions.
-              <span className="block text-slate-500">Precision at Every Step.</span>
+              {data?.heading}
+              {/* Complete Manufacturing Solutions. */}
+              <span className="block text-slate-500">
+                {data?.highlightedHeading}
+
+                {/* Precision at Every Step. */}
+              </span>
             </h2>
 
-            <a
+            {/* <a
               href="#all-services"
               className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-[#004DA3] underline underline-offset-4 transition hover:text-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#004DA3]"
             >
               Explore Our Solutions
               <ArrowUpRight />
-            </a>
+            </a> */}
           </div>
 
           {/* Description */}
           <div className="space-y-4 text-sm leading-7 md:text-base">
             <p className="font-medium text-slate-800">
-            MTAT Technologies brings together advanced machine tools, industrial machinery and precision measurement technologies to support the evolving needs of modern manufacturing.   </p>
+              {data?.description?.map((paragraph, index) => (
+                <span key={index}>{paragraph}</span>
+              ))}
+              {/* MTAT Technologies brings together advanced machine tools, industrial machinery and precision measurement technologies to support the evolving needs of modern manufacturing.  */}
+            </p>
 
-            <p className="text-slate-500">
-          
-             From metal cutting and sheet metal processing to tool room equipment and metrology, we connect businesses with established technology partners and solutions designed to enhance accuracy, productivity and operational efficiency.  <br /><br />With a customer-focused approach and a commitment to dependable support, we help manufacturers identify the right technologies for their production requirements. </p>
+            {/* <p className="text-slate-500">
+         
+              From metal cutting and sheet metal processing to tool room equipment and metrology, we connect businesses with established technology partners and solutions designed to enhance accuracy, productivity and operational efficiency.  <br /><br />With a customer-focused approach and a commitment to dependable support, we help manufacturers identify the right technologies for their production requirements. 
+            </p> */}
           </div>
         </div>
 
@@ -148,8 +170,22 @@ export default function ServicesSection() {
         >
           <div className="animate-slow-marquee gap-6">
             {displayedServices.map((service, index) => (
+  //              <div key={service._id || index}>
+  //   <img
+  //     src={getMediaUrl(service.image)}
+  //     alt={service.title}
+  //   />
+
+  //   <h3>{service.title}</h3>
+
+  //   <p>{service.description}</p>
+
+  //   <Link href={service.href || "/contact"}>
+  //     {service.buttonText}
+  //   </Link>
+  // </div>
               <div
-                key={`${service.title}-${index}`}
+                key={service._id || index}
                 data-card
                 className="group relative flex h-96 w-65 shrink-0 snap-start flex-col justify-end overflow-visible bg-slate-900 md:h-80 md:w-72"
               >
@@ -160,7 +196,7 @@ export default function ServicesSection() {
                 >
                   {/* Image */}
                   <img
-                    src={service.image}
+                     src={getMediaUrl(service.image)}
                     alt={service.title}
                     loading="lazy"
                     className="absolute inset-0 h-full w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
@@ -181,6 +217,11 @@ export default function ServicesSection() {
                   </div>
                 </a>
               </div>
+
+
+
+
+
             ))}
           </div>
         </div>

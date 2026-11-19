@@ -145,6 +145,106 @@ function SectionEyebrow({ children }) {
 
 export default function OurPresencePage() {
   const [swiper, setSwiper] = useState(null);
+
+const [pageData, setPageData] = useState(null);
+
+
+const content = pageData || {
+  hero: {
+    eyebrow: "MTAT TECHNOLOGIES PRIVATE LIMITED",
+    title: "Our Presence",
+    description:
+      "Three decades of experience, established technology partnerships and customer-focused solutions driving manufacturing progress.",
+    buttonText: "Explore Our Story",
+    buttonLink: "#our-story",
+    bottomText: "Engineering Precision · Powering Progress",
+    image: images.hero,
+  },
+  gallery: images.gallery1
+    ? [
+        images.gallery1,
+        images.team1,
+        images.gallery3,
+        images.gallery6,
+        images.gallery2,
+        images.gallery5,
+        images.team2,
+        images.gallery4,
+        images.team3,
+      ].map((image) => ({ image, alt: "MTAT manufacturing and company" }))
+    : [],
+  teamSection: {
+    eyebrow: "Our People",
+    heading: "Approximately 60 Professionals.",
+    highlightedText: "One Shared Vision.",
+    description:
+      "From an initial team of two professionals to an organisation of approximately 60, our journey reflects the dedication, experience and collaborative efforts of our people.",
+    note: "",
+  },
+  team,
+  industriesSection: {
+    eyebrow: "Industrial Reach",
+    heading: "Supporting Diverse Manufacturing",
+    description:
+      "Our solutions are engineered for a broad range of industrial sectors, delivering precision, reliability, and productivity where it matters most.",
+    note: "Explore our application domains on the right",
+    backgroundImage: "/Images/banner.webp",
+    columnOne: [],
+    columnTwo: [],
+  },
+  approachSection: {
+    eyebrow: "Why Choose MTAT",
+    heading: "Experience That",
+    highlightedText: "Moves Industry Forward.",
+    description:
+      "Bringing together three decades of industry experience, established technology partnerships and dependable customer support.",
+    secondaryDescription:
+      "From machine selection and technical coordination to installation assistance, maintenance and spares.",
+  },
+  highlights: [],
+  approachCards: [],
+  supportSection: {
+    eyebrow: "SALES, SERVICE & SUPPORT",
+    heading: "Support Beyond",
+    highlightedText: "The Machine.",
+    description:
+    "The value of a machine extends beyond its installation.",
+    buttonText: "Discuss Your Requirements",
+    buttonLink: "/contact",
+  },
+  supportCards: testimonials,
+};
+
+
+
+
+
+
+useEffect(() => {
+  const loadPage = async () => {
+    try {
+      const API =
+        process.env.NEXT_PUBLIC_API_URL ||
+        "http://localhost:8002/api";
+
+      const response = await fetch(`${API}/our-presence`, {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to load Our Presence page.");
+      }
+
+      const result = await response.json();
+      setPageData(result.data);
+    } catch (error) {
+      console.error("Our Presence API:", error);
+    }
+  };
+
+  loadPage();
+}, []);
+
   const rootRef = useRef(null);
 
   useEffect(() => {

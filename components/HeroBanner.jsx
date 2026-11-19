@@ -2,8 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import { getMediaUrl } from ".././src/app/lib/mediaUrl";
 
-function HeroBanner() {
+function HeroBanner({data}) {
   return (
     <div className="relative w-full bg-[#01193B] overflow-hidden">
       {/* Background Video relative to container, covering the entire area */}
@@ -15,7 +16,9 @@ function HeroBanner() {
           playsInline
           className=" w-full h-full object-cover object-top opacity-80"
         >
-          <source src="/video/mtat1.mp4" type="video/mp4" />
+          {/* <source src="/video/mtat1.mp4" type="video/mp4" /> */}
+          <source src={getMediaUrl(data?.video)} type="video/mp4" />
+
           Your browser does not support the video tag.
         </video>
       </div>
@@ -29,6 +32,7 @@ function HeroBanner() {
           
           {/* Main Heading matching the reference layout */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1]">
+       {/* {data?.heading} */}
           Advance Machine  
          <br className="hidden sm:inline" />
              <span className="relative inline-block text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[6px] after:bg-[#004DA3]/60 italic">tools &</span> <br className="hidden sm:inline" />
@@ -37,22 +41,24 @@ function HeroBanner() {
 
           {/* Subtext */}
           <p className="text-sm sm:text-base text-gray-200 max-w-xl font-normal leading-relaxed">
-         MTAT Technologies delivers advanced machine tools, precision machining technologies and industrial manufacturing solutions to help businesses enhance productivity, improve accuracy and build stronger manufacturing capabilities.
+   {data?.description}
+         {/* MTAT Technologies delivers advanced machine tools, precision machining technologies and industrial manufacturing solutions to help businesses enhance productivity, improve accuracy and build stronger manufacturing capabilities. */}
           </p>
 
           {/* Explore More Action Button */}
           <div className="pt-4">
-            <div
+            <Link href={data?.buttonLink || "/contact"}
             
               className="inline-flex items-center justify-between bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/20 rounded-[4px] px-6 py-4 text-white text-xs font-semibold tracking-[1.2px] uppercase transition-all duration-300 group shadow-lg"
             >
                <span className="flex items-center gap-3">
-          Explore Our Solutions
+        {data?.buttonText}
+            {/* Explore Our Solutions */}
                 <span className="w-7 h-7 rounded bg-[#004DA3] flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                   <BsArrowUpRight className="w-4 h-4 text-white" />
                 </span>
               </span>
-            </div>
+            </Link>
           </div>
 
         </div>

@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import AdminAuthGuard from "./AdminAuthGuard";
 
 const menu = [
   {
@@ -170,7 +171,7 @@ export default function AdminLayout({ children }) {
           <Link
             href="/"
             target="_blank"
-            className="text-xs font-medium text- transition hover:text-white sm:text-sm"
+            className="text-xs font-medium text- transition hover:text-black sm:text-sm"
           >
             View Website ↗
           </Link>
@@ -220,7 +221,10 @@ export default function AdminLayout({ children }) {
         {/* Main Content */}
         <main className="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">
           <div className="mx-auto w-full max-w-[1600px]">
-            {children}
+             <AdminAuthGuard>
+               {children}
+              
+              </AdminAuthGuard>  
           </div>
         </main>
       </div>

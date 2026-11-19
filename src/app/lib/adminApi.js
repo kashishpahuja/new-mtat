@@ -22,6 +22,19 @@ export function clearAdminSession() {
 export async function apiRequest(path, options = {}) {
   const token = getAdminToken();
 
+  // Redirect if admin token is missing
+  if (
+    typeof window !== "undefined" &&
+    !token &&
+    !path.startsWith("/auth/login")
+  ) {
+    if (window.location.pathname !== "/admin/login") {
+      window.location.replace("/admin/login");
+    }
+
+    throw new Error("Please log in to continue.");
+  }
+
   const headers = {
     ...(options.body instanceof FormData
       ? {}
