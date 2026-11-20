@@ -1,5 +1,6 @@
 'use client';
 
+import { getMediaUrl } from "@/app/lib/mediaUrl";
 import React from "react";
 import {
   FaIndustry,
@@ -8,57 +9,67 @@ import {
   FaHeadset,
 } from "react-icons/fa";
 
-
-const strengths = [
-  {
-    icon: FaIndustry,
-    number: "01",
-    title: "Precision",
-    description:
-      "Advanced machine-tool technologies for accuracy and reliable manufacturing performance.",
-  },
-  {
-    icon: FaHandshake,
-    number: "02",
-    title: "Partnership",
-    description:
-      "Strong technology partnerships built on trust, expertise, and shared growth.",
-  },
-  {
-    icon: FaCogs,
-    number: "03",
-    title: "Expertise",
-    description:
-      "The right machinery and technology for diverse industrial applications.",
-  },
-  {
-    icon: FaHeadset,
-    number: "04",
-    title: "Progress",
-    description:
-      "Responsive on-ground support to keep businesses moving forward.",
-  },
-];
+const iconMap = {
+  industry: FaIndustry,
+  handshake: FaHandshake,
+  cogs: FaCogs,
+  headset: FaHeadset,
+};
 
 
-const column1Images = [
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=500&q=80",
-];
+// const strengths = [
+//   {
+//     icon: FaIndustry,
+//     number: "01",
+//     title: "Precision",
+//     description:
+//       "Advanced machine-tool technologies for accuracy and reliable manufacturing performance.",
+//   },
+//   {
+//     icon: FaHandshake,
+//     number: "02",
+//     title: "Partnership",
+//     description:
+//       "Strong technology partnerships built on trust, expertise, and shared growth.",
+//   },
+//   {
+//     icon: FaCogs,
+//     number: "03",
+//     title: "Expertise",
+//     description:
+//       "The right machinery and technology for diverse industrial applications.",
+//   },
+//   {
+//     icon: FaHeadset,
+//     number: "04",
+//     title: "Progress",
+//     description:
+//       "Responsive on-ground support to keep businesses moving forward.",
+//   },
+// ];
 
-const column2Images = [
-  "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=500&q=80",
-  "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=500&q=80",
-];
 
-export default function WhyUsSection() {
+// const column1Images = [
+//   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=500&q=80",
+// ];
+
+// const column2Images = [
+//   "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=500&q=80",
+//   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=500&q=80",
+// ];
+
+export default function WhyUsSection({data}) {
+  const strengths = data?.strengths || [];
+const column1Images = data?.leftImages || [];
+const column2Images = data?.rightImages || [];
   return (
     <section className="relative flex items-center overflow-hidden bg-[#01050a] py-12 text-white lg:py-0">
       {/* Background Overlay */}
@@ -76,38 +87,47 @@ export default function WhyUsSection() {
           <div className="space-y-10 lg:col-span-8">
             <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
-              Why MTAT
+           {data?.eyebrow}   {/* Why MTAT */}
             </p>
 
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Precision.
-              <br />
-              Partnership. Progress.
+            {data?.heading}
+              {/* Precision. */}
+              {/* <br /> */}
+              {/* Partnership. Progress. */}
             </h2>
 
 
               <div className="mt-4 h-px w-14 bg-white/30" />
 
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base">
-              The right technology. Expert guidance. Reliable support. MTAT helps
-  businesses make informed manufacturing decisions with confidence.
+           {data?.description}
+              {/* The right technology. Expert guidance. Reliable support. MTAT helps
+  businesses make informed manufacturing decisions with confidence. */}
               </p>
             </div>
 
             {/* Why Choose MTAT */}
             <div className="grid max-w-3xl gap-6 sm:grid-cols-2">
-              {strengths.map((item) => {
-                const Icon = item.icon;
+         {/* {strengths.map((item, index) => (
+  <div key={item._id || index}>
+    <span>{item.number}</span>
+    <h3>{item.title}</h3>
+    <p>{item.description}</p>
+  </div>
+))} */}
 
+     {strengths.map((item,index) => {
+                const Icon = iconMap[item.icon] || FaIndustry;
                 return (
                   <div
-                    key={item.number}
+                   key={item._id || index}
                     className="group relative flex items-start gap-4 rounded-xl border border-white/5 p-4 backdrop-blur-sm transition-all duration-300 hover:border-white/15 hover:bg-black/40 hover:shadow-lg"
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-300 group-hover:bg-white/20">
                       <Icon className="h-4 w-4" />
                     </div>
-
+ {/* <span>{item.number}</span> */}
                     <div>
                       <h3 className="text-sm font-semibold tracking-tight text-white sm:text-base">
                         {item.title}
@@ -125,13 +145,15 @@ export default function WhyUsSection() {
             {/* Closing Statement */}
             <div className="flex flex-col items-start justify-start gap-2 border-t border-white/10 pt-4 text-left sm:flex-row sm:items-center sm:gap-3">
               <span className="text-xs font-medium text-gray-200 sm:text-sm">
-                Technology you can trust.
+              {data?.closingLine1}
+                {/* Technology you can trust. */}
               </span>
 
               <span className="hidden text-white/30 sm:inline">/</span>
 
               <span className="text-xs text-gray-400 sm:text-sm">
-                Relationships built for the long term.
+             {data?.closingLine2}
+                {/* Relationships built for the long term. */}
               </span>
             </div>
           </div>
@@ -141,14 +163,14 @@ export default function WhyUsSection() {
 
             {/* Column 1 */}
             <div className="animate-scroll-up flex w-1/2 flex-col gap-3">
-              {column1Images.concat(column1Images).map((src, idx) => (
+              {column1Images.concat(column1Images).map((item, index) => (
                 <div
-                  key={`col1-${idx}`}
+                  key={item._id || index}
                   className="h-32 w-full shrink-0 overflow-hidden rounded-2xl border border-white/15 bg-black/40 shadow-md sm:h-36"
                 >
                   <img
-                    src={src}
-                    alt="Industrial manufacturing and engineering"
+                    src={getMediaUrl(item.image)}
+                    alt={item.alt || "Industrial manufacturing"}
                     loading="lazy"
                     className="h-full w-full object-cover opacity-80 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0"
                   />
@@ -158,14 +180,14 @@ export default function WhyUsSection() {
 
             {/* Column 2 */}
             <div className="animate-scroll-down flex w-1/2 flex-col gap-3">
-              {column2Images.concat(column2Images).map((src, idx) => (
+              {column2Images.concat(column2Images).map((item, index) => (
                 <div
-                  key={`col2-${idx}`}
+                  key={item._id || index}
                   className="h-32 w-full shrink-0 overflow-hidden rounded-2xl border border-white/15 bg-black/40 shadow-md sm:h-36"
                 >
                   <img
-                    src={src}
-                    alt="Precision machinery and industrial technology"
+                    src={getMediaUrl(item.image)}
+                    alt={item.alt || "Industrial manufacturing"}
                     loading="lazy"
                     className="h-full w-full object-cover opacity-80 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0"
                   />

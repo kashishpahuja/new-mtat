@@ -58,6 +58,35 @@ const EMPTY_CONTENT = {
   },
 };
 
+
+const API_BASE = (
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api"
+).replace(/\/$/, "");
+
+const API_ORIGIN = new URL(API_BASE).origin;
+
+function getImagePreviewUrl(url) {
+  if (!url) return "";
+
+  // Already an absolute URL
+  if (/^https?:\/\//i.test(url)) {
+    return url.replace(
+      /^http:\/\/(localhost|127\.0\.0\.1):8002/i,
+      API_ORIGIN
+    );
+  }
+
+  // Uploaded backend files
+  if (url.startsWith("/uploads/") || url.startsWith("uploads/")) {
+    return `${API_ORIGIN}/${url.replace(/^\/+/, "")}`;
+  }
+
+  // Frontend public assets such as /Images/logo.webp
+  return url.startsWith("/") ? url : `/${url}`;
+}
+
+
+
 const SECTIONS = [
   {
     id: "seo",
@@ -253,9 +282,10 @@ function Field({ field, value, onChange, name }) {
   const [uploadError, setUploadError] = useState("");
 
   if (field.type === "image") {
-    const image = typeof value === "string"
-      ? { url: value, alt: "" }
-      : value || { url: "", alt: "" };
+    const image =
+      typeof value === "string"
+        ? { url: value, alt: "" }
+        : value || { url: "", alt: "" };
 
     async function uploadImage(file) {
       if (!file) return;
@@ -268,18 +298,38 @@ function Field({ field, value, onChange, name }) {
         formData.append("file", file);
         formData.append("fieldName", name || "about-image");
 
-        const result = await apiRequest("/uploads", {
-          method: "POST",
-          body: formData,
-        });
+      const result = await apiRequest("/uploads", {
+  method: "POST",
+  body: formData,
+});
 
+console.log("UPLOAD RESPONSE:", result);
+
+
+        // Support common upload API response structures.
+        const uploadedUrl =
+          result?.url ||
+          result?.data?.url ||
+          result?.data?.data?.url ||
+          result?.file?.url ||
+          result?.data?.file?.url;
+
+        if (!uploadedUrl) {
+          console.error("Upload API response:", result);
+          throw new Error(
+            "Image uploaded, but the API did not return an image URL."
+          );
+        }
+
+        // Update the parent About page content state.
         onChange({
           ...image,
-          url: result.url,
+          url: uploadedUrl,
           alt: image.alt || file.name.replace(/\.[^.]+$/, ""),
         });
       } catch (error) {
-        setUploadError(error.message);
+        console.error("Image upload error:", error);
+        setUploadError(error.message || "Image upload failed.");
       } finally {
         setUploading(false);
       }
@@ -294,25 +344,45 @@ function Field({ field, value, onChange, name }) {
         {image.url ? (
           <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
             <img
-              src={image.url}
+              src={getImagePreviewUrl(image.url)}
               alt={image.alt || field.label}
               className="h-48 w-full object-cover"
             />
 
-            <button
-              type="button"
-              onClick={() => onChange({ ...image, url: "" })}
-              className="absolute right-3 top-3 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-red-600 shadow"
-            >
-              Remove Image
-            </button>
+            <div className="absolute right-3 top-3 flex gap-2">
+              <label className="cursor-pointer rounded-lg bg-white px-3 py-2 text-xs font-semibold text-[#467B23] shadow">
+                {uploading ? "Uploading..." : "Replace Image"}
+
+                <input
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/svg+xml"
+                  disabled={uploading}
+                  className="hidden"
+                  onChange={(e) => {
+                    uploadImage(e.target.files?.[0]);
+                    e.target.value = "";
+                  }}
+                />
+              </label>
+
+              <button
+                type="button"
+                disabled={uploading}
+                onClick={() => onChange({ ...image, url: "" })}
+                className="rounded-lg bg-white px-3 py-2 text-xs font-semibold text-red-600 shadow disabled:opacity-50"
+              >
+                Remove
+              </button>
+            </div>
           </div>
         ) : (
           <label className="flex min-h-40 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-6 text-center transition hover:border-[#467B23] hover:bg-green-50/40">
             <span className="text-3xl text-slate-400">+</span>
+
             <span className="mt-2 text-sm font-semibold text-slate-700">
               {uploading ? "Uploading..." : "Click to upload image"}
             </span>
+
             <span className="mt-1 text-xs text-slate-400">
               JPG, PNG, WEBP or SVG
             </span>
@@ -343,6 +413,12 @@ function Field({ field, value, onChange, name }) {
         {uploadError && (
           <p className="text-sm text-red-600">{uploadError}</p>
         )}
+
+        {image.url && (
+          <p className="break-all text-xs text-slate-400">
+            Image URL: {image.url}
+          </p>
+        )}
       </div>
     );
   }
@@ -353,6 +429,7 @@ function Field({ field, value, onChange, name }) {
         <label className="mb-2 block text-sm font-medium text-slate-700">
           {field.label}
         </label>
+
         <input
           value={Array.isArray(value) ? value.join(", ") : value || ""}
           onChange={(e) =>
@@ -366,6 +443,7 @@ function Field({ field, value, onChange, name }) {
           placeholder="CNC, VMC, HMC"
           className="admin-input"
         />
+
         <p className="mt-1 text-xs text-slate-400">
           Separate each tag with a comma.
         </p>
@@ -399,6 +477,161 @@ function Field({ field, value, onChange, name }) {
     </div>
   );
 }
+
+// function Field({ field, value, onChange, name }) {
+//   const [uploading, setUploading] = useState(false);
+//   const [uploadError, setUploadError] = useState("");
+
+//   if (field.type === "image") {
+//     const image = typeof value === "string"
+//       ? { url: value, alt: "" }
+//       : value || { url: "", alt: "" };
+
+//     async function uploadImage(file) {
+//       if (!file) return;
+
+//       setUploading(true);
+//       setUploadError("");
+
+//       try {
+//         const formData = new FormData();
+//         formData.append("file", file);
+//         formData.append("fieldName", name || "about-image");
+
+//         const result = await apiRequest("/uploads", {
+//           method: "POST",
+//           body: formData,
+//         });
+
+//         onChange({
+//           ...image,
+//           url: result.url,
+//           alt: image.alt || file.name.replace(/\.[^.]+$/, ""),
+//         });
+//       } catch (error) {
+//         setUploadError(error.message);
+//       } finally {
+//         setUploading(false);
+//       }
+//     }
+
+//     return (
+//       <div className="space-y-3">
+//         <label className="block text-sm font-medium text-slate-700">
+//           {field.label}
+//         </label>
+
+//         {image.url ? (
+//           <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+//             <img
+//               src={image.url}
+//               alt={image.alt || field.label}
+//               className="h-48 w-full object-cover"
+//             />
+
+//             <button
+//               type="button"
+//               onClick={() => onChange({ ...image, url: "" })}
+//               className="absolute right-3 top-3 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-red-600 shadow"
+//             >
+//               Remove Image
+//             </button>
+//           </div>
+//         ) : (
+//           <label className="flex min-h-40 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-6 text-center transition hover:border-[#467B23] hover:bg-green-50/40">
+//             <span className="text-3xl text-slate-400">+</span>
+//             <span className="mt-2 text-sm font-semibold text-slate-700">
+//               {uploading ? "Uploading..." : "Click to upload image"}
+//             </span>
+//             <span className="mt-1 text-xs text-slate-400">
+//               JPG, PNG, WEBP or SVG
+//             </span>
+
+//             <input
+//               type="file"
+//               accept="image/jpeg,image/png,image/webp,image/svg+xml"
+//               disabled={uploading}
+//               className="hidden"
+//               onChange={(e) => {
+//                 uploadImage(e.target.files?.[0]);
+//                 e.target.value = "";
+//               }}
+//             />
+//           </label>
+//         )}
+
+//         <input
+//           type="text"
+//           value={image.alt || ""}
+//           onChange={(e) =>
+//             onChange({ ...image, alt: e.target.value })
+//           }
+//           placeholder="Image alt text"
+//           className="admin-input"
+//         />
+
+//         {uploadError && (
+//           <p className="text-sm text-red-600">{uploadError}</p>
+//         )}
+//       </div>
+//     );
+//   }
+
+//   if (field.type === "tags") {
+//     return (
+//       <div>
+//         <label className="mb-2 block text-sm font-medium text-slate-700">
+//           {field.label}
+//         </label>
+//         <input
+//           value={Array.isArray(value) ? value.join(", ") : value || ""}
+//           onChange={(e) =>
+//             onChange(
+//               e.target.value
+//                 .split(",")
+//                 .map((tag) => tag.trim())
+//                 .filter(Boolean)
+//             )
+//           }
+//           placeholder="CNC, VMC, HMC"
+//           className="admin-input"
+//         />
+//         <p className="mt-1 text-xs text-slate-400">
+//           Separate each tag with a comma.
+//         </p>
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div>
+//       <label className="mb-2 block text-sm font-medium text-slate-700">
+//         {field.label}
+//       </label>
+
+//       {field.type === "textarea" ? (
+//         <textarea
+//           value={value || ""}
+//           onChange={(e) => onChange(e.target.value)}
+//           rows={4}
+//           placeholder={`Enter ${field.label.toLowerCase()}...`}
+//           className="admin-input min-h-24 resize-y"
+//         />
+//       ) : (
+//         <input
+//           type={field.type === "url" ? "url" : "text"}
+//           value={value || ""}
+//           onChange={(e) => onChange(e.target.value)}
+//           placeholder={`Enter ${field.label.toLowerCase()}...`}
+//           className="admin-input"
+//         />
+//       )}
+//     </div>
+//   );
+// }
+
+
+
 
 export default function AboutContentPage() {
   const [content, setContent] = useState(clone(EMPTY_CONTENT));
@@ -486,38 +719,82 @@ export default function AboutContentPage() {
     });
   }
 
-  async function saveContent(shouldPublish = false) {
-    setSaving(true);
-    setError("");
-    setMessage("");
+async function saveContent(shouldPublish = false) {
+  setSaving(true);
+  setError("");
+  setMessage("");
 
-    try {
-      const result = await apiRequest("/about", {
-        method: "PUT",
-        body: JSON.stringify({
-          content,
-          ...(shouldPublish ? { published: true } : {}),
-        }),
-      });
+  try {
+    const result = await apiRequest("/about", {
+      method: "PUT",
+      body: JSON.stringify({
+        content,
+        ...(shouldPublish ? { published: true } : {}),
+      }),
+    });
 
-      setContent({
-        ...clone(EMPTY_CONTENT),
-        ...(result.data || content),
-      });
-
-      setPublished(Boolean(result.published));
-
-      setMessage(
-        shouldPublish
-          ? "About page published successfully."
-          : "Changes saved successfully."
-      );
-    } catch (err) {
-      setError(err.message || "Unable to save About page.");
-    } finally {
-      setSaving(false);
+    if (!result?.success) {
+      throw new Error(result?.message || "Unable to save About page.");
     }
+
+    const savedContent = result.data?.content ?? result.data;
+
+    if (!savedContent) {
+      throw new Error("The server did not return the saved content.");
+    }
+
+    setContent({
+      ...clone(EMPTY_CONTENT),
+      ...savedContent,
+    });
+
+    setPublished(Boolean(result.published));
+
+    setMessage(
+      shouldPublish
+        ? "About page published successfully."
+        : "Changes saved successfully."
+    );
+  } catch (err) {
+    console.error("Save About page error:", err);
+    setError(err.message || "Unable to save About page.");
+  } finally {
+    setSaving(false);
   }
+}
+
+// async function saveContent(shouldPublish = false) {
+  //   setSaving(true);
+  //   setError("");
+  //   setMessage("");
+
+  //   try {
+  //     const result = await apiRequest("/about", {
+  //       method: "PUT",
+  //       body: JSON.stringify({
+  //         content,
+  //         ...(shouldPublish ? { published: true } : {}),
+  //       }),
+  //     });
+
+  //     setContent({
+  //       ...clone(EMPTY_CONTENT),
+  //       ...(result.data || content),
+  //     });
+
+  //     setPublished(Boolean(result.published));
+
+  //     setMessage(
+  //       shouldPublish
+  //         ? "About page published successfully."
+  //         : "Changes saved successfully."
+  //     );
+  //   } catch (err) {
+  //     setError(err.message || "Unable to save About page.");
+  //   } finally {
+  //     setSaving(false);
+  //   }
+  // }
 
   if (loading) {
     return (

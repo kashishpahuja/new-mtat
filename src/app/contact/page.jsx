@@ -12,13 +12,219 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
+  FaGlobe,
   FaArrowRight,
 } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const API_BASE_URL = (
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api"
+).replace(/\/$/, "");
+
+const DEFAULT_PAGE = {
+  hero: {
+    eyebrow: "ENGINEERING PRECISION · POWERING PROGRESS",
+    title: "One Stop Solution Providers.",
+    description:
+      "Connect with our team for precision machinery, sales, service, and spare parts assistance.",
+    buttonText: "Get In Touch",
+    buttonLink: "#contact-section",
+    image: "/Images/contact.webp",
+    imageAlt: "Industrial machinery and manufacturing environment",
+    overlayOpacity: 65,
+  },
+  contactInfo: {
+    label: "CONTACT US",
+    heading: "Get In Touch",
+    description:
+      "Reach out directly via phone or email, or connect with our team to discuss your machinery and technical requirements.",
+    phones: [
+      { label: "Phone 1", number: "0160-4624748", href: "tel:01604624748", isActive: true },
+      { label: "Phone 2", number: "0160-4635748", href: "tel:01604635748", isActive: true },
+      { label: "Phone 3", number: "0160-4634748", href: "tel:01604634748", isActive: true },
+    ],
+    email: "info@mtaindia.in",
+    address: "Ludhiana, Punjab, India",
+  },
+  quickLinks: [
+    { label: "About", url: "/about", isActive: true },
+    { label: "Strength", url: "/about#our-journey", isActive: true },
+    { label: "Our Presence", url: "/our-presence", isActive: true },
+    { label: "Contact", url: "/contact", isActive: true },
+  ],
+  socials: [
+    {
+      platform: "Facebook",
+      url: "https://www.facebook.com/people/MTAT-Technologies-Private-Limited/61562506565764/",
+      isActive: true,
+    },
+    {
+      platform: "Instagram",
+      url: "https://www.instagram.com/mtattpl/",
+      isActive: true,
+    },
+    {
+      platform: "LinkedIn",
+      url: "https://www.linkedin.com/",
+      isActive: true,
+    },
+    {
+      platform: "YouTube",
+      url: "https://www.youtube.com/@mtatpl",
+      isActive: true,
+    },
+  ],
+  enquiry: {
+    eyebrow: "SEND AN ENQUIRY",
+    heading: "Let's Discuss Your Requirements",
+    buttonText: "Submit Enquiry",
+    successTitle: "Thank You!",
+    successMessage:
+      "Your message has been received. Our team will get back to you shortly.",
+    nameLabel: "Your Name",
+    emailLabel: "Email Address",
+    phoneLabel: "Phone Number",
+    messageLabel: "Message / Requirements",
+    namePlaceholder: "Enter your name",
+    emailPlaceholder: "Enter your email",
+    phonePlaceholder: "Enter your phone number",
+    messagePlaceholder:
+      "Tell us about the machinery or services you need...",
+  },
+  map: {
+    title: "MTAT Technologies Location Map",
+    embedUrl:
+      "https://www.google.com/maps?q=MTAT+Technologies+Ludhiana&output=embed",
+    isVisible: true,
+  },
+  isPublished: true,
+};
+
+function normalizeContactPage(raw) {
+  const payload =
+    raw?.data?.contactPage ||
+    raw?.data ||
+    raw?.contactPage ||
+    raw?.page ||
+    raw ||
+    {};
+
+  const rawHero = payload.hero || {};
+  const rawContact = payload.contactInfo || {};
+  const rawQuickLinks = Array.isArray(payload.quickLinks)
+    ? payload.quickLinks
+    : Array.isArray(payload.quickLinks?.items)
+    ? payload.quickLinks.items
+    : DEFAULT_PAGE.quickLinks;
+
+  const rawSocials = Array.isArray(payload.socials)
+    ? payload.socials
+    : Array.isArray(payload.socials?.items)
+    ? payload.socials.items
+    : DEFAULT_PAGE.socials;
+
+  const emailsFromArray = Array.isArray(rawContact.emails)
+    ? rawContact.emails.filter((e) => e?.isActive !== false && e?.email)
+    : [];
+
+  const resolvedEmail =
+    rawContact.email ||
+    emailsFromArray[0]?.email ||
+    DEFAULT_PAGE.contactInfo.email;
+
+  const resolvedAddress =
+    rawContact.address ||
+    rawContact.location?.address ||
+    DEFAULT_PAGE.contactInfo.address;
+
+  const phones = Array.isArray(rawContact.phones)
+    ? rawContact.phones
+        .filter((p) => p?.isActive !== false && p?.number)
+        .map((p) => ({
+          label: p.label || "Phone",
+          number: p.number,
+          href: p.href || `tel:${String(p.number).replace(/[^+\d]/g, "")}`,
+        }))
+    : DEFAULT_PAGE.contactInfo.phones;
+
+  const overlayNum = Number(rawHero.overlayOpacity);
+  const overlayOpacity = Number.isFinite(overlayNum)
+    ? Math.min(100, Math.max(0, overlayNum))
+    : DEFAULT_PAGE.hero.overlayOpacity;
+
+  return {
+    hero: {
+      ...DEFAULT_PAGE.hero,
+      ...rawHero,
+      image:
+        rawHero.image ||
+        rawHero.backgroundImage ||
+        DEFAULT_PAGE.hero.image,
+      overlayOpacity,
+    },
+    contactInfo: {
+      ...DEFAULT_PAGE.contactInfo,
+      ...rawContact,
+      email: resolvedEmail,
+      emails: emailsFromArray,
+      address: resolvedAddress,
+      phones,
+    },
+    quickLinks: rawQuickLinks.filter(
+      (item) => item?.isActive !== false && item?.label && item?.url
+    ),
+    socials: rawSocials.filter(
+      (item) => item?.isActive !== false && item?.url
+    ),
+    enquiry: {
+      ...DEFAULT_PAGE.enquiry,
+      ...(payload.enquiry || {}),
+      buttonText:
+        payload.enquiry?.buttonText ||
+        payload.enquiry?.submitText ||
+        DEFAULT_PAGE.enquiry.buttonText,
+    },
+    map: {
+      ...DEFAULT_PAGE.map,
+      ...(payload.map || {}),
+      isVisible:
+        typeof payload.map?.isVisible === "boolean"
+          ? payload.map.isVisible
+          : true,
+    },
+    isPublished:
+      typeof payload.isPublished === "boolean"
+        ? payload.isPublished
+        : DEFAULT_PAGE.isPublished,
+  };
+}
+
+function getSocialIcon(platform) {
+  const key = String(platform || "").toLowerCase();
+  if (key.includes("facebook")) return <FaFacebookF className="h-4 w-4" />;
+  if (key.includes("instagram")) return <FaInstagram className="h-4 w-4" />;
+  if (key.includes("linkedin")) return <FaLinkedinIn className="h-4 w-4" />;
+  if (key.includes("youtube")) return <FaYoutube className="h-4 w-4" />;
+  return <FaGlobe className="h-4 w-4" />;
+}
+
+function formatHeroTitleLines(title) {
+  if (!title) return ["One Stop Solution", "Providers."];
+  if (title.includes("\n")) return title.split("\n");
+  const idx = title.indexOf("Providers.");
+  if (idx > 0) {
+    return [title.slice(0, idx).trim(), title.slice(idx).trim()];
+  }
+  return [title];
+}
+
 export default function ContactPage() {
   const containerRef = useRef(null);
+
+  const [pageData, setPageData] = useState(DEFAULT_PAGE);
+  const [loading, setLoading] = useState(true);
+  const [unavailable, setUnavailable] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -30,29 +236,78 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
+    let active = true;
+
+    async function fetchContactPage() {
+      try {
+        setLoading(true);
+        setUnavailable(false);
+
+        const res = await fetch(`${API_BASE_URL}/contact`, {
+          cache: "no-store",
+        });
+
+        if (res.status === 404) {
+          if (active) {
+            setUnavailable(true);
+          }
+          return;
+        }
+
+        const json = await res.json();
+
+        if (!res.ok || json?.success === false) {
+          if (res.status === 404 && active) {
+            setUnavailable(true);
+          }
+          return;
+        }
+
+        if (active) {
+          setPageData(normalizeContactPage(json));
+        }
+      } catch {
+        // Fall back gracefully to DEFAULT_PAGE if backend is unreachable
+      } finally {
+        if (active) {
+          setLoading(false);
+        }
+      }
+    }
+
+    fetchContactPage();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (loading || unavailable || !containerRef.current) return;
+
     const ctx = gsap.context(() => {
-      // Hero entrance animations
       gsap.from("[data-hero-content]", {
         opacity: 0,
-        y: 40,
-        duration: 1,
-        stagger: 0.15,
+        y: 36,
+        duration: 0.9,
+        stagger: 0.14,
         ease: "power3.out",
+        clearProps: "transform,opacity",
       });
 
-      // Section animations
       gsap.utils.toArray(".gsap-fade-up").forEach((el) => {
         gsap.fromTo(
           el,
-          { opacity: 0, y: 40 },
+          { opacity: 0, y: 36 },
           {
             opacity: 1,
             y: 0,
-            duration: 0.9,
+            duration: 0.85,
             ease: "power3.out",
+            clearProps: "transform",
             scrollTrigger: {
               trigger: el,
-              start: "top 85%",
+              start: "top 88%",
               toggleActions: "play none none reverse",
             },
           }
@@ -61,23 +316,43 @@ export default function ContactPage() {
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [loading, unavailable]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Connect your enquiry API here to actually send the form data.
+    // Connect your enquiry API endpoint here if needed
     setSubmitted(true);
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
+
+  if (unavailable) {
+    return (
+      <div className="flex min-h-[60vh] flex-col items-center justify-center bg-[#f7f9fc] px-6 text-center text-slate-700">
+        <h1 className="text-2xl font-semibold text-[#01193B]">
+          Contact Page Unavailable
+        </h1>
+        <p className="mt-2 max-w-md text-sm text-slate-500">
+          This page is currently unpublished. Please check back later.
+        </p>
+      </div>
+    );
+  }
+
+  const { hero, contactInfo, quickLinks, socials, enquiry, map } = pageData;
+  const titleLines = formatHeroTitleLines(hero.title);
+  const activeEmails =
+    contactInfo.emails?.length > 0
+      ? contactInfo.emails.map((item) => item.email)
+      : contactInfo.email
+      ? [contactInfo.email]
+      : [];
 
   return (
     <div
@@ -107,26 +382,23 @@ export default function ContactPage() {
       {/* Hero Banner */}
       <section className="relative">
         <div className="relative flex min-h-125 items-center justify-center overflow-hidden bg-[#01193B] sm:min-h-[540px] lg:min-h-[650px]">
-          <img
-            src="/Images/contact.webp"
-            alt="Industrial machinery and manufacturing environment"
-            fetchPriority="high"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
+          {hero.image && (
+            <img
+              key={hero.image}
+              src={hero.image}
+              alt={
+                hero.imageAlt ||
+                "Industrial machinery and manufacturing environment"
+              }
+              fetchPriority="high"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          )}
 
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-[#01193B]/65" />
-
-          {/* Subtle industrial grid texture */}
+          {/* Dynamic dark overlay */}
           <div
-            className="absolute inset-0 opacity-[0.13]"
-            // style={{
-            //   backgroundImage: `
-            //     linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px),
-            //     linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px)
-            //   `,
-            //   backgroundSize: "55px 55px",
-            // }}
+            className="absolute inset-0 bg-[#01193B]"
+            style={{ opacity: hero.overlayOpacity / 100 }}
           />
 
           {/* Soft radial lighting */}
@@ -137,32 +409,40 @@ export default function ContactPage() {
               data-hero-content
               className="text-5xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              One Stop Solution
-              <br />
-              Providers.
+              {titleLines.map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx < titleLines.length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </h1>
 
-            <p
-              data-hero-content
-              className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-lg"
-            >
-              Connect with our team for precision machinery, sales, service,
-              and spare parts assistance.
-            </p>
+            {hero.description && (
+              <p
+                data-hero-content
+                className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-lg"
+              >
+                {hero.description}
+              </p>
+            )}
 
-            <a
-              data-hero-content
-              href="#contact-section"
-              className="mt-9 inline-flex items-center gap-3 rounded-full border border-white/60 px-6 py-3 text-sm font-medium transition-all duration-300 hover:border-white hover:bg-white hover:text-[#01193B]"
-            >
-              Get In Touch
-              <FaArrowRight className="text-xs" />
-            </a>
+            {hero.buttonText && (
+              <a
+                data-hero-content
+                href={hero.buttonLink || "#contact-section"}
+                className="mt-9 inline-flex items-center gap-3 rounded-full border border-white/60 px-6 py-3 text-sm font-medium transition-all duration-300 hover:border-white hover:bg-white hover:text-[#01193B]"
+              >
+                {hero.buttonText}
+                <FaArrowRight className="text-xs" />
+              </a>
+            )}
           </div>
 
-          <div className="absolute bottom-6 left-6 hidden text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:block">
-            Engineering Precision · Powering Progress
-          </div>
+          {hero.eyebrow && (
+            <div className="absolute bottom-6 left-6 hidden text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:block">
+              {hero.eyebrow}
+            </div>
+          )}
 
           {/* Bottom gradient */}
           <div className="absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-[#01193B]/40 to-transparent" />
@@ -174,7 +454,6 @@ export default function ContactPage() {
         id="contact-section"
         className="gsap-fade-up relative px-4 py-20 sm:px-6 sm:py-28 md:px-12 lg:px-24 xl:px-40"
       >
-        {/* Decorative background elements */}
         <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#004DA3]/[0.04] blur-3xl" />
         <div className="pointer-events-none absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-[#467B23]/[0.05] blur-3xl" />
 
@@ -182,216 +461,189 @@ export default function ContactPage() {
           {/* Left Column: Contact Information */}
           <div className="space-y-8 rounded-3xl border border-slate-200/80 bg-white/95 p-8 shadow-xl shadow-slate-900/[0.04] backdrop-blur-sm sm:p-10 lg:col-span-5">
             <div>
-              <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
-                CONTACT US
-              </p>
+              {contactInfo.label && (
+                <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
+                  {contactInfo.label}
+                </p>
+              )}
 
               <h2 className="text-3xl tracking-tight text-[#01193B]">
-                Get In Touch
+                {contactInfo.heading}
               </h2>
 
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Reach out directly via phone or email, or connect with our team
-                to discuss your machinery and technical requirements.
-              </p>
+              {contactInfo.description && (
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  {contactInfo.description}
+                </p>
+              )}
             </div>
 
             {/* Phone Numbers */}
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
-                <FaPhoneAlt className="h-5 w-5" />
+            {contactInfo.phones?.length > 0 && (
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
+                  <FaPhoneAlt className="h-5 w-5" />
+                </div>
+
+                <div>
+                  <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                    Phone Numbers
+                  </h3>
+
+                  {contactInfo.phones.map((phone, index) => (
+                    <p
+                      key={index}
+                      className={`${
+                        index > 0 ? "mt-0.5" : ""
+                      } text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]`}
+                    >
+                      <a href={phone.href}>{phone.number}</a>
+                    </p>
+                  ))}
+                </div>
               </div>
-
-              <div>
-                <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-                  Phone Numbers
-                </h3>
-
-                <p className="text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]">
-                  <a href="tel:01604624748">0160-4624748</a>
-                </p>
-
-                <p className="mt-0.5 text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]">
-                  <a href="tel:01604635748">0160-4635748</a>
-                </p>
-
-                <p className="mt-0.5 text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]">
-                  <a href="tel:01604634748">0160-4634748</a>
-                </p>
-              </div>
-            </div>
+            )}
 
             {/* Email Address */}
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
-                <FaEnvelope className="h-5 w-5" />
-              </div>
+            {activeEmails.length > 0 && (
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
+                  <FaEnvelope className="h-5 w-5" />
+                </div>
 
-              <div>
-                <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-                  Email Address
-                </h3>
+                <div>
+                  <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                    Email Address
+                  </h3>
 
-                <a
-                  href="mailto:info@mtaindia.in"
-                  className="text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]"
-                >
-                  info@mtaindia.in
-                </a>
+                  {activeEmails.map((addr, idx) => (
+                    <p key={idx} className={idx > 0 ? "mt-0.5" : ""}>
+                      <a
+                        href={`mailto:${addr}`}
+                        className="text-base font-medium text-slate-700 transition-colors hover:text-[#004DA3]"
+                      >
+                        {addr}
+                      </a>
+                    </p>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Location */}
-            <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
-                <FaMapMarkerAlt className="h-5 w-5" />
-              </div>
+            {contactInfo.address && (
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#004DA3]/10 text-[#004DA3]">
+                  <FaMapMarkerAlt className="h-5 w-5" />
+                </div>
 
-              <div>
-                <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
-                  Location
-                </h3>
+                <div>
+                  <h3 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                    Location
+                  </h3>
 
-                <p className="text-sm font-medium leading-relaxed text-slate-700">
-                  Ludhiana, Punjab, India
-                </p>
+                  <p className="text-sm font-medium leading-relaxed text-slate-700">
+                    {contactInfo.address}
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
 
             <hr className="border-slate-100" />
 
             {/* Quick Links */}
-            <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
-                Quick Links
-              </h3>
+            {quickLinks.length > 0 && (
+              <div>
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                  Quick Links
+                </h3>
 
-              <ul className="grid grid-cols-2 gap-3 text-sm font-medium text-slate-700">
-                <li>
-                  <Link
-                    href="/about"
-                    className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
-                    About
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/about#our-journey"
-                    className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
-                    Strength
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/our-presence"
-                    className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
-                    Our Presence
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/contact"
-                    className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
-                  >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                <ul className="grid grid-cols-2 gap-3 text-sm font-medium text-slate-700">
+                  {quickLinks.map((link, index) => (
+                    <li key={index}>
+                      {link.url.startsWith("http") ? (
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
+                        >
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={link.url}
+                          className="flex items-center gap-2 transition-colors hover:text-[#004DA3]"
+                        >
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#004DA3]" />
+                          {link.label}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Social Links */}
-            <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
-                Connect With Us
-              </h3>
+            {socials.length > 0 && (
+              <div>
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+                  Connect With Us
+                </h3>
 
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://www.facebook.com/people/MTAT-Technologies-Private-Limited/61562506565764/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#004DA3] hover:text-white"
-                >
-                  <FaFacebookF className="h-4 w-4" />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/mtattpl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#004DA3] hover:text-white"
-                >
-                  <FaInstagram className="h-4 w-4" />
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#004DA3] hover:text-white"
-                >
-                  <FaLinkedinIn className="h-4 w-4" />
-                </a>
-
-                <a
-                  href="https://www.youtube.com/@mtatpl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#004DA3] hover:text-white"
-                >
-                  <FaYoutube className="h-4 w-4" />
-                </a>
+                <div className="flex items-center gap-3">
+                  {socials.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={item.platform || "Social link"}
+                      className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-700 shadow-sm transition-all duration-300 hover:bg-[#004DA3] hover:text-white"
+                    >
+                      {getSocialIcon(item.platform)}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Right Column: Contact Form & Map */}
           <div className="space-y-8 lg:col-span-7">
             {/* Contact Form */}
             <div className="rounded-3xl border border-slate-200/80 bg-white/95 p-8 shadow-xl shadow-slate-900/[0.04] backdrop-blur-sm sm:p-10">
-              <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
-                SEND AN ENQUIRY
-              </p>
+              {enquiry.eyebrow && (
+                <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
+                  {enquiry.eyebrow}
+                </p>
+              )}
 
               <h2 className="mb-6 text-3xl tracking-tight text-[#01193B]">
-                Let&apos;s Discuss Your Requirements
+                {enquiry.heading}
               </h2>
 
               {submitted ? (
                 <div className="rounded-2xl border border-[#004DA3]/30 bg-[#004DA3]/10 p-6 text-center">
                   <h3 className="mb-2 text-lg font-semibold text-[#004DA3]">
-                    Thank You!
+                    {enquiry.successTitle}
                   </h3>
 
                   <p className="text-sm leading-relaxed text-slate-700">
-                    Your message has been received. Our team will get back to
-                    you shortly.
+                    {enquiry.successMessage}
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                    {/* Name */}
                     <div>
                       <label
                         htmlFor="name"
                         className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-700"
                       >
-                        Your Name
+                        {enquiry.nameLabel}
                       </label>
 
                       <input
@@ -401,18 +653,17 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Enter your name"
+                        placeholder={enquiry.namePlaceholder}
                         className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-colors placeholder:text-slate-400 focus:border-[#004DA3] focus:ring-2 focus:ring-[#004DA3]/10"
                       />
                     </div>
 
-                    {/* Email */}
                     <div>
                       <label
                         htmlFor="email"
                         className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-700"
                       >
-                        Email Address
+                        {enquiry.emailLabel}
                       </label>
 
                       <input
@@ -422,19 +673,18 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="Enter your email"
+                        placeholder={enquiry.emailPlaceholder}
                         className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-colors placeholder:text-slate-400 focus:border-[#004DA3] focus:ring-2 focus:ring-[#004DA3]/10"
                       />
                     </div>
                   </div>
 
-                  {/* Phone */}
                   <div>
                     <label
                       htmlFor="phone"
                       className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-700"
                     >
-                      Phone Number
+                      {enquiry.phoneLabel}
                     </label>
 
                     <input
@@ -443,18 +693,17 @@ export default function ContactPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="Enter your phone number"
+                      placeholder={enquiry.phonePlaceholder}
                       className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-colors placeholder:text-slate-400 focus:border-[#004DA3] focus:ring-2 focus:ring-[#004DA3]/10"
                     />
                   </div>
 
-                  {/* Message */}
                   <div>
                     <label
                       htmlFor="message"
                       className="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-700"
                     >
-                      Message / Requirements
+                      {enquiry.messageLabel}
                     </label>
 
                     <textarea
@@ -464,17 +713,16 @@ export default function ContactPage() {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about the machinery or services you need..."
+                      placeholder={enquiry.messagePlaceholder}
                       className="w-full resize-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-colors placeholder:text-slate-400 focus:border-[#004DA3] focus:ring-2 focus:ring-[#004DA3]/10"
                     />
                   </div>
 
-                  {/* Submit */}
                   <button
                     type="submit"
                     className="group flex w-full items-center justify-center gap-3 rounded-xl bg-[#004DA3] py-4 text-sm font-semibold text-white shadow-lg shadow-[#004DA3]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#003b82]"
                   >
-                    Submit Enquiry
+                    {enquiry.buttonText}
                     <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
                   </button>
                 </form>
@@ -482,18 +730,21 @@ export default function ContactPage() {
             </div>
 
             {/* Google Map */}
-            <div className="h-[350px] w-full overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-xl shadow-slate-900/[0.04]">
-              <iframe
-                src="https://www.google.com/maps?q=MTAT+Technologies+Ludhiana&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                title="MTAT Technologies Location Map"
-              />
-            </div>
+            {map.isVisible && map.embedUrl && (
+              <div className="h-[350px] w-full overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-xl shadow-slate-900/[0.04]">
+                <iframe
+                  key={map.embedUrl}
+                  src={map.embedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title={map.title || "MTAT Technologies Location Map"}
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>

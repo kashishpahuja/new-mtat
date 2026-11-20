@@ -59,7 +59,7 @@ const testimonials = [
   }
 ];
 
-export default function TestimonialSection() {
+export default function TestimonialSection({data}) {
   const [swiper, setSwiper] = useState(null);
 
   return (
@@ -68,13 +68,19 @@ export default function TestimonialSection() {
       <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004DA3]">
-            Client Success Stories
+         {data?.eyebrow}
+            {/* Client Success Stories */}
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-semibold tracking-tight leading-[1.1] text-slate-700">
-            Trusted by Leaders in <span className="font-medium italic underline text-[#004DA3]">Precision Engineering</span>
+           {data?.heading}
+            {/* Trusted by Leaders in */}
+             <span className="font-medium italic underline text-[#004DA3]">
+             {data?.highlightedHeading} {/* Precision Engineering */}
+              </span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-neutral-500 max-w-xl">
-            Hear how our high-performance CNC machinery, robust tooling, and dedicated support empower manufacturing excellence across industries.
+           {data?.description}
+            {/* Hear how our high-performance CNC machinery, robust tooling, and dedicated support empower manufacturing excellence across industries. */}
           </p>
         </div>
 

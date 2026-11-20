@@ -1,5 +1,6 @@
 'use client';
 
+import { getMediaUrl } from ".././src/app/lib/mediaUrl";
 import Link from "next/link";
 import React from "react";
 
@@ -74,7 +75,7 @@ export default function CompanyStorySection({data}) {
             preload="metadata"
             // poster="/Images/company-video-poster.webp"
              poster={getMediaUrl(data?.videoPoster)}
-            className="h-[220px] w-full object-contain sm:h-[320px] md:h-[480px] xl:h-[70vh] xl:object-cover"
+            className="h-55 w-full object-contain sm:h-[320px] md:h-[480px] xl:h-[70vh] xl:object-cover"
           >
             {/* <source src="/video/intro1.mp4" type="video/mp4" /> */}
             <source src={getMediaUrl(data?.video)} type="video/mp4" />

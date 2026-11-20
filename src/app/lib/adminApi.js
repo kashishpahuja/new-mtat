@@ -22,7 +22,6 @@ export function clearAdminSession() {
 export async function apiRequest(path, options = {}) {
   const token = getAdminToken();
 
-  // Redirect if admin token is missing
   if (
     typeof window !== "undefined" &&
     !token &&
@@ -35,8 +34,12 @@ export async function apiRequest(path, options = {}) {
     throw new Error("Please log in to continue.");
   }
 
+  const isFormData =
+    typeof FormData !== "undefined" &&
+    options.body instanceof FormData;
+
   const headers = {
-    ...(options.body instanceof FormData
+    ...(isFormData
       ? {}
       : { "Content-Type": "application/json" }),
     ...(options.headers || {}),
@@ -71,7 +74,7 @@ export async function apiRequest(path, options = {}) {
     );
   }
 
-  if (!response.ok) {
+  if (!response.ok || data.success === false) {
     throw new Error(data.message || "Request failed");
   }
 
