@@ -1,6 +1,7 @@
+
 const API = (
   process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api"
-).replace(/\/$/, "");
+).replace(/\/+$/, "");
 
 async function getPublicData(endpoint) {
   const response = await fetch(`${API}${endpoint}`, {
@@ -14,28 +15,70 @@ async function getPublicData(endpoint) {
   if (!response.ok) {
     const errorText = await response.text();
     console.error(`API Error (${endpoint}):`, errorText);
-
     throw new Error(`Unable to fetch ${endpoint}. Status: ${response.status}`);
   }
 
   const result = await response.json();
 
   if (!result.success || !result.data) {
-    console.error("Invalid API response:", result);
+    console.error("Invalid public API response:", result);
     throw new Error("Invalid public API response.");
   }
 
-  // Supports both { data: content } and { data: { content } }
   return result.data.content ?? result.data;
 }
 
-export async function getPublicHomepage() {
+export function getPublicHomepage() {
   return getPublicData("/homepage");
 }
 
-export async function getPublicAbout() {
+export function getPublicAbout() {
   return getPublicData("/about");
 }
+
+export function getPublicOurPresence() {
+  return getPublicData("/our-presence");
+}
+
+
+// const API = (
+//   process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api"
+// ).replace(/\/$/, "");
+
+// async function getPublicData(endpoint) {
+//   const response = await fetch(`${API}${endpoint}`, {
+//     method: "GET",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     cache: "no-store",
+//   });
+
+//   if (!response.ok) {
+//     const errorText = await response.text();
+//     console.error(`API Error (${endpoint}):`, errorText);
+
+//     throw new Error(`Unable to fetch ${endpoint}. Status: ${response.status}`);
+//   }
+
+//   const result = await response.json();
+
+//   if (!result.success || !result.data) {
+//     console.error("Invalid API response:", result);
+//     throw new Error("Invalid public API response.");
+//   }
+
+//   // Supports both { data: content } and { data: { content } }
+//   return result.data.content ?? result.data;
+// }
+
+// export async function getPublicHomepage() {
+//   return getPublicData("/homepage");
+// }
+
+// export async function getPublicAbout() {
+//   return getPublicData("/about");
+// }
 
 // const API =
 //   process.env.NEXT_PUBLIC_API_URL ||

@@ -13,6 +13,8 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FaStar } from "react-icons/fa";
+import { getPublicOurPresence } from "../../app/lib/publicApi";
+import { getMediaUrl } from "../../app/lib/mediaUrl";
 
 const images = {
   hero: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2200&q=90",
@@ -146,10 +148,78 @@ function SectionEyebrow({ children }) {
 export default function OurPresencePage() {
   const [swiper, setSwiper] = useState(null);
 
-const [pageData, setPageData] = useState(null);
+// const [pageData, setPageData] = useState(null);
 
 
-const content = pageData || {
+// const content = pageData || {
+//   hero: {
+//     eyebrow: "MTAT TECHNOLOGIES PRIVATE LIMITED",
+//     title: "Our Presence",
+//     description:
+//       "Three decades of experience, established technology partnerships and customer-focused solutions driving manufacturing progress.",
+//     buttonText: "Explore Our Story",
+//     buttonLink: "#our-story",
+//     bottomText: "Engineering Precision · Powering Progress",
+//     image: images.hero,
+//   },
+//   gallery: images.gallery1
+//     ? [
+//         images.gallery1,
+//         images.team1,
+//         images.gallery3,
+//         images.gallery6,
+//         images.gallery2,
+//         images.gallery5,
+//         images.team2,
+//         images.gallery4,
+//         images.team3,
+//       ].map((image) => ({ image, alt: "MTAT manufacturing and company" }))
+//     : [],
+//   teamSection: {
+//     eyebrow: "Our People",
+//     heading: "Approximately 60 Professionals.",
+//     highlightedText: "One Shared Vision.",
+//     description:
+//       "From an initial team of two professionals to an organisation of approximately 60, our journey reflects the dedication, experience and collaborative efforts of our people.",
+//     note: "",
+//   },
+//   team,
+//   industriesSection: {
+//     eyebrow: "Industrial Reach",
+//     heading: "Supporting Diverse Manufacturing",
+//     description:
+//       "Our solutions are engineered for a broad range of industrial sectors, delivering precision, reliability, and productivity where it matters most.",
+//     note: "Explore our application domains on the right",
+//     backgroundImage: "/Images/banner.webp",
+//     columnOne: [],
+//     columnTwo: [],
+//   },
+//   approachSection: {
+//     eyebrow: "Why Choose MTAT",
+//     heading: "Experience That",
+//     highlightedText: "Moves Industry Forward.",
+//     description:
+//       "Bringing together three decades of industry experience, established technology partnerships and dependable customer support.",
+//     secondaryDescription:
+//       "From machine selection and technical coordination to installation assistance, maintenance and spares.",
+//   },
+//   highlights: [],
+//   approachCards: [],
+//   supportSection: {
+//     eyebrow: "SALES, SERVICE & SUPPORT",
+//     heading: "Support Beyond",
+//     highlightedText: "The Machine.",
+//     description:
+//     "The value of a machine extends beyond its installation.",
+//     buttonText: "Discuss Your Requirements",
+//     buttonLink: "/contact",
+//   },
+//   supportCards: testimonials,
+// };
+
+
+
+const defaultContent = {
   hero: {
     eyebrow: "MTAT TECHNOLOGIES PRIVATE LIMITED",
     title: "Our Presence",
@@ -160,19 +230,22 @@ const content = pageData || {
     bottomText: "Engineering Precision · Powering Progress",
     image: images.hero,
   },
-  gallery: images.gallery1
-    ? [
-        images.gallery1,
-        images.team1,
-        images.gallery3,
-        images.gallery6,
-        images.gallery2,
-        images.gallery5,
-        images.team2,
-        images.gallery4,
-        images.team3,
-      ].map((image) => ({ image, alt: "MTAT manufacturing and company" }))
-    : [],
+
+  gallery: [
+    images.gallery1,
+    images.team1,
+    images.gallery3,
+    images.gallery6,
+    images.gallery2,
+    images.gallery5,
+    images.team2,
+    images.gallery4,
+    images.team3,
+  ].map((image) => ({
+    image,
+    alt: "MTAT manufacturing and company",
+  })),
+
   teamSection: {
     eyebrow: "Our People",
     heading: "Approximately 60 Professionals.",
@@ -181,7 +254,9 @@ const content = pageData || {
       "From an initial team of two professionals to an organisation of approximately 60, our journey reflects the dedication, experience and collaborative efforts of our people.",
     note: "",
   },
+
   team,
+
   industriesSection: {
     eyebrow: "Industrial Reach",
     heading: "Supporting Diverse Manufacturing",
@@ -189,9 +264,56 @@ const content = pageData || {
       "Our solutions are engineered for a broad range of industrial sectors, delivering precision, reliability, and productivity where it matters most.",
     note: "Explore our application domains on the right",
     backgroundImage: "/Images/banner.webp",
-    columnOne: [],
-    columnTwo: [],
+    columnOne: [
+      {
+        title: "Automotive & Auto Components",
+        desc: "Precision machining and production equipment.",
+      },
+      {
+        title: "Agriculture & Implements",
+        desc: "Machinery solutions for equipment manufacturers.",
+      },
+      {
+        title: "Railways & Transportation",
+        desc: "Machining and measurement technologies.",
+      },
+      {
+        title: "Aerospace & Precision",
+        desc: "Advanced machining and inspection solutions.",
+      },
+      {
+        title: "Defence & Heavy Engineering",
+        desc: "Manufacturing technologies for specialised requirements.",
+      },
+      {
+        title: "Medical Equipment & Devices",
+        desc: "Precision machining and dimensional measurement.",
+      },
+    ],
+    columnTwo: [
+      {
+        title: "Oil, Gas & Energy",
+        desc: "Machining and fabrication solutions for industry.",
+      },
+      {
+        title: "Textiles & Industrial Equipment",
+        desc: "Component manufacturing and equipment production.",
+      },
+      {
+        title: "Jewellery & Fine Engineering",
+        desc: "Precision machining and specialised applications.",
+      },
+      {
+        title: "Telecommunications & Electronics",
+        desc: "Technologies supporting precision components.",
+      },
+      {
+        title: "Scaffolding & Infrastructure",
+        desc: "Fabrication and metal processing machinery.",
+      },
+    ],
   },
+
   approachSection: {
     eyebrow: "Why Choose MTAT",
     heading: "Experience That",
@@ -201,49 +323,161 @@ const content = pageData || {
     secondaryDescription:
       "From machine selection and technical coordination to installation assistance, maintenance and spares.",
   },
-  highlights: [],
-  approachCards: [],
+
+  highlights: [
+    {
+      number: "01",
+      title: "Since 1995",
+      text: "Three decades of presence in the machine tool and manufacturing solutions sector.",
+    },
+    {
+      number: "02",
+      title: "Technology Portfolio",
+      text: "Solutions across metal cutting, metal forming, metrology and tool room machinery.",
+    },
+    {
+      number: "03",
+      title: "Established Partnerships",
+      text: "Connecting manufacturers with reputed Indian and international technology brands.",
+    },
+    {
+      number: "04",
+      title: "Beyond Sales",
+      text: "Installation coordination, after-sales service, maintenance and spare parts support.",
+    },
+  ],
+
+  approachCards: [
+    {
+      number: "01",
+      title: "Industry Knowledge",
+      text: "Understanding manufacturing needs and industrial applications.",
+    },
+    {
+      number: "02",
+      title: "Technology Partners",
+      text: "Connecting customers with established machine-tool brands.",
+    },
+    {
+      number: "03",
+      title: "Customer Support",
+      text: "Helping coordinate service and spare-parts requirements.",
+    },
+    {
+      number: "04",
+      title: "Long-Term Relationships",
+      text: "Building partnerships through communication and reliability.",
+    },
+  ],
+
   supportSection: {
     eyebrow: "SALES, SERVICE & SUPPORT",
     heading: "Support Beyond",
     highlightedText: "The Machine.",
     description:
-    "The value of a machine extends beyond its installation.",
+      "The value of a machine extends beyond its installation. We focus on customer support, technical coordination and dependable assistance throughout the equipment lifecycle.",
     buttonText: "Discuss Your Requirements",
     buttonLink: "/contact",
   },
+
   supportCards: testimonials,
 };
 
+const [pageData, setPageData] = useState(null);
+const [pageLoading, setPageLoading] = useState(true);
 
+const content = {
+  ...defaultContent,
+  ...(pageData || {}),
 
+  hero: {
+    ...defaultContent.hero,
+    ...(pageData?.hero || {}),
+  },
 
+  teamSection: {
+    ...defaultContent.teamSection,
+    ...(pageData?.teamSection || {}),
+  },
 
+  industriesSection: {
+    ...defaultContent.industriesSection,
+    ...(pageData?.industriesSection || {}),
+  },
+
+  approachSection: {
+    ...defaultContent.approachSection,
+    ...(pageData?.approachSection || {}),
+  },
+
+  supportSection: {
+    ...defaultContent.supportSection,
+    ...(pageData?.supportSection || {}),
+  },
+
+  gallery: pageData?.gallery ?? defaultContent.gallery,
+  team: pageData?.team ?? defaultContent.team,
+  highlights: pageData?.highlights ?? defaultContent.highlights,
+  approachCards: pageData?.approachCards ?? defaultContent.approachCards,
+  supportCards: pageData?.supportCards ?? defaultContent.supportCards,
+};
+
+const media = (path, fallback = "") =>
+  getMediaUrl(path || fallback);
 
 useEffect(() => {
+  let active = true;
+
   const loadPage = async () => {
     try {
-      const API =
-        process.env.NEXT_PUBLIC_API_URL ||
-        "http://localhost:8002/api";
+      const data = await getPublicOurPresence();
 
-      const response = await fetch(`${API}/our-presence`, {
-        cache: "no-store",
-      });
-
-      if (!response.ok) {
-        throw new Error("Unable to load Our Presence page.");
+      if (active) {
+        setPageData(data);
       }
-
-      const result = await response.json();
-      setPageData(result.data);
     } catch (error) {
       console.error("Our Presence API:", error);
+    } finally {
+      if (active) {
+        setPageLoading(false);
+      }
     }
   };
 
   loadPage();
+
+  return () => {
+    active = false;
+  };
 }, []);
+
+
+
+
+// useEffect(() => {
+//   const loadPage = async () => {
+//     try {
+//       const API =
+//         process.env.NEXT_PUBLIC_API_URL ||
+//         "http://localhost:8002/api";
+
+//       const response = await fetch(`${API}/our-presence`, {
+//         cache: "no-store",
+//       });
+
+//       if (!response.ok) {
+//         throw new Error("Unable to load Our Presence page.");
+//       }
+
+//       const result = await response.json();
+//       setPageData(result.data);
+//     } catch (error) {
+//       console.error("Our Presence API:", error);
+//     }
+//   };
+
+//   loadPage();
+// }, []);
 
   const rootRef = useRef(null);
 
@@ -337,9 +571,9 @@ useEffect(() => {
         <section className="relative">
           <div className="relative flex  items-center justify-center overflow-hidden bg-slate-800 sm:min-h-[540px] lg:min-h-[650px]">
             <img
-              src={images.hero}
-              alt="Industrial machinery and manufacturing environment"
-              fetchPriority="high"
+             src={media(content.hero.image, images.hero)}
+  alt={content.hero.title || "MTAT Technologies"}
+  fetchPriority="high"
               className="absolute inset-0 h-full w-full object-cover"
             />
 
@@ -357,28 +591,32 @@ useEffect(() => {
                 data-hero-content
                 className="mt-6 text-5xl font-medium tracking-tight sm:text-4xl lg:text-5xl"
               >
-                Our Presence
+  {content.hero.eyebrow}    
+     {/* Our Presence */}
               </h1>
 
               <p
                 data-hero-content
                 className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/85 sm:text-lg"
-              >
-  Three decades of experience, established technology partnerships
-  and customer-focused solutions driving manufacturing progress.   </p>
+              >  
+              {content.hero.description}
+  {/* Three decades of experience, established technology partnerships
+  and customer-focused solutions driving manufacturing progress.  */}
+    </p>
 
               <a
                 data-hero-content
-                href="#our-story"
+       href={content.hero.buttonLink || "#our-story"}
                 className="mt-9 inline-flex items-center gap-3 rounded-full border border-white/60 px-6 py-3 text-sm font-medium transition hover:bg-white hover:text-[#01193B]"
               >
-                Explore Our Story
+            {content.hero.buttonText}
+                  {/* Explore Our Story */}
                 <FaArrowRight className="text-xs" />
               </a>
             </div>
 
             <div className="absolute bottom-6 left-6 hidden text-[10px] font-semibold uppercase tracking-[0.22em] text-white/70 sm:block">
-              Engineering Precision · Powering Progress
+              {content.hero.bottomText}
             </div>
           </div>
         </section>
@@ -391,134 +629,124 @@ useEffect(() => {
           className="mx-auto px-4 py-20 sm:px-6 md:px-12 lg:px-24 xl:px-40"
         >
           <div>
-            {/* Editorial image collage */}
-            <div className="grid grid-cols-6 gap-3 sm:gap-4 lg:gap-5">
-              {/* Image 1 — Industrial machinery */}
-              <div
-                data-image-reveal
-                className="col-span-3 mt-8 overflow-hidden sm:mt-12"
-              >
-                <Image
-                  src={images.gallery1}
-                  alt="Industrial machine tools"
-                  width={900}
-                  height={650}
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 600px"
-                  loading="lazy"
-                  className="h-48 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-64 lg:h-80"
-                />
-              </div>
+     <div>
+  {/* Editorial image collage */}
+  <div className="grid grid-cols-6 gap-3 sm:gap-4 lg:gap-5">
+    {/* Image 1 — Industrial machinery */}
+    <div
+      data-image-reveal
+      className="col-span-3 mt-8 overflow-hidden sm:mt-12"
+    >
+      <img
+        src={media(content.gallery?.[0]?.image, images.gallery1)}
+        alt={content.gallery?.[0]?.alt || "Industrial machine tools"}
+        loading="lazy"
+        className="h-48 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-64 lg:h-80"
+      />
+    </div>
 
-              {/* Image 2 — Team */}
-              <div data-image-reveal className="col-span-3 overflow-hidden">
-                <Image
-                  src={images.team1}
-                  alt="Team collaboration and workplace"
-                  width={900}
-                  height={650}
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 45vw, 600px"
-                  loading="lazy"
-                  className="h-40 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-52 lg:h-64"
-                />
-              </div>
+    {/* Image 2 — Team */}
+    <div data-image-reveal className="col-span-3 overflow-hidden">
+      <img
+        src={media(content.gallery?.[1]?.image, images.team1)}
+        alt={content.gallery?.[1]?.alt || "Team collaboration and workplace"}
+        loading="lazy"
+        className="h-40 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-52 lg:h-64"
+      />
+    </div>
 
-              {/* Image 3 — Precision equipment */}
-              <div data-image-reveal className="col-span-2 overflow-hidden">
-                <Image
-                  src={images.gallery3}
-                  alt="Precision engineering equipment"
-                  width={600}
-                  height={500}
-                  sizes="(max-width: 640px) 33vw, 350px"
-                  loading="lazy"
-                  className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-48 lg:h-56"
-                />
-              </div>
+    {/* Image 3 — Precision equipment */}
+    <div data-image-reveal className="col-span-2 overflow-hidden">
+      <img
+        src={media(content.gallery?.[2]?.image, images.gallery3)}
+        alt={content.gallery?.[2]?.alt || "Precision engineering equipment"}
+        loading="lazy"
+        className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-48 lg:h-56"
+      />
+    </div>
 
-              {/* Image 4 — Industrial workplace */}
-              <div
-                data-image-reveal
-                className="col-span-4 -mt-4 overflow-hidden sm:-mt-8"
-              >
-                <Image
-                  src={images.gallery6}
-                  alt="Industrial workplace and engineering operations"
-                  width={1200}
-                  height={700}
-                  sizes="(max-width: 640px) 67vw, (max-width: 1024px) 60vw, 800px"
-                  loading="lazy"
-                  className="h-44 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-60 lg:h-72"
-                />
-              </div>
+    {/* Image 4 — Industrial workplace */}
+    <div
+      data-image-reveal
+      className="col-span-4 -mt-4 overflow-hidden sm:-mt-8"
+    >
+      <img
+        src={media(content.gallery?.[3]?.image, images.gallery6)}
+        alt={
+          content.gallery?.[3]?.alt ||
+          "Industrial workplace and engineering operations"
+        }
+        loading="lazy"
+        className="h-44 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-60 lg:h-72"
+      />
+    </div>
 
-              {/* Image 5 — Machine shop */}
-              <div data-image-reveal className="col-span-3 overflow-hidden">
-                <Image
-                  src={images.gallery2}
-                  alt="Machine shop and manufacturing equipment"
-                  width={900}
-                  height={600}
-                  sizes="(max-width: 640px) 50vw, 600px"
-                  loading="lazy"
-                  className="h-44 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-56 lg:h-64"
-                />
-              </div>
+    {/* Image 5 — Machine shop */}
+    <div data-image-reveal className="col-span-3 overflow-hidden">
+      <img
+        src={media(content.gallery?.[4]?.image, images.gallery2)}
+        alt={
+          content.gallery?.[4]?.alt ||
+          "Machine shop and manufacturing equipment"
+        }
+        loading="lazy"
+        className="h-44 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-56 lg:h-64"
+      />
+    </div>
 
-              {/* Image 6 — Team interaction */}
-              <div
-                data-image-reveal
-                className="col-span-3 mt-5 overflow-hidden sm:mt-8"
-              >
-                <Image
-                  src={images.team2}
-                  alt="Team members working together"
-                  width={900}
-                  height={600}
-                  sizes="(max-width: 640px) 50vw, 600px"
-                  loading="lazy"
-                  className="h-40 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-52 lg:h-60"
-                />
-              </div>
+    {/* Image 6 — Team interaction */}
+    <div
+      data-image-reveal
+      className="col-span-3 mt-5 overflow-hidden sm:mt-8"
+    >
+      <img
+        src={media(content.gallery?.[5]?.image, images.team2)}
+        alt={content.gallery?.[5]?.alt || "Team members working together"}
+        loading="lazy"
+        className="h-40 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-52 lg:h-60"
+      />
+    </div>
 
-              {/* Image 7 — Manufacturing process */}
-              <div data-image-reveal className="col-span-2 overflow-hidden">
-                <Image
-                  src={images.gallery4}
-                  alt="Manufacturing and metalworking process"
-                  width={600}
-                  height={500}
-                  sizes="(max-width: 640px) 33vw, 350px"
-                  loading="lazy"
-                  className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
-                />
-              </div>
+    {/* Image 7 — Manufacturing process */}
+    <div data-image-reveal className="col-span-2 overflow-hidden">
+      <img
+        src={media(content.gallery?.[6]?.image, images.gallery4)}
+        alt={
+          content.gallery?.[6]?.alt ||
+          "Manufacturing and metalworking process"
+        }
+        loading="lazy"
+        className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
+      />
+    </div>
 
-              {/* Image 8 — Industrial facility */}
-              <div data-image-reveal className="col-span-2 overflow-hidden">
-                <Image
-                  src={images.gallery5}
-                  alt="Industrial facility and production area"
-                  width={600}
-                  height={500}
-                  sizes="(max-width: 640px) 33vw, 350px"
-                  loading="lazy"
-                  className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
-                />
-              </div>
+    {/* Image 8 — Industrial facility */}
+    <div data-image-reveal className="col-span-2 overflow-hidden">
+      <img
+        src={media(content.gallery?.[7]?.image, images.gallery5)}
+        alt={
+          content.gallery?.[7]?.alt ||
+          "Industrial facility and production area"
+        }
+        loading="lazy"
+        className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
+      />
+    </div>
 
-              {/* Image 9 — Team or company environment */}
-              <div data-image-reveal className="col-span-2 overflow-hidden">
-                <Image
-                  src={images.team3}
-                  alt="Professional team and company environment"
-                  width={600}
-                  height={500}
-                  sizes="(max-width: 640px) 33vw, 350px"
-                  loading="lazy"
-                  className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
-                />
-              </div>
-            </div>
+    {/* Image 9 — Team or company environment */}
+    <div data-image-reveal className="col-span-2 overflow-hidden">
+      <img
+        src={media(content.gallery?.[8]?.image, images.team3)}
+        alt={
+          content.gallery?.[8]?.alt ||
+          "Professional team and company environment"
+        }
+        loading="lazy"
+        className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-44 lg:h-52"
+      />
+    </div>
+  </div>
+</div>
           </div>
         </section>
 
@@ -533,25 +761,55 @@ useEffect(() => {
   className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
 >
   <div>
-    <SectionEyebrow>Our People</SectionEyebrow>
+    <SectionEyebrow>  {content.teamSection.eyebrow}</SectionEyebrow>
 
     <h2 className="mt-5 max-w-2xl text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
-      Approximately 60 Professionals.
+     {content.teamSection.heading}
       <span className="block text-slate-400">
-        One Shared Vision.
+      {content.teamSection.highlightedText}
       </span>
     </h2>
   </div>
 
   <p className="max-w-md text-sm leading-7 text-slate-500 sm:text-base">
-    From an initial team of two professionals to an organisation
-    of approximately 60, our journey reflects the dedication,
-    experience and collaborative efforts of our people.
+  {content.teamSection.description}
   </p>
 </div>
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((member, index) => (
+          {content.team.map((member, index) => (
+  <article
+    key={`${member.role}-${index}`}
+    data-reveal
+    className="group"
+  >
+    <div className="relative overflow-hidden bg-slate-100">
+      <img
+        src={media(member.image, images.team1)}
+        alt={`${member.role} representative image`}
+        loading="lazy"
+        className="h-[300px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[340px]"
+      />
+
+      <span className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#004DA3] shadow-sm">
+        <FaArrowRight className="-rotate-45 text-sm transition group-hover:rotate-0" />
+      </span>
+    </div>
+
+    <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-[#004DA3]">
+      {String(index + 1).padStart(2, "0")}
+    </p>
+
+    <h3 className="mt-2 text-xl font-semibold text-slate-900">
+      {member.role}
+    </h3>
+
+    <p className="mt-3 text-sm leading-6 text-slate-500">
+      {member.description}
+    </p>
+  </article>
+))}
+  {/* {team.map((member, index) => (
               <article key={member.role} data-reveal className="group">
                 <div className="relative overflow-hidden bg-slate-100">
                   <img
@@ -578,7 +836,7 @@ useEffect(() => {
                   {member.description}
                 </p>
               </article>
-            ))}
+            ))} */}
           </div>
 
           <p className="mt-6 text-xs leading-5 text-slate-400">
@@ -591,17 +849,22 @@ useEffect(() => {
  {/* INDUSTRIES WE SERVE */}
       <section className="relative flex items-center overflow-hidden py-16 text-white lg:py-24">
         {/* Background Overlay */}
-        <div
-          className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-15"
-          style={{ backgroundImage: "url('/Images/banner.webp')" }}
-        />
+<div
+  className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-15"
+  style={{
+    backgroundImage: `url("${media(
+      content.industriesSection.backgroundImage,
+      "/Images/banner.webp"
+    )}")`,
+  }}
+/>
         <div className="pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-[#01050a83] via-[#021022] to-[#060d16d3]" />
 
         <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
             
             {/* Left Content: Title & Short Intro */}
-            <div className="space-y-6 lg:col-span-5">
+            {/* <div className="space-y-6 lg:col-span-5">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
                   Industrial Reach
@@ -618,13 +881,71 @@ useEffect(() => {
               <div className="pt-2 text-xs text-gray-400">
                 <span>Explore our application domains on the right</span>
               </div>
-            </div>
+            </div> */}
+            <div className="space-y-6 lg:col-span-5">
+  <div>
+    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#98b2cf]">
+      {content.industriesSection.eyebrow}
+    </p>
+
+    <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+      {content.industriesSection.heading}
+    </h2>
+
+    <div className="mt-4 h-1 w-16 bg-orange-500" />
+
+    <p className="mt-6 text-sm leading-relaxed text-gray-300 sm:text-base">
+      {content.industriesSection.description}
+    </p>
+  </div>
+
+  <div className="pt-2 text-xs text-gray-400">
+    <span>{content.industriesSection.note}</span>
+  </div>
+</div>
 
             {/* Right: Infinite Scrolling Industry Columns */}
             <div className="relative flex h-[480px] gap-4 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0,black_64px,black_calc(100%-64px),transparent_100%)] sm:h-[540px] lg:col-span-7">
 
               {/* Column 1 (Scroll Up) */}
-              <div className="animate-scroll-up flex w-1/2 flex-col gap-4">
+      {/* Column 1 */}
+<div className="animate-scroll-up flex w-1/2 flex-col gap-4">
+  {[...(content.industriesSection.columnOne || []),
+    ...(content.industriesSection.columnOne || [])].map((sector, idx) => (
+    <div
+      key={`col1-${idx}`}
+      className="group flex flex-col justify-center rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07] hover:shadow-lg"
+    >
+      <h4 className="text-sm font-semibold tracking-tight text-white sm:text-base">
+        {sector.title}
+      </h4>
+
+      <p className="mt-1.5 text-xs leading-relaxed text-gray-300">
+        {sector.desc}
+      </p>
+    </div>
+  ))}
+</div>
+
+{/* Column 2 */}
+<div className="animate-scroll-down flex w-1/2 flex-col gap-4">
+  {[...(content.industriesSection.columnTwo || []),
+    ...(content.industriesSection.columnTwo || [])].map((sector, idx) => (
+    <div
+      key={`col2-${idx}`}
+      className="group flex flex-col justify-center rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07] hover:shadow-lg"
+    >
+      <h4 className="text-sm font-semibold tracking-tight text-white sm:text-base">
+        {sector.title}
+      </h4>
+
+      <p className="mt-1.5 text-xs leading-relaxed text-gray-300">
+        {sector.desc}
+      </p>
+    </div>
+  ))}
+</div>
+        {/* <div className="animate-scroll-up flex w-1/2 flex-col gap-4">
                 {[
                   { title: "Automotive & Auto Components", desc: "Precision machining and production equipment." },
                   { title: "Agriculture & Implements", desc: "Machinery solutions for equipment manufacturers." },
@@ -652,10 +973,10 @@ useEffect(() => {
                     </p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               {/* Column 2 (Scroll Down) */}
-              <div className="animate-scroll-down flex w-1/2 flex-col gap-4">
+              {/* <div className="animate-scroll-down flex w-1/2 flex-col gap-4">
                 {[
                   { title: "Oil, Gas & Energy", desc: "Machining and fabrication solutions for industry." },
                   { title: "Textiles & Industrial Equipment", desc: "Component manufacturing and equipment production." },
@@ -681,10 +1002,8 @@ useEffect(() => {
                     </p>
                   </div>
                 ))}
-              </div>
-
+              </div> */}
             </div>
-
           </div>
         </div>
 
@@ -739,34 +1058,51 @@ useEffect(() => {
   className="grid gap-8 md:grid-cols-[0.65fr_1.35fr] md:gap-16"
 >
   <div>
-    <SectionEyebrow>Why Choose MTAT</SectionEyebrow>
+    <SectionEyebrow>{content.approachSection.eyebrow}</SectionEyebrow>
 
     <h2 className="mt-5 max-w-sm text-3xl font-medium leading-tight tracking-tight sm:text-4xl">
-      Experience That
+  {content.approachSection.heading}
       <span className="block text-slate-400">
-        Moves Industry Forward.
+  {content.approachSection.highlightedText}
       </span>
     </h2>
   </div>
 
   <div>
     <p className="max-w-3xl text-lg leading-8 text-slate-800 sm:text-2xl sm:leading-10">
-      Bringing together three decades of industry experience,
-      established technology partnerships and dependable
-      customer support.
+ {content.approachSection.description}
     </p>
 
     <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-      From machine selection and technical coordination to
-      installation assistance, maintenance and spares, we work
-      towards solutions aligned with our customers' manufacturing
-      requirements and business priorities.
+      {content.approachSection.secondaryDescription}
     </p>
   </div>
 </div>
 
 <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-  {[
+  {content.highlights.map((item, index) => (
+  <article
+    key={`${item.number}-${index}`}
+    data-reveal
+    className="group border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#004DA3]/40 sm:p-7"
+  >
+    <span className="text-sm font-semibold text-[#004DA3]">
+      {item.number}
+    </span>
+
+    <h3 className="mt-8 text-lg font-semibold text-slate-900">
+      {item.title}
+    </h3>
+
+    <p className="mt-3 text-sm leading-6 text-slate-500">
+      {item.text}
+    </p>
+
+    <FaArrowUpRightFromSquare className="mt-7 text-sm text-slate-300 transition group-hover:text-[#004DA3]" />
+  </article>
+))}
+
+{/* {[
     {
       number: "01",
       title: "Since 1995",
@@ -807,11 +1143,32 @@ useEffect(() => {
 
       <FaArrowUpRightFromSquare className="mt-7 text-sm text-slate-300 transition group-hover:text-[#004DA3]" />
     </article>
-  ))}
+  ))} */}
 </div>
 
             <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {[
+           {content.approachCards.map((item, index) => (
+  <article
+    key={`${item.number}-${index}`}
+    data-reveal
+    className="group border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#004DA3]/40 sm:p-7"
+  >
+    <span className="text-sm font-semibold text-[#004DA3]">
+      {item.number}
+    </span>
+
+    <h3 className="mt-8 text-lg font-semibold text-slate-900">
+      {item.title}
+    </h3>
+
+    <p className="mt-3 text-sm leading-6 text-slate-500">
+      {item.text}
+    </p>
+
+    <FaArrowUpRightFromSquare className="mt-7 text-sm text-slate-300 transition group-hover:text-[#004DA3]" />
+  </article>
+))}
+   {/* {[
                 {
                   number: "01",
                   title: "Industry Knowledge",
@@ -852,7 +1209,7 @@ useEffect(() => {
 
                   <FaArrowUpRightFromSquare className="mt-7 text-sm text-slate-300 transition group-hover:text-[#004DA3]" />
                 </article>
-              ))}
+              ))} */}
             </div>
           </div>
         </section>
@@ -867,28 +1224,25 @@ useEffect(() => {
          <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40 flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
   <div>
     <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004DA3]">
-      SALES, SERVICE & SUPPORT
+  {content.supportSection.eyebrow}
     </span>
 
     <h2 className="mt-5 text-3xl font-medium tracking-tight sm:text-4xl lg:text-5xl">
-      Support Beyond
+    {content.supportSection.heading}
       <span className="block text-slate-400">
-        The Machine.
+    {content.supportSection.highlightedText}
       </span>
     </h2>
 
     <div>
       <p className="max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
-        The value of a machine extends beyond its installation.
-        We focus on customer support, technical coordination
-        and dependable assistance throughout the equipment lifecycle.
-      </p>
+        {content.supportSection.description}  </p>
 
       <a
-        href="/contact"
+     href={content.supportSection.buttonLink || "/contact"}
         className="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-[#004DA3] transition hover:gap-5"
       >
-        Discuss Your Requirements
+   {content.supportSection.buttonText}
         <FaArrowRight />
       </a>
     </div>
@@ -934,7 +1288,7 @@ useEffect(() => {
               }}
               className="overflow-visible! px-4! sm:px-6! md:px-12! lg:px-16!"
             >
-              {testimonials.map((item, index) => {
+             {content.supportCards.map((item, index) => {
                 const raised = index % 2 === 1;
 
                 return (
@@ -965,8 +1319,9 @@ useEffect(() => {
                       {/* Client Info & Machine Tag */}
                       <div className="mt-8 pt-6 border-t border-slate-200 flex items-center gap-4">
                         <img
-                          src={item.image}
-                          alt={item.name}
+           src={media(item.image, images.team1)}
+  alt={item.name || "MTAT support"}
+  loading="lazy"
                           className="h-12 w-12 rounded-full object-cover border-2 border-[#004DA3]/30"
                         />
                         <div>

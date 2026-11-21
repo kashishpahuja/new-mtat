@@ -71,6 +71,7 @@ const DEFAULT_DATA = {
   ],
 
   enquiry: {
+     recipientEmail: "info@mtaindia.in",
     eyebrow: "SEND AN ENQUIRY",
     heading: "Let's Discuss Your Requirements",
     buttonText: "Submit Enquiry",
@@ -180,9 +181,6 @@ function ContactContentSection() {
     { id: "map", label: "Google Map" },
   ];
 
-  useEffect(() => {
-    loadContent();
-  }, []);
 
 
 const loadContent = async () => {
@@ -203,10 +201,20 @@ const loadContent = async () => {
       ...DEFAULT_DATA,
       ...savedData,
 
-      hero: {
-        ...DEFAULT_DATA.hero,
-        ...(savedData.hero || {}),
-      },
+   
+hero: {
+  ...DEFAULT_DATA.hero,
+  ...(savedData.hero || {}),
+  image:
+    savedData.hero?.image ||
+    savedData.hero?.backgroundImage ||
+    DEFAULT_DATA.hero.image,
+  backgroundImage:
+    savedData.hero?.image ||
+    savedData.hero?.backgroundImage ||
+    DEFAULT_DATA.hero.image,
+},
+
 
       contactInfo: {
         ...DEFAULT_DATA.contactInfo,
@@ -246,6 +254,9 @@ const loadContent = async () => {
   }
 };
 
+  useEffect(() => {
+    loadContent();
+  }, []);
 
   const updateSection = (section, field, value) => {
     setData((prev) => ({
@@ -289,54 +300,103 @@ const removeArrayItem = (section, index) => {
 };
 
 
-  const uploadHeroImage = async (file) => {
-    if (!file) return;
 
-    try {
-      setUploading(true);
-      setError("");
-      setSuccess("");
+const uploadHeroImage = async (file) => {
+  if (!file) return;
 
-      const formData = new FormData();
-      formData.append("file", file);
-      formData.append("fieldName", "contact-hero-image");
+  if (!file.type.startsWith("image/")) {
+    setError("Please select a valid image.");
+    return;
+  }
 
-      const response = await apiRequest("/uploads", {
-        method: "POST",
-        body: formData,
-      });
+  try {
+    setUploading(true);
+    setError("");
+    setSuccess("");
 
-      if (!response.url) {
-        throw new Error("Upload response did not contain an image URL.");
-      }
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("fieldName", "contact-hero-image");
 
-      updateSection("hero", "image", response.url);
-      setSuccess("Hero image uploaded successfully.");
-    } catch (err) {
-      setError(err.message || "Image upload failed.");
-    } finally {
-      setUploading(false);
+    const response = await apiRequest("/uploads", {
+      method: "POST",
+      body: formData,
+    });
+
+    // Support different upload response structures.
+    const imageUrl =
+      response?.url ||
+      response?.data?.url ||
+      response?.data?.file?.url ||
+      response?.file?.url;
+
+    if (!imageUrl || typeof imageUrl !== "string") {
+      console.error("Upload response:", response);
+      throw new Error("Image URL was not returned by the server.");
     }
-  };
 
-  const handleSave = async () => {
-    try {
-      setSaving(true);
-      setError("");
-      setSuccess("");
+    // Update both fields.
+    setData((prev) => ({
+      ...prev,
+      hero: {
+        ...prev.hero,
+        image: imageUrl,
+        backgroundImage: imageUrl,
+      },
+    }));
 
-      await apiRequest("/contact/admin", {
-        method: "PUT",
-        body: JSON.stringify(data),
-      });
+    setSuccess("Image uploaded. Click Save Changes to publish it.");
+  } catch (err) {
+    console.error("Hero image upload error:", err);
+    setError(err.message || "Image upload failed.");
+  } finally {
+    setUploading(false);
+  }
+};
 
-      setSuccess("Contact page content saved successfully.");
-    } catch (err) {
-      setError(err.message || "Unable to save Contact page.");
-    } finally {
-      setSaving(false);
+
+
+const handleSave = async () => {
+  try {
+    setSaving(true);
+    setError("");
+    setSuccess("");
+
+    const image =
+      data.hero.image ||
+      data.hero.backgroundImage;
+
+    const payload = {
+      ...data,
+      hero: {
+        ...data.hero,
+        image,
+        backgroundImage: image,
+      },
+    };
+
+    const response = await apiRequest("/contact/admin", {
+      method: "PUT",
+      body: JSON.stringify(payload),
+    });
+
+    if (response.success === false) {
+      throw new Error(
+        response.message || "Unable to save Contact page."
+      );
     }
-  };
+
+    // Refresh admin data from database.
+    await loadContent();
+
+    setSuccess("Contact page updated successfully.");
+  } catch (err) {
+    setError(err.message || "Unable to save Contact page.");
+  } finally {
+    setSaving(false);
+  }
+};
+
 
   if (loading) {
     return (
@@ -859,6 +919,28 @@ const removeArrayItem = (section, index) => {
             />
 
             <div className="grid gap-5 md:grid-cols-2">
+              <div className="md:col-span-2 rounded-xl border border-[#467B23]/20 bg-[#467B23]/5 p-4">
+  <div className="mb-3 flex items-center gap-2">
+    <FiMail className="text-[#467B23]" size={18} />
+    <h3 className="text-sm font-semibold text-[#01193B]">
+      Enquiry Email Recipient
+    </h3>
+  </div>
+
+  <Field
+  label="Send Enquiries To (Gmail / Email Address)"
+  type="email"
+  value={data.enquiry.recipientEmail || ""}
+  onChange={(v) =>
+    updateSection("enquiry", "recipientEmail", v)
+  }
+  placeholder="example@gmail.com"
+/>
+
+  <p className="mt-2 text-xs text-slate-500">
+    All contact form submissions will be sent to this email address.
+  </p>
+</div>
               <Field
                 label="Section Eyebrow"
                 value={data.enquiry.eyebrow}

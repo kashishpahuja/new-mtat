@@ -1,39 +1,34 @@
+
 const API = (
   process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api"
-).replace(/\/$/, "");
+).replace(/\/+$/, "");
 
 const API_ORIGIN = new URL(API).origin;
 
 export function getMediaUrl(path) {
-  if (!path) return "";
+  if (!path || typeof path !== "string") return "";
 
-  // Handle localhost URLs saved in MongoDB
-  if (
-    /^https?:\/\/(localhost|127\.0\.0\.1):8002/i.test(path)
-  ) {
+  // Replace localhost backend URLs with the deployed backend origin.
+  if (/^https?:\/\/(localhost|127\.0\.0\.1):8002/i.test(path)) {
     return path.replace(
       /^https?:\/\/(localhost|127\.0\.0\.1):8002/i,
       API_ORIGIN
     );
   }
 
-  // Already an external URL
+  // Keep external image URLs unchanged.
   if (/^https?:\/\//i.test(path)) {
     return path;
   }
 
-  // Backend uploaded files
-  if (
-    path.startsWith("/uploads/") ||
-    path.startsWith("uploads/")
-  ) {
+  // Backend uploaded images.
+  if (path.startsWith("/uploads/") || path.startsWith("uploads/")) {
     return `${API_ORIGIN}/${path.replace(/^\/+/, "")}`;
   }
 
-  // Frontend public assets: /Images, /video, etc.
+  // Frontend public assets, such as /Images/banner.webp.
   return path.startsWith("/") ? path : `/${path}`;
 }
-
 
 
 // const API =

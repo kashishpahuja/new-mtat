@@ -153,16 +153,19 @@ function normalizeContactPage(raw) {
     ? Math.min(100, Math.max(0, overlayNum))
     : DEFAULT_PAGE.hero.overlayOpacity;
 
+const heroImage =
+  rawHero.image?.trim() ||
+  rawHero.backgroundImage?.trim() ||
+  DEFAULT_PAGE.hero.image;
+
   return {
-    hero: {
-      ...DEFAULT_PAGE.hero,
-      ...rawHero,
-      image:
-        rawHero.image ||
-        rawHero.backgroundImage ||
-        DEFAULT_PAGE.hero.image,
-      overlayOpacity,
-    },
+ hero: {
+  ...DEFAULT_PAGE.hero,
+  ...rawHero,
+  image: heroImage,
+  backgroundImage: heroImage,
+  overlayOpacity,
+},
     contactInfo: {
       ...DEFAULT_PAGE.contactInfo,
       ...rawContact,
@@ -232,7 +235,8 @@ export default function ContactPage() {
     phone: "",
     message: "",
   });
-
+const [submitting, setSubmitting] = useState(false);
+const [submitError, setSubmitError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -243,10 +247,13 @@ export default function ContactPage() {
         setLoading(true);
         setUnavailable(false);
 
-        const res = await fetch(`${API_BASE_URL}/contact`, {
-          cache: "no-store",
-        });
-
+const res = await fetch(`${API_BASE_URL}/contact`, {
+  method: "GET",
+  cache: "no-store",
+  headers: {
+    Accept: "application/json",
+  },
+});
         if (res.status === 404) {
           if (active) {
             setUnavailable(true);
@@ -255,7 +262,13 @@ export default function ContactPage() {
         }
 
         const json = await res.json();
+        console.log("CONTACT API RESPONSE:", json);
 
+        console.log(
+          "CONTACT HERO IMAGE:",
+          json?.data?.hero?.image ||
+          json?.data?.hero?.backgroundImage
+        );
         if (!res.ok || json?.success === false) {
           if (res.status === 404 && active) {
             setUnavailable(true);
@@ -318,11 +331,67 @@ export default function ContactPage() {
     return () => ctx.revert();
   }, [loading, unavailable]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Connect your enquiry API endpoint here if needed
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (submitting) return;
+
+  try {
+    setSubmitting(true);
+    setSubmitError("");
+
+    const response = await fetch(
+      `${API_BASE_URL}/contact/enquiry`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      }
+    );
+
+    const result = await response.json();
+
+    if (!response.ok || result.success === false) {
+      throw new Error(
+        result.message || "Unable to submit your enquiry."
+      );
+    }
+
     setSubmitted(true);
-  };
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error("Enquiry submission error:", error);
+
+    setSubmitError(
+      error.message || "Something went wrong. Please try again."
+    );
+  } finally {
+    setSubmitting(false);
+  }
+};
+
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Connect your enquiry API endpoint here if needed
+  //   setSubmitted(true);
+  // };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -382,18 +451,23 @@ export default function ContactPage() {
       {/* Hero Banner */}
       <section className="relative">
         <div className="relative flex min-h-125 items-center justify-center overflow-hidden bg-[#01193B] sm:min-h-[540px] lg:min-h-[650px]">
-          {hero.image && (
-            <img
-              key={hero.image}
-              src={hero.image}
-              alt={
-                hero.imageAlt ||
-                "Industrial machinery and manufacturing environment"
-              }
-              fetchPriority="high"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          )}
+        {hero.image && (
+  <img
+    key={hero.image}
+    src={hero.image}
+    alt={
+      hero.imageAlt ||
+      "Industrial machinery and manufacturing environment"
+    }
+    fetchPriority="high"
+    loading="eager"
+    decoding="async"
+    onError={(e) => {
+      console.error("Contact hero image failed:", hero.image);
+    }}
+    className="absolute inset-0 h-full w-full object-cover"
+  />
+)}
 
           {/* Dynamic dark overlay */}
           <div
@@ -718,13 +792,30 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {submitError && (
+                    <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
+                      {submitError}
+                    </div>
+                  )}
                   <button
+                    type="submit"
+                    disabled={submitting}
+                    className="group flex w-full items-center justify-center gap-3 rounded-xl bg-[#004DA3] py-4 text-sm font-semibold text-white shadow-lg shadow-[#004DA3]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#003b82] disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {submitting ? "Sending Enquiry..." : enquiry.buttonText}
+
+                    {!submitting && (
+                      <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
+                    )}
+                  </button>
+
+                  {/* <button
                     type="submit"
                     className="group flex w-full items-center justify-center gap-3 rounded-xl bg-[#004DA3] py-4 text-sm font-semibold text-white shadow-lg shadow-[#004DA3]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#003b82]"
                   >
                     {enquiry.buttonText}
                     <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
-                  </button>
+                  </button> */}
                 </form>
               )}
             </div>
