@@ -1,18 +1,42 @@
 
-import brands from "../brandData";
 import BrandPageClient from "../BrandPageClient";
+import { getPublicBrand } from "../../lib/publicApi";
+import { notFound } from "next/navigation";
 
- export function generateStaticParams(){
-  return Object.keys(brands).map((slug)=>({
-    slug,
-  }))
- }
+export default async function BrandPage({ params }) {
+  const { slug } = await params;
 
-export default async function BrandPage({params}){
-  const resolvedParams = await params;
+  let brand;
 
-  return <BrandPageClient params={resolvedParams}/>
+  try {
+    brand = await getPublicBrand(slug);
+  } catch (error) {
+    console.error("Brand fetch error:", error);
+    notFound();
+  }
+
+  if (!brand || !brand.isActive) {
+    notFound();
+  }
+
+  return <BrandPageClient brand={brand} />;
 }
+
+
+// import brands from "../brandData";
+// import BrandPageClient from "../BrandPageClient";
+
+//  export function generateStaticParams(){
+//   return Object.keys(brands).map((slug)=>({
+//     slug,
+//   }))
+//  }
+
+// export default async function BrandPage({params}){
+//   const resolvedParams = await params;
+
+//   return <BrandPageClient params={resolvedParams}/>
+// }
 
 // 'use client';
 

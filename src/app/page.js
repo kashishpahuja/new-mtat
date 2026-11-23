@@ -10,6 +10,7 @@ import TestimonialSection from "../../components/TestimonialSection";
 import EnquirySection from "../../components/EnquirySection";
 
 import { getPublicHomepage } from "../app/lib/publicApi";
+import VideoFrame from "../../components/VideoFrame";
 
 export default function Home() {
   const [homepage, setHomepage] = useState(null);
@@ -45,7 +46,7 @@ export default function Home() {
       {homepage.hero?.enabled !== false && (
         <HeroBanner data={homepage.hero} />
       )}
-
+   <VideoFrame />
       {homepage.services?.enabled !== false && (
         <ServicesSection data={homepage.services} />
       )}

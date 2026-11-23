@@ -1225,7 +1225,7 @@ export default function ProductsAdmin({ initialTab = "categories" }) {
                 disabled={saving || uploading}
                 className="rounded-lg p-2 text-xl text-gray-400 hover:bg-gray-100"
               >
-                ×
+                X
               </button>
             </div>
 

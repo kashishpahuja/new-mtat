@@ -8,7 +8,6 @@ import {
   FaQuoteLeft,
 } from "react-icons/fa6";
 import EnquirySection from "../../../components/EnquirySection";
-import Image from "next/image";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

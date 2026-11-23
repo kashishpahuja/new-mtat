@@ -375,6 +375,10 @@ const res = await fetch(`${API_BASE_URL}/contact`, {
       message: "",
     });
 
+    if(result.emailSent === false){
+      console.warn("Enquiry saved, but email notification was not sent.");
+    } 
+
   } catch (error) {
     console.error("Enquiry submission error:", error);
 

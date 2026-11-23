@@ -6,18 +6,19 @@ import { LiaTimesSolid } from "react-icons/lia";
 import Link from "next/link";
 import gsap from "gsap";
 import { FaChevronDown } from "react-icons/fa";
-import brands from '../src/app/brands/brandData'
+import { getPublicNavigation } from "../src/app/lib/publicApi";
 
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [productMenuOpen, setProductMenuOpen] = useState(false);
-  const [brandMenuOpen, setBrandMenuOpen] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("metal-cutting");
-  const [mobileCategoryOpen, setMobileCategoryOpen] = useState({});
-  // const btnRef = useRef(null);
-  // const borderRef = useRef(null);
-  const dropdownRef = useRef(null);
+const [productCategories, setProductCategories] = useState([]);
+const [brands, setBrands] = useState([]);
+
+const [menuOpen, setMenuOpen] = useState(false);
+const [productMenuOpen, setProductMenuOpen] = useState(false);
+const [brandMenuOpen, setBrandMenuOpen] = useState(false);
+const [activeCategory, setActiveCategory] = useState("metal-cutting");
+const [mobileCategoryOpen, setMobileCategoryOpen] = useState({});
+const dropdownRef = useRef(null);
 
   // Prevent background scrolling when mobile menu is open.
   useEffect(() => {
@@ -45,50 +46,50 @@ function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // CTA button hover animations.
-  // const handleMouseEnter = () => {
-  //   if (btnRef.current) {
-  //     gsap.to(btnRef.current, {
-  //       y: 2,
-  //       scale: 0.98,
-  //       duration: 0.2,
-  //       ease: "power3.inOut",
-  //     });
-  //   }
+  // Fetch navigation hierarchy from MongoDB
+useEffect(() => {
+  let isMounted = true;
 
-  //   if (borderRef.current) {
-  //     gsap.fromTo(
-  //       borderRef.current,
-  //       { scale: 1, opacity: 0.5 },
-  //       {
-  //         scale: 1.1,
-  //         opacity: 1,
-  //         duration: 0.2,
-  //         ease: "power3.out",
-  //       }
-  //     );
-  //   }
-  // };
+  async function loadNavigation() {
+    try {
+      const result = await getPublicNavigation();
 
-  // const handleMouseLeave = () => {
-  //   if (btnRef.current) {
-  //     gsap.to(btnRef.current, {
-  //       y: 0,
-  //       scale: 1,
-  //       duration: 0.2,
-  //       ease: "power3.inOut",
-  //     });
-  //   }
+      if (!isMounted) return;
 
-  //   if (borderRef.current) {
-  //     gsap.to(borderRef.current, {
-  //       scale: 1,
-  //       opacity: 0.5,
-  //       duration: 0.4,
-  //       ease: "power2.inOut",
-  //     });
-  //   }
-  // };
+      const categories = result?.categories || [];
+
+      setProductCategories(categories);
+
+      // Flatten brands for the separate Brands dropdown
+      const allBrands = categories.flatMap((category) =>
+        (category.brands || []).map((brand) => ({
+          ...brand,
+          categorySlug: category.slug,
+        }))
+      );
+
+      setBrands(allBrands);
+
+      // Set first available category as active
+      if (categories.length > 0) {
+        setActiveCategory((current) =>
+          categories.some((category) => category.slug === current)
+            ? current
+            : categories[0].slug
+        );
+      }
+    } catch (error) {
+      console.error("Navbar navigation fetch error:", error);
+    }
+  }
+
+  loadNavigation();
+
+  return () => {
+    isMounted = false;
+  };
+}, []);
+
 
   const toggleMenu = () => {
     setMenuOpen((previous) => !previous);
@@ -142,177 +143,6 @@ function Navbar() {
     };
   }, [menuOpen]);
 
-const productCategories = [
-  {
-    title: "Metal Cutting",
-    slug: "metal-cutting",
-    desc: "Jyoti CNC & Eifco machining and gear hobbing solutions.",
-    brands: [
-      {
-        title: "Jyoti CNC",
-        slug: "jyoti",
-        subcategories: [
-          { title: "Turning Centres", slug: "turning-centres" },
-          { title: "Vertical Turning Lathes (VTL)", slug: "vertical-turning-lathes-vtl" },
-          { title: "Vertical Machining Centres (VMC)", slug: "vertical-machining-centres-vmc" },
-          { title: "Turn-Mill Centres (TMC)", slug: "turn-mill-centres-tmc" },
-          { title: "Horizontal Machining Centres", slug: "horizontal-machining-centres" },
-          { title: "5-Axis Machines", slug: "5-axis-machines" },
-          { title: "Double Column Machines", slug: "double-column-machines" },
-        ],
-      },
-      {
-        title: "EIFCO",
-        slug: "eifco",
-        subcategories: [
-          { title: "Vertical Gear Hobber", slug: "vertical-gear-hobber" },
-          { title: "Horizontal Gear Hobber", slug: "horizontal-gear-hobber" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Metal Forming",
-    slug: "metal-forming",
-    desc: "Energy Mission, Singhal Press & Sukrit sheet metal systems.",
-    brands: [
-      {
-        title: "Energy Mission",
-        slug: "energy-mission",
-        subcategories: [
-          { title: "CNC Press Brakes", slug: "cnc-press-brakes" },
-          { title: "Shearing Machines", slug: "shearing-machines" },
-          { title: "Hydraulic Presses", slug: "hydraulic-presses" },
-          { title: "Iron Worker", slug: "iron-worker" },
-          { title: "BusBar Machine", slug: "busbar-machine" },
-          { title: "V-Grooving Machine", slug: "v-grooving-machine" },
-        ],
-      },
-      {
-        title: "Singhal Press (SEW)",
-        slug: "singhal-press",
-        subcategories: [
-          { title: "Cross Shaft Press", slug: "cross-shaft-press" },
-          { title: "Two Point Press", slug: "two-point-press" },
-          { title: "Eccentric Driven Press", slug: "eccentric-driven-press" },
-          { title: "Link Motion Power Press", slug: "link-motion-power-press" },
-          { title: "Knuckle Joint Press", slug: "knuckle-joint-press" },
-          { title: "2 in 1 and 3 in 1 Automation System", slug: "2-in-1-and-3-in-1-automation-system" },
-        ],
-      },
-      {
-        title: "SUKRIT",
-        slug: "sukrit",
-        subcategories: [
-          { title: "Ball Screw Driven", slug: "ball-screw-driven" },
-          { title: "Belt Driven", slug: "belt-driven" },
-          { title: "Servo Electric Press", slug: "servo-electric-press" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Metrology",
-    slug: "metrology",
-    desc: "Hexagon precision measurement, CMM & optical inspection.",
-    brands: [
-      {
-        title: "Hexagon",
-        slug: "hexagon",
-        subcategories: [
-          { title: "Optical Light Measuring Machines (OLM)", slug: "optical-light-measuring-machines-olm" },
-          { title: "Coordinate Measuring Machine (CMM)", slug: "coordinate-measuring-machine-cmm" },
-          { title: "Romer Arm (Portable Arm)", slug: "romer-arm-portable-arm" },
-          { title: "Tool and Job Probes", slug: "tool-and-job-probes" },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Tool Room & Software",
-    slug: "tool-room-software",
-    desc: "Sodick EDM, Pinnacle & Kiya grinders and workshop solutions.",
-    brands: [
-      {
-        title: "Sodick",
-        slug: "sodick",
-        subcategories: [
-          { title: "EDM Machines", slug: "edm-machines" },
-          { title: "Wire EDM Machines", slug: "wire-edm-machines" },
-        ],
-      },
-      {
-        title: "Pinnacle",
-        slug: "pinnacle",
-        subcategories: [
-          { title: "Surface Grinders (Semi Automatic)", slug: "surface-grinders-semi-automatic" },
-          { title: "CNC Surface Grinders", slug: "cnc-surface-grinders" },
-          { title: "Rotary Surface Grinders", slug: "rotary-surface-grinders" },
-        ],
-      },
-      {
-        title: "Kiya",
-        slug: "kiya",
-        subcategories: [
-          { title: "CNC Hybrid Grinder (ID/OD)", slug: "cnc-hybrid-grinder-id-od" },
-          { title: "CNC External Cylindrical Grinder", slug: "cnc-external-cylindrical-grinder" },
-          { title: "CNC Internal Cylindrical Grinder", slug: "cnc-internal-cylindrical-grinder" },
-          { title: "CNC External Bush/Track Grinder", slug: "cnc-external-bush-track-grinder" },
-          { title: "Hydraulic Cylindrical Grinder", slug: "hydraulic-cylindrical-grinder" },
-          { title: "CNC LIP Grinder", slug: "cnc-lip-grinder" },
-        ],
-      },
-    ],
-  },
-];
-
-  // const brands = [
-  //   {
-  //     title: "Jyoti CNC",
-  //     slug: "jyoti",
-  //     desc: "Advanced machining centers and turning solutions.",
-  //   },
-  //   {
-  //     title: "EIFCO",
-  //     slug: "eifco",
-  //     desc: "Vertical and horizontal gear hobbers.",
-  //   },
-  //   {
-  //     title: "Energy Mission",
-  //     slug: "energy-mission",
-  //     desc: "CNC press brakes, shearing machines & hydraulic presses.",
-  //   },
-  //   {
-  //     title: "Singhal Press (SEW)",
-  //     slug: "singhal-press",
-  //     desc: "Cross-shaft, two-point & eccentric-driven presses.",
-  //   },
-  //   {
-  //     title: "SUKRIT",
-  //     slug: "sukrit",
-  //     desc: "Specialized metal forming and finishing systems.",
-  //   },
-  //   {
-  //     title: "Hexagon",
-  //     slug: "hexagon",
-  //     desc: "Coordinate measuring machines and optical systems.",
-  //   },
-  //   {
-  //     title: "Sodick",
-  //     slug: "sodick",
-  //     desc: "EDM and wire EDM machine solutions.",
-  //   },
-  //   {
-  //     title: "Pinnacle",
-  //     slug: "pinnacle",
-  //     desc: "Surface grinders and precision tool room machines.",
-  //   },
-  //   {
-  //     title: "Kiya",
-  //     slug: "kiya",
-  //     desc: "Cylindrical, internal, and external grinders.",
-  //   },
-  // ];
 
   const closeMobileMenu = () => {
     setMenuOpen(false);
@@ -353,28 +183,46 @@ const productCategories = [
               <div className="invisible absolute left-[-150px] top-full z-50 w-[850px] rounded-xl border border-[#467B23]/20 bg-white/95 p-6 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <div className="grid grid-cols-12 gap-6 text-start">
                   {/* Left Column: Categories */}
-                  <div className="col-span-5 flex flex-col gap-1 border-r border-gray-100 pr-4">
-                    {productCategories.map((item) => (
-                      <div
-                        key={item.slug}
-                        onMouseEnter={() => setActiveCategory(item.slug)}
-                        className={`group/item rounded-lg p-3 cursor-pointer transition-all duration-300 ${
-                          activeCategory === item.slug
-                            ? "bg-[#467B23]/10 text-[#467B23]"
-                            : "hover:bg-gray-50"
-                        }`}
-                      >
-                        <div className="block">
-                          <span className="block font-semibold text-[#0b2345] transition-colors group-hover/item:text-[#467B23]">
-                            {item.title}
-                          </span>
-                          <p className="mt-1 line-clamp-1 text-xs text-gray-500">
-                            {item.desc}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+           {/* Right Column: Brands and Subcategories */}
+<div className="col-span-7 pl-2 max-h-95 overflow-y-auto">
+  {productCategories
+    .filter((cat) => cat.slug === activeCategory)
+    .map((cat) => (
+      <div key={cat._id || cat.slug} className="flex flex-col gap-4">
+        {(cat.brands || []).map((brand) => (
+          <div
+            key={brand._id || brand.slug}
+            className="flex flex-col gap-1.5"
+          >
+            <Link
+              href={`/brands/${brand.slug}`}
+              className="text-sm font-bold text-[#467B23] hover:underline"
+            >
+              {brand.name} →
+            </Link>
+
+            {brand.categories?.length > 0 ? (
+              <div className="grid grid-cols-2 gap-1.5 pl-2">
+                {brand.categories.map((sub) => (
+                  <Link
+                    key={sub._id || sub.slug}
+                    href={`/products/${cat.slug}/${brand.slug}/${sub.slug}`}
+                    className="rounded-md p-1.5 text-xs text-gray-600 transition-colors hover:bg-[#467B23]/10 hover:text-[#0b2345]"
+                  >
+                    {sub.title}
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <p className="text-xs text-gray-400 pl-2">
+                Explore specialized systems
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    ))}
+</div>
 
                   {/* Right Column: Brands and Subcategories */}
                   <div className="col-span-7 pl-2 max-h-95 overflow-y-auto">
@@ -390,17 +238,17 @@ const productCategories = [
                               >
                                 {brand.title} →
                               </Link>
-                              {brand.subcategories.length > 0 ? (
+                              {brand.categories.length > 0 ? (
                                 <div className="grid grid-cols-2 gap-1.5 pl-2">
-                                  {brand.subcategories.map((sub) => (
-                                    <Link
-                                      key={sub.slug}
-                                      href={`/products/${cat.slug}/${brand.slug}/${sub.slug}`}
-                                      className="rounded-md p-1.5 text-xs text-gray-600 transition-colors hover:bg-[#467B23]/10 hover:text-[#0b2345]"
-                                    >
-                                      {sub.title}
-                                    </Link>
-                                  ))}
+                              {brand.categories?.map((sub) => (
+  <Link
+    key={sub._id || sub.slug}
+    href={`/products/${cat.slug}/${brand.slug}/${sub.slug}`}
+    className="rounded-md p-1.5 text-xs text-gray-600 transition-colors hover:bg-[#467B23]/10 hover:text-[#0b2345]"
+  >
+    {sub.title}
+  </Link>
+))}
                                 </div>
                               ) : (
                                 <p className="text-xs text-gray-400 pl-2">
@@ -452,20 +300,21 @@ const productCategories = [
 
               <div className="invisible absolute left-0 top-full z-50 w-[300px] max-h-[400px] overflow-y-auto rounded-xl border border-[#467B23]/20 bg-white/95 p-3 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <div className="flex flex-col gap-1">
-                  {Object.values(brands).map((brand) => (
-                    <Link
-                      href={`/brands/${brand.slug}`}
-                      key={brand.slug}
-                      className="group/brand rounded-lg p-3 transition-all duration-300 hover:bg-[#467B23]/10"
-                    >
-                      <span className="block font-semibold text-[#0b2345] group-hover/brand:text-[#467B23]">
-                        {brand.name}
-                      </span>
-                      <p className="mt-0.5 text-xs text-gray-500">
-                        {brand.tagline}
-                      </p>
-                    </Link>
-                  ))}
+{brands.map((brand) => (
+  <Link
+    key={brand._id || brand.slug}
+    href={`/brands/${brand.slug}`}
+    className="group/brand rounded-lg p-3 transition-all duration-300 hover:bg-[#467B23]/10"
+  >
+    <span className="block font-semibold text-[#0b2345] group-hover/brand:text-[#467B23]">
+      {brand.name}
+    </span>
+
+    <p className="mt-0.5 text-xs text-gray-500">
+      {brand.tagline || brand.shortDescription || ""}
+    </p>
+  </Link>
+))}
                 </div>
               </div>
             </li>
@@ -561,63 +410,66 @@ const productCategories = [
               }`}
             >
               <div className="mt-1 flex flex-col gap-2 rounded-lg bg-gray-50/50 p-2 pl-3">
-                {productCategories.map((item) => (
-                  <div key={item.slug} className="flex flex-col gap-1">
-                    <div className="flex items-center justify-between rounded-md p-2 hover:bg-[#467B23]/10">
-                      <div
-                        // href={`/products/${item.slug}`}
-                        onClick={closeMobileMenu}
-                        className="text-sm font-semibold text-[#0b2345]"
-                      >
-                        {item.title}
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => toggleMobileCategory(item.slug)}
-                        aria-label={`Toggle ${item.title} categories`}
-                        className="p-1 cursor-pointer"
-                      >
-                        <FaChevronDown
-                          className={`h-3 w-3 text-gray-500 transition-transform duration-300 ${
-                            mobileCategoryOpen[item.slug] ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-                    </div>
+           {productCategories.map((item) => (
+  <div key={item._id || item.slug} className="flex flex-col gap-1">
+    <div className="flex items-center justify-between rounded-md p-2 hover:bg-[#467B23]/10">
+      <div
+        className="text-sm font-semibold text-[#0b2345]"
+      >
+        {item.title}
+      </div>
 
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        mobileCategoryOpen[item.slug]
-                          ? "max-h-[1000px] opacity-100"
-                          : "max-h-0 opacity-0"
-                      }`}
-                    >
-                      <div className="flex flex-col gap-1 pl-3 border-l border-gray-200 mt-1">
-                        {item.brands.map((brand) => (
-                          <div key={brand.slug} className="flex flex-col gap-1 py-1">
-                            <Link
-                              href={`/brands/${brand.slug}`}
-                              onClick={closeMobileMenu}
-                              className="text-xs font-bold text-[#467B23]"
-                            >
-                              {brand.title}
-                            </Link>
-                            {brand.subcategories.map((sub) => (
-                              <Link
-                                key={sub.slug}
-                                href={`/products/${item.slug}/${brand.slug}/${sub.slug}`}
-                                onClick={closeMobileMenu}
-                                className="text-xs text-gray-600 hover:text-[#0b2345] py-0.5"
-                              >
-                                {sub.title}
-                              </Link>
-                            ))}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
+      <button
+        type="button"
+        onClick={() => toggleMobileCategory(item.slug)}
+        aria-label={`Toggle ${item.title} categories`}
+        className="p-1 cursor-pointer"
+      >
+        <FaChevronDown
+          className={`h-3 w-3 text-gray-500 transition-transform duration-300 ${
+            mobileCategoryOpen[item.slug] ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+    </div>
+
+    <div
+      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+        mobileCategoryOpen[item.slug]
+          ? "max-h-[1000px] opacity-100"
+          : "max-h-0 opacity-0"
+      }`}
+    >
+      <div className="flex flex-col gap-1 pl-3 border-l border-gray-200 mt-1">
+        {(item.brands || []).map((brand) => (
+          <div
+            key={brand._id || brand.slug}
+            className="flex flex-col gap-1 py-1"
+          >
+            <Link
+              href={`/brands/${brand.slug}`}
+              onClick={closeMobileMenu}
+              className="text-xs font-bold text-[#467B23]"
+            >
+              {brand.name}
+            </Link>
+
+            {brand.categories?.map((sub) => (
+              <Link
+                key={sub._id || sub.slug}
+                href={`/products/${item.slug}/${brand.slug}/${sub.slug}`}
+                onClick={closeMobileMenu}
+                className="text-xs text-gray-600 hover:text-[#0b2345] py-0.5"
+              >
+                {sub.title}
+              </Link>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+))}
               </div>
             </div>
           </li>
@@ -656,21 +508,22 @@ const productCategories = [
               }`}
             >
               <div className="mt-1 flex flex-col gap-1 rounded-lg bg-gray-50/50 p-2 pl-3">
-                {Object.values(brands).map((brand) => (
-                  <Link
-                    key={brand.slug}
-                    href={`/brands/${brand.slug}`}
-                    onClick={closeMobileMenu}
-                    className="rounded-md p-2.5 text-sm hover:bg-[#467B23]/10"
-                  >
-                    <span className="block font-medium text-[#0b2345]">
-                      {brand.name}
-                    </span>
-                    <span className="text-xs text-gray-500">
-                      {brand.tagline}
-                    </span>
-                  </Link>
-                ))}
+{brands.map((brand) => (
+  <Link
+    key={brand._id || brand.slug}
+    href={`/brands/${brand.slug}`}
+    onClick={closeMobileMenu}
+    className="rounded-md p-2.5 text-sm hover:bg-[#467B23]/10"
+  >
+    <span className="block font-medium text-[#0b2345]">
+      {brand.name}
+    </span>
+
+    <span className="text-xs text-gray-500">
+      {brand.tagline || brand.shortDescription || ""}
+    </span>
+  </Link>
+))}
               </div>
             </div>
           </li>

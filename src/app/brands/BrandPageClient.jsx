@@ -11,13 +11,13 @@ import {
 } from "react-icons/fa";
 
 
-import brands from "./brandData";
+// import brands from "./brandData";
 
-export function generateStaticParams(){
-  return Object.keys(brands).map((slug)=>({
-    slug,
-  }))
-}
+// export function generateStaticParams(){
+//   return Object.keys(brands).map((slug)=>({
+//     slug,
+//   }))
+// }
 
 const smootherstep = t => t * t * t * (t * (t * 6 - 15) + 10);
 
@@ -46,17 +46,34 @@ function useElementWidth(ref) {
     const element = ref.current;
     if (!element) return;
 
-    if (typeof ResizeObserver === 'undefined') {
-      const updateWidth = () => setWidth(element.offsetWidth);
-      updateWidth();
-      window.addEventListener('resize', updateWidth);
-      return () => window.removeEventListener('resize', updateWidth);
+    const updateWidth = (nextWidth) => {
+      setWidth((previousWidth) =>
+        previousWidth === nextWidth ? previousWidth : nextWidth
+      );
+    };
+
+    if (typeof ResizeObserver === "undefined") {
+      const handleResize = () => updateWidth(element.offsetWidth);
+
+      handleResize();
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     }
 
     const observer = new ResizeObserver(([entry]) => {
-      setWidth(entry.borderBoxSize?.[0]?.inlineSize ?? entry.contentRect.width);
+      updateWidth(
+        Math.round(
+          entry.borderBoxSize?.[0]?.inlineSize ??
+          entry.contentRect.width
+        )
+      );
     });
+
     observer.observe(element);
+
     return () => observer.disconnect();
   }, [ref]);
 
@@ -66,40 +83,57 @@ function useElementWidth(ref) {
 
 
 
-
 // eslint-disable-next-line @next/next/no-async-client-component
-export default async function BrandPage({ params }) {
-  const { slug } = await params;
+export default function BrandPageClient({ brand }) {
+  if (!brand) return null;
+
+  const categories = (brand.categories || []).map((category) => ({
+    ...category,
+    href: `/brands/${brand.slug}/${category.slug}`,
+  }));
+
+  const featuredProducts = (brand.featuredProducts || []).map(
+    (product) => ({
+      ...product,
+      image: product.images?.[0] || "",
+      category: product.brandCategory?.title || "",
+      description:
+        product.shortDescription || product.description || "",
+      href: `/products/${product.slug}`,
+    })
+  );
+  // export default async function BrandPage({ params }) {
+  // const { slug } = await params;
 
   // Safely retrieve brand data, handling potential case sensitivity issues.
-  const brand = brands[slug?.toLowerCase()];
+  // const brand = brands[slug?.toLowerCase()];
 
-  if (!brand) {
-    return (
-      <main className="flex min-h-[65vh] items-center justify-center bg-slate-200 px-6">
-        <div className="max-w-lg text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
-            Brand Not Found
-          </p>
-          <h1 className="mt-4 text-3xl font-medium tracking-tight text-slate-900 lg:text-4xl">
-            Manufacturer not found.
-          </h1>
-          <p className="mt-4 leading-7 text-slate-600">
-            Return to the brands directory to explore our manufacturers and their product ranges.
-          </p>
-          <Link
-            href="/brands"
-            className="mt-7 inline-flex items-center gap-3 bg-[#004DA3] px-6 py-3 text-sm font-medium text-white transition hover:bg-orange-700"
-          >
-            Explore All Brands <FaArrowRight />
-          </Link>
-        </div>
-      </main>
-    );
-  }
+  // if (!brand) {
+  //   return (
+  //     <main className="flex min-h-[65vh] items-center justify-center bg-slate-200 px-6">
+  //       <div className="max-w-lg text-center">
+  //         <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#004DA3]">
+  //           Brand Not Found
+  //         </p>
+  //         <h1 className="mt-4 text-3xl font-medium tracking-tight text-slate-900 lg:text-4xl">
+  //           Manufacturer not found.
+  //         </h1>
+  //         <p className="mt-4 leading-7 text-slate-600">
+  //           Return to the brands directory to explore our manufacturers and their product ranges.
+  //         </p>
+  //         <Link
+  //           href="/brands"
+  //           className="mt-7 inline-flex items-center gap-3 bg-[#004DA3] px-6 py-3 text-sm font-medium text-white transition hover:bg-orange-700"
+  //         >
+  //           Explore All Brands <FaArrowRight />
+  //         </Link>
+  //       </div>
+  //     </main>
+  //   );
+  // }
 
-  const categories = brand?.categories ?? [];
-  const featuredProducts = brand?.featuredProducts ?? [];
+  // const categories = brand?.categories ?? [];
+  // const featuredProducts = brand?.featuredProducts ?? [];
 
 
 
@@ -511,7 +545,7 @@ export default async function BrandPage({ params }) {
                 Visit the official {brand.name} website for additional manufacturer information, technical specifications, documentation, CAD files, and global product resources.
               </p>
               <p className="mt-5 break-all text-sm font-mono text-white/60">
-                {brand.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+               {(brand.website || "").replace(/^https?:\/\//, "").replace(/\/$/, "")}
               </p>
             </div>
 

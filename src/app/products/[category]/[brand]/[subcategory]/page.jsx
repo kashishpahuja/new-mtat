@@ -1,25 +1,75 @@
-import catalogData from "../../../../../data/jyotiProducts.json";
+import { notFound } from "next/navigation";
 import SubcategoryPageClient from "../../../../../../components/SubcategoryPageClient";
-
-export function generateStaticParams() {
-  return (catalogData.productCategories || []).flatMap((category) =>
-    (category.brands || []).flatMap((brand) =>
-      (brand.subcategories || []).map((subcategory) => ({
-        category: category.slug,
-        brand: brand.slug,
-        subcategory: subcategory.slug,
-      }))
-    )
-  );
-}
+import { getPublicBrand, getPublicItems } from "../../../../lib/publicApi";
 
 export default async function Page({ params }) {
-  const resolvedParams = await params;
+  const { category, brand, subcategory } = await params;
 
-  return <SubcategoryPageClient params={resolvedParams} />;
+  try {
+    // 1. Fetch brand using its database slug
+    const brandData = await getPublicBrand(brand);
+
+    if (!brandData || !brandData.isActive) {
+      notFound();
+    }
+
+    // 2. Find requested subcategory inside the brand
+    const currentCategory = (brandData.categories || []).find(
+      (item) => item.slug === subcategory && item.isActive,
+    );
+
+    if (!currentCategory) {
+      notFound();
+    }
+
+    // 3. Fetch products using MongoDB relationship IDs
+    const products = await getPublicItems({
+      brand: brandData._id,
+      brandCategory: currentCategory._id,
+    });
+
+    // 4. Adapt database fields to the existing frontend layout
+    const currentData = {
+      hero: {
+        bgImage: currentCategory.bannerImage || brandData.heroImage || "",
+        title: currentCategory.pageTitle || currentCategory.title,
+        description:
+          currentCategory.pageDescription || currentCategory.description,
+        primaryBtn: "Explore Product Range",
+        secondaryBtn: "Enquire Now",
+      },
+
+      intro: {
+        subtitle: brandData.name,
+        heading: currentCategory.title,
+        description: currentCategory.description,
+      },
+
+      categories: ["All"],
+    };
+
+    return (
+      // eslint-disable-next-line react-hooks/error-boundaries
+      <SubcategoryPageClient
+        categorySlug={category}
+        brand={brandData}
+        currentData={currentData}
+        products={products || []}
+      />
+    );
+  } catch (error) {
+    if (
+      error.message === "Brand not found" ||
+      error.message === "Brand is inactive" ||
+      error.message === "Brand category not found"
+    ) {
+      notFound();
+    }
+
+    console.error("Subcategory page fetch error:", error);
+    throw error;
+  }
 }
-
-
 
 // "use client";
 
@@ -28,7 +78,6 @@ export default async function Page({ params }) {
 // import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import catalogData from "../../../../../data/jyotiProducts.json";
-
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -91,13 +140,13 @@ export default async function Page({ params }) {
 //   }, [subcategorySlug]);
 
 //   const productsList = currentData?.products || [];
-//   const filteredProducts = activeCategory === "All" 
-//     ? productsList 
+//   const filteredProducts = activeCategory === "All"
+//     ? productsList
 //     : productsList.filter(p => p.category === activeCategory);
 
 //   return (
 //     <div className="min-h-screen bg-slate-100 text-slate-900 selection:bg-[#004DA3] selection:text-white">
-      
+
 //       {/* SECTION 1 — Hero Banner */}
 //       <section ref={heroRef} className="relative flex h-[75vh] min-h-[550px] w-full flex-col justify-end overflow-hidden bg-slate-950 pb-16 pt-28">
 //         <img
@@ -156,7 +205,7 @@ export default async function Page({ params }) {
 //       {/* SECTION 3 — Product Range & Category Filtering */}
 //       <section id="product-grid" className="py-20 md:py-28">
 //         <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
-          
+
 //           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
 //             <div>
 //               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#004DA3]">
