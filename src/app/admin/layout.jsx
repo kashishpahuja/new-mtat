@@ -171,7 +171,7 @@ export default function AdminLayout({ children }) {
       ]}
     />
       {/* Top Header */}
-      <header className="sticky top-0 z-40 flex h-[70px] items-center justify-between border-b border-white/10 text-[#01193B] px-4 bg-slate-100 shadow-md sm:px-6">
+      <header className="sticky top-0 z-40 flex h-17.5 items-center justify-between border-b border-white/10 text-[#01193B] px-4 bg-slate-100 shadow-md sm:px-6">
         <div className="flex items-center gap-3">
           <button
             type="button"

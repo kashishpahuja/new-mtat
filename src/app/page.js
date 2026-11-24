@@ -46,10 +46,11 @@ export default function Home() {
       {homepage.hero?.enabled !== false && (
         <HeroBanner data={homepage.hero} />
       )}
-   <VideoFrame />
       {homepage.services?.enabled !== false && (
         <ServicesSection data={homepage.services} />
       )}
+
+      <VideoFrame />
 
       {homepage.companyStory?.enabled !== false && (
         <CompanyStorySection data={homepage.companyStory} />
