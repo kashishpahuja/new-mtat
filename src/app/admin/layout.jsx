@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import AdminAuthGuard from "./AdminAuthGuard";
-import CustomCursor from "@/components/ui/custom-cursor";
+
 
 const menu = [
   {
@@ -146,30 +146,6 @@ export default function AdminLayout({ children }) {
   return (
     <div className="min-h-screen bg-[#f4f6f8] text-[#142033]">
 
-    <CustomCursor
-      circleSize={38}
-      dotSize={6}
-      circleColor="#467B23"
-      dotColor="#01193B"
-      circleBorderWidth={2}
-      circleStiffness={150}
-      circleDamping={20}
-      dotStiffness={300}
-      dotDamping={30}
-      targetPadding={5}
-      elastic={true}
-      showOnTouch={false}
-      zIndex={9999}
-      mixBlendMode="normal"
-      targets={[
-        "a",
-        "button",
-        "input",
-        "select",
-        "textarea",
-        "[role='button']",
-      ]}
-    />
       {/* Top Header */}
       <header className="sticky top-0 z-40 flex h-17.5 items-center justify-between border-b border-white/10 text-[#01193B] px-4 bg-slate-100 shadow-md sm:px-6">
         <div className="flex items-center gap-3">
