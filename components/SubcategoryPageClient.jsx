@@ -111,7 +111,7 @@ export default function SubcategoryPageClient({
           className="absolute inset-0 h-full w-full object-cover opacity-40 mix-blend-luminosity"
         />
 
-        <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/50 to-transparent" />
+        <div className="absolute inset-0 bg-[#01193b2a]" />
 
         <div className="hero-content relative z-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-40">
           <h1 className="mt-3 max-w-4xl text-4xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl">

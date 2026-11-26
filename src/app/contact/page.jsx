@@ -475,7 +475,7 @@ const res = await fetch(`${API_BASE_URL}/contact`, {
 
           {/* Dynamic dark overlay */}
           <div
-            className="absolute inset-0 bg-[#01193B]"
+            className="absolute inset-0 bg-[#01193b49]"
             style={{ opacity: hero.overlayOpacity / 100 }}
           />
 
