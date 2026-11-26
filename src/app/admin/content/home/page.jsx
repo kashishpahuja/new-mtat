@@ -87,14 +87,11 @@ function getArrayTemplate(key, currentValue) {
 }
 
 function isImageField(key) {
-  return (
-    /image|logo|poster/i.test(key) &&
-    !/video/i.test(key)
-  );
+  return /image|logo|poster/i.test(key);
 }
 
 function isVideoField(key) {
-  return /video/i.test(key);
+  return /video/i.test(key) && !/poster/i.test(key);
 }
 
 function isLongField(key) {
