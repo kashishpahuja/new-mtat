@@ -47,6 +47,7 @@ const dropdownRef = useRef(null);
   }, []);
 
   // Fetch navigation hierarchy from MongoDB
+
 useEffect(() => {
   let isMounted = true;
 
@@ -56,11 +57,12 @@ useEffect(() => {
 
       if (!isMounted) return;
 
-      const categories = result?.categories || [];
+      const categories = Array.isArray(result?.categories)
+        ? result.categories
+        : [];
 
       setProductCategories(categories);
 
-      // Flatten brands for the separate Brands dropdown
       const allBrands = categories.flatMap((category) =>
         (category.brands || []).map((brand) => ({
           ...brand,
@@ -70,7 +72,6 @@ useEffect(() => {
 
       setBrands(allBrands);
 
-      // Set first available category as active
       if (categories.length > 0) {
         setActiveCategory((current) =>
           categories.some((category) => category.slug === current)
@@ -89,6 +90,49 @@ useEffect(() => {
     isMounted = false;
   };
 }, []);
+
+  // useEffect(() => {
+//   let isMounted = true;
+
+//   async function loadNavigation() {
+//     try {
+//       const result = await getPublicNavigation();
+
+//       if (!isMounted) return;
+
+//       const categories = result?.categories || [];
+
+//       setProductCategories(categories);
+
+//       // Flatten brands for the separate Brands dropdown
+//       const allBrands = categories.flatMap((category) =>
+//         (category.brands || []).map((brand) => ({
+//           ...brand,
+//           categorySlug: category.slug,
+//         }))
+//       );
+
+//       setBrands(allBrands);
+
+//       // Set first available category as active
+//       if (categories.length > 0) {
+//         setActiveCategory((current) =>
+//           categories.some((category) => category.slug === current)
+//             ? current
+//             : categories[0].slug
+//         );
+//       }
+//     } catch (error) {
+//       console.error("Navbar navigation fetch error:", error);
+//     }
+//   }
+
+//   loadNavigation();
+
+//   return () => {
+//     isMounted = false;
+//   };
+// }, []);
 
 
   const toggleMenu = () => {
@@ -170,7 +214,155 @@ useEffect(() => {
           {/* Desktop navigation */}
           <ul className="poppins hidden items-center space-x-7 text-base font-medium text-[#01193B] xl:flex">
             {/* Products dropdown */}
-            <li className="group relative py-6">
+           
+{/* Products dropdown */}
+<li className="group relative py-6">
+  <div className="group relative inline-flex items-center gap-1.5 cursor-pointer">
+    <span>Products</span>
+    <FaChevronDown className="text-xs text-gray-500 transition-transform duration-300 group-hover:rotate-180" />
+    <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#467B23] transition-[width] duration-300 group-hover:w-full" />
+  </div>
+
+  {/* Mega Menu */}
+  <div className="invisible absolute left-[-150px] top-full z-50 w-[850px] rounded-xl border border-[#467B23]/20 bg-white/95 p-6 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
+
+    <div className="grid grid-cols-12 gap-6">
+
+      {/* LEFT: MAIN CATEGORIES */}
+      <div className="col-span-4 border-r border-gray-100 pr-4">
+        <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-gray-400">
+          Product Categories
+        </h3>
+
+        <div className="flex flex-col gap-1">
+          {productCategories.map((category) => (
+            <button
+              key={category._id || category.slug}
+              type="button"
+              onMouseEnter={() => setActiveCategory(category.slug)}
+              onClick={() => setActiveCategory(category.slug)}
+              className={`flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm transition-all duration-200 ${
+                activeCategory === category.slug
+                  ? "bg-[#467B23]/10 font-semibold text-[#467B23]"
+                  : "text-gray-600 hover:bg-gray-50 hover:text-[#467B23]"
+              }`}
+            >
+              <span>{category.title}</span>
+
+              <FaChevronDown
+                className={`-rotate-90 text-[10px] transition-transform ${
+                  activeCategory === category.slug
+                    ? "text-[#467B23]"
+                    : "text-gray-400"
+                }`}
+              />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* RIGHT: BRANDS AND THEIR CATEGORIES */}
+      <div className="col-span-8 max-h-[420px] overflow-y-auto pr-2">
+
+        {productCategories
+          .filter((category) => category.slug === activeCategory)
+          .map((category) => (
+            <div key={category._id || category.slug}>
+
+              {/* <div className="mb-4">
+                <h3 className="text-lg font-semibold text-[#01193B]">
+                  {category.title}
+                </h3>
+
+                {category.desc && (
+                  <p className="mt-1 text-xs leading-5 text-gray-500">
+                    {category.desc}
+                  </p>
+                )}
+              </div> */}
+
+              <div className="flex flex-col gap-5">
+
+                {(category.brands || []).map((brand) => (
+                  <div
+                    key={brand._id || brand.slug}
+                    className="border-b border-gray-100 pb-4 last:border-0"
+                  >
+
+                    {/* BRAND NAME */}
+                    <Link
+                      href={`/brands/${brand.slug}`}
+                      className="inline-flex items-center gap-2 text-sm font-bold text-[#467B23] transition-colors hover:text-[#01193B]"
+                    >
+                      {brand.name}
+                      <span>→</span>
+                    </Link>
+
+                    {/* BRAND DESCRIPTION */}
+                    {/* {(brand.shortDescription || brand.tagline) && (
+                      <p className="mt-1 max-w-xl text-xs leading-5 text-gray-500">
+                        {brand.shortDescription || brand.tagline}
+                      </p>
+                    )} */}
+
+                    {/* BRAND CATEGORIES */}
+                    {brand.categories?.length > 0 ? (
+                      <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+
+                        {brand.categories.map((sub) => (
+                          <Link
+                            key={sub._id || sub.slug}
+                            href={`/products/${category.slug}/${brand.slug}/${sub.slug}`}
+                            className="group/sub rounded-md p-2 transition-colors hover:bg-[#467B23]/10"
+                          >
+                            <span className="block text-xs font-semibold text-gray-700 transition-colors group-hover/sub:text-[#467B23]">
+                              {sub.title}
+                            </span>
+
+                            {/* {sub.description && (
+                              <span className="mt-1 block line-clamp-2 text-[11px] leading-4 text-gray-400">
+                                {sub.description}
+                              </span>
+                            )} */}
+                          </Link>
+                        ))}
+
+                      </div>
+                    ) : (
+                      <p className="mt-2 pl-1 text-xs text-gray-400">
+                        Explore specialized systems
+                      </p>
+                    )}
+
+                  </div>
+                ))}
+
+                {(!category.brands || category.brands.length === 0) && (
+                  <p className="text-sm text-gray-400">
+                    No brands available in this category.
+                  </p>
+                )}
+
+              </div>
+            </div>
+          ))}
+
+      </div>
+    </div>
+
+    <div className="mt-5 flex items-center justify-between border-t border-gray-100 pt-4">
+      <span className="text-xs font-medium text-gray-400">
+        Explore complete catalogue & specifications
+      </span>
+    </div>
+
+  </div>
+</li>
+
+
+
+
+ {/* <li className="group relative py-6">
               <div
                 
                 className="group relative inline-flex items-center gap-1.5"
@@ -182,8 +374,7 @@ useEffect(() => {
 
               <div className="invisible absolute left-[-150px] top-full z-50 w-[850px] rounded-xl border border-[#467B23]/20 bg-white/95 p-6 opacity-0 shadow-2xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <div className="grid grid-cols-12 gap-6 text-start">
-                  {/* Left Column: Categories */}
-           {/* Right Column: Brands and Subcategories */}
+                 
 <div className="col-span-7 pl-2 max-h-95 overflow-y-auto">
   {productCategories
     .filter((cat) => cat.slug === activeCategory)
@@ -224,7 +415,6 @@ useEffect(() => {
     ))}
 </div>
 
-                  {/* Right Column: Brands and Subcategories */}
                   <div className="col-span-7 pl-2 max-h-95 overflow-y-auto">
                     {productCategories
                       .filter((cat) => cat.slug === activeCategory)
@@ -266,15 +456,10 @@ useEffect(() => {
                   <span className="text-xs font-medium text-gray-400">
                     Explore complete catalogue & specifications
                   </span>
-                  {/* <Link
-                    href="/products"
-                    className="text-sm font-semibold text-[#467B23] hover:underline"
-                  >
-                    View All Products →
-                  </Link> */}
+                 
                 </div>
               </div>
-            </li>
+            </li> */}
 
             {/* About */}
             <li className="py-6">

@@ -850,8 +850,8 @@ export default function HomeContentPage() {
             <div className="space-y-6 p-5 sm:p-7">
               <div className="grid gap-5 sm:grid-cols-2">
                 {Object.entries(currentSection)
-  .filter(([key]) => key !== "videoCaption")
-  .map(([key, value]) => (
+                .filter(([key]) => key !== "videoCaption")
+                .map(([key, value]) => (
                   <div
                     key={`${activeSection}.${key}`}
                     className={
