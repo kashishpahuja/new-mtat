@@ -1344,7 +1344,7 @@ useEffect(() => {
         </section>
 
       </main>
-      <EnquirySection />
+      <EnquirySection data={content.supportSection} />
     </>
   );
 }
