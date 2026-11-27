@@ -2,8 +2,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+// import { apiRequest } from "../../../lib/adminApi";
 import { apiRequest } from "../../../lib/adminApi";
-
+import { getMediaUrl } from "../../../lib/mediaUrl";
 const SECTIONS = [
   { key: "hero", label: "Hero Banner", description: "Main homepage banner and call to action." },
   { key: "services", label: "Services", description: "Services heading, descriptions and service cards." },
@@ -301,8 +302,11 @@ function FieldEditor({
   }
 
   // NORMAL / MEDIA FIELDS
-  const isNumber = typeof value === "number";
-  const mediaUrl = typeof value === "string" ? value : "";
+const isNumber = typeof value === "number";
+const mediaUrl = typeof value === "string" ? value : "";
+const resolvedMediaUrl = getMediaUrl(mediaUrl);
+  // const isNumber = typeof value === "number";
+  // const mediaUrl = typeof value === "string" ? value : "";
 
   const showMediaUpload =
     (imageField || videoField) &&
@@ -323,8 +327,10 @@ function FieldEditor({
             <div className="overflow-hidden rounded-xl border border-gray-200 bg-gray-50">
               {imageField ? (
                 <img
-                  key={mediaUrl}
-                  src={mediaUrl}
+                  // key={mediaUrl}
+                  // src={mediaUrl}
+                  key={resolvedMediaUrl}
+                  src={resolvedMediaUrl}
                   alt={labelize(name)}
                   className="h-44 w-full object-contain p-2"
                   onError={(event) => {
@@ -333,8 +339,10 @@ function FieldEditor({
                 />
               ) : (
                 <video
-                  key={mediaUrl}
-                  src={mediaUrl}
+                 key={resolvedMediaUrl}
+                 src={resolvedMediaUrl}
+                  // key={mediaUrl}
+                  // src={mediaUrl}
                   controls
                   preload="metadata"
                   playsInline
@@ -402,18 +410,33 @@ function FieldEditor({
       ) : (
         <input
           type={isNumber ? "number" : "text"}
-          value={value ?? ""}
-          disabled={disabled}
-          onChange={(event) =>
-            onChange(
-              path,
-              isNumber
-                ? event.target.value === ""
-                  ? 0
-                  : Number(event.target.value)
-                : event.target.value
-            )
+          // value={value ?? ""}
+          value={
+            typeof value === "string" && (imageField || videoField)
+              ? resolvedMediaUrl
+              : value ?? ""
           }
+          disabled={disabled}
+onChange={(event) =>
+  onChange(
+    path,
+    isNumber
+      ? event.target.value === ""
+        ? 0
+        : Number(event.target.value)
+      : event.target.value
+  )
+}
+ // onChange={(event) =>
+          //   onChange(
+          //     path,
+          //     isNumber
+          //       ? event.target.value === ""
+          //         ? 0
+          //         : Number(event.target.value)
+          //       : event.target.value
+          //   )
+          // }
           className={inputClass}
           placeholder={`Enter ${labelize(name).toLowerCase()}`}
         />

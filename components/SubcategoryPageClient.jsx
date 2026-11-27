@@ -100,7 +100,7 @@ export default function SubcategoryPageClient({
       {/* SECTION 1 — Hero Banner */}
       <section
         ref={heroRef}
-        className="relative flex h-[75vh] min-h-[550px] w-full flex-col justify-end overflow-hidden bg-slate-950 pb-16 pt-28"
+        className="relative flex h-[75vh] min-h-137.5 w-full flex-col justify-end overflow-hidden bg-slate-950 pb-16 pt-28"
       >
         <img
           src={
