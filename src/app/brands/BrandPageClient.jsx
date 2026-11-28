@@ -83,14 +83,18 @@ function useElementWidth(ref) {
 
 
 
-// eslint-disable-next-line @next/next/no-async-client-component
-export default function BrandPageClient({ brand }) {
+  // eslint-disable-next-line @next/next/no-async-client-component
+  export default function BrandPageClient({ brand }) {
   if (!brand) return null;
-
-  const categories = (brand.categories || []).map((category) => ({
-    ...category,
-    href: `/brands/${brand.slug}/${category.slug}`,
-  }));
+  
+const categories = (brand.categories || []).map((category) => ({
+  ...category,
+  href: `/products/${brand.categorySlug || "metal-cutting"}/${brand.slug}/${category.slug}`,
+}));
+  // const categories = (brand.categories || []).map((category) => ({
+  //   ...category,
+  //   href: `/brands/${brand.slug}/${category.slug}`,
+  // }));
 
   const featuredProducts = (brand.featuredProducts || []).map(
     (product) => ({

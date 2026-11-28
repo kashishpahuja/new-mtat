@@ -206,9 +206,7 @@ export default function SubcategoryPageClient({
                   key={product.id}
                   className="group relative flex h-[380px] flex-col justify-between overflow-hidden bg-slate-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <Link
-                    href={product.href}
-                    className="relative flex h-full w-full flex-col justify-between overflow-hidden p-6"
+                  <div className="relative flex h-full w-full flex-col justify-between overflow-hidden p-6"
                   >
                     {product.image && (
                       <img
@@ -226,9 +224,9 @@ export default function SubcategoryPageClient({
                         {product.category}
                       </span>
 
-                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition group-hover:bg-[#004DA3]">
+                      {/* <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition group-hover:bg-[#004DA3]">
                         <ArrowUpRight />
-                      </span>
+                      </span> */}
                     </div>
 
                     <div className="relative z-10 pt-10">
@@ -240,11 +238,11 @@ export default function SubcategoryPageClient({
                         {product.desc}
                       </p>
 
-                      <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-white underline underline-offset-4">
+                      {/* <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-white underline underline-offset-4">
                         View Details
-                      </div>
+                      </div> */}
                     </div>
-                  </Link>
+                  </div>
                 </div>
               ))
             ) : (
